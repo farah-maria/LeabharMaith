@@ -1,108 +1,49 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Leabhar Maith
 
-Welcome Farah M,
+## Introduction
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<br>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This is a README for an e-commerce website for a hypothetical business called 'Leabhar Maith', meaning 'good book' in Irish. 
+Leabhar Maith is a business to customer (B2C) e-commerce site, selling literary products to the user, namely books written in English and Irish by Irish authors. The deliverables will expand in future to include journals, paperweights and stationary with an Irish literary theme. Customers sign up to create an online account and pay via single payments using Stripe.
 
-## Gitpod Reminders
+Features of this business-focused website include a shopping cart, a catalogue of products that is curated and updated quarterly and is searchable by author or title, an online payment system that can save the customer’s preferred mode of payment, a quarterly email newsletter sign-up, and a star rating / reviews system from Goodreads via the Goodreads API.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The site was developed using Python in the Django framework and styled using CSS and Bootstrap. PostgreSQL/ ElephantSQL is used for the database and Heroku for deployment. 
 
-`python3 -m http.server`
+'Leabhar Maith' means 'good book' in Irish.
 
-A blue button should appear to click: _Make Public_,
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+## Contents
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* [User Experience R&D](#user-experience,-research-and-design)
+    * [Strategy](#strategy)
+    * [Scope](#Scope)
+    * [Structure](#Structure)
+    * [Skeleton](#Skeleton)
+    * [Surface](#Surface)
+* [Web Marketing Strategy](#Web-marketing-strategy)
+* [Features](#Features)
+* [Data Model](#Data-Model)
+* [Testing](#Testing)
+* [Deployment](#Deployment)
+* [Credit & Attributes](#Credit-&-attributes)
 
-A blue button should appear to click: _Make Public_,
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+## User Experience, Research and Design
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+I looked at a range of online bookshops, most of which constituted the online presence of a physical shop or chain of shops, such as Waterstones (https://www.waterstones.com/), Easons (https://www.easons.com/) or my local favourite, Vibes and Scribes (https://www.vibesandscribes.ie/). The book industry in Ireland is one where smaller, one-off book stores do not necessarily have a web presence at all, such as my closest bookshop in East Cork, Midleton Books (it does have a Facebook page at: https://www.facebook.com/midletonbooks/). On the other hand, the Book Depository (owned by Amazon) offers free delivery in Ireland, practically every book going, but no physical shop at all (https://www.bookdepository.com/).
 
-To log into the Heroku toolbelt CLI:
+Given the impersonal e-commerce feel of many online bookshops, even those that are linked to a physical shop that is well grounded in a local area, such as Vibes & Scribes, I wanted to create an alternatrive that brings a personal feel to online book shopping. Rather like a friendly and knowledgable bookshop owner or assistant, Leabhar Maith offers a curated and small selection of books that recommended by the site owner. The selection changes every quarter, with the seasons, so that there is a Spring selection of books, a Summer collection, and so on. The chosen books reflect the season, and past selections and the books in them can still be accessed and purchased by the site user. There's the feeling of a bookclub to the site (a little like the Guardian bookshop, which is linked to books featured in the Guardian and has a bookclub subcription). There is a newsletter sign-up that connects the user with articles and reviews, some of which are actually written by Leabhar Maith readers. Readers are 'at home' with Leabhar Maith, and can contribute reviews or musings.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+A subscription service option would certainly suit Leabhar Maith, but for the this intial version of the project it only offers one-off purchases. The curation of groups of books, however, encourages buying multiple books and there is a discount on purchases of three books or more. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+On Leabhar Maith, there is no guest mode for buying books without registering as a user, as this doesn't fit the ethos of the site. Leabhar Maith offers a bookclub-type sense of belonging for the buyer, where there is a feeling of familiarity and friendliness rather than anonymity. The reality of the book market it that if someone wanted to buy a single book as cheaply and efficiently as possible, without registering user details, a guest would likely go to the Book Depository, because this Amazon owned company doesn't charge for delivery and has a huge selection of books available at a buyer's fingertips. Leabhar Maith offers a different kind of online book scene.  
 
-------
+### An AGILE Approach to Design: User Stories & Kanban
 
-## Release History
+Despite being in a team of... one... I used an Agile approach to designing, planning and developing the site.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+First of all, 'user stories' were put together and recorded using the GitHub project tools, and a MVP (Minimum Viable Product) was then designed around the requirements that most directly met the needs of each user story.
