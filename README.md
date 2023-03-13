@@ -1,4 +1,5 @@
 # Leabhar Maith
+# Leabhar Maith
 
 ## Introduction
 
@@ -42,7 +43,7 @@ A subscription service option would certainly suit Leabhar Maith, but for the th
 
 On Leabhar Maith, there is no guest mode for buying books without registering as a user, as this doesn't fit the ethos of the site. Leabhar Maith offers a bookclub-type sense of belonging for the buyer, where there is a feeling of familiarity and friendliness rather than anonymity. The reality of the book market it that if someone wanted to buy a single book as cheaply and efficiently as possible, without registering user details, a guest would likely go to the Book Depository, because this Amazon owned company doesn't charge for delivery and has a huge selection of books available at a buyer's fingertips. Leabhar Maith offers a different kind of online book scene.  
 
-### An AGILE Approach to Design: User Stories & Kanban
+------
 
 Despite being in a team of... one... I used an Agile approach to designing, planning and developing the site.
 
