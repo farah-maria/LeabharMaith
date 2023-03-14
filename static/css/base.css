@@ -64,6 +64,9 @@ body {
     border: 1px solid black !important;
 }
 
+.my-1 {
+    background-color: #555;
+}
 /* --------------------------------- Media queries (from Boutique Ado walkthrough project by Code Institute) */
 
 /* Slightly larger container on xl screens */
@@ -103,13 +106,27 @@ body {
         min-width: 70%;
 
     }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) and (max-height: 448px) {
+    .display-4 {
+        margin-top: 70%;
+    }
 }
 
 @media (max-width: 364px) {
 
-    .display-4 {
+    /*.display-4 {
         margin-top: 150%;
-    }
+    }*/
 
     .shop-now-button {
         font-size: 50%;
