@@ -33,10 +33,11 @@ body {
 }
 
 .shop-now-button {
-    background: rgba(58, 92, 60, 0.8);
+    background: rgba(11, 125, 19, 0.9);
     color: white;
     min-width: 260px;
     border-radius: 2%;
+    border: 1px solid whitesmoke;
 }
 
 .btn-black {
@@ -65,9 +66,11 @@ body {
 }
 
 .my-1 {
-    background-color: #555;
+    background-color: #023020;
+    border-radius: 2%;
+    border: 2px solid whitesmoke;
 }
-/* --------------------------------- Media queries (from Boutique Ado walkthrough project by Code Institute) */
+/* --------------------------------- Media queries ( some are from Boutique Ado walkthrough project by Code Institute) */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
