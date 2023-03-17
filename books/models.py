@@ -1,10 +1,10 @@
 from django.db import models
 
 QUARTER = (
-    ("Earrach", "spring"),
-    ("Samhradh", "summer"),
-    ("Fómhar", "autumn"),
-    ("Geimhreadh", "winter"),
+    ("Earrach 2023", "Spring 2023"),
+    ("Samhradh 2023", "Summer 2023"),
+    ("Fómhar 2023", "Autumn 2023"),
+    ("Geimhreadh 2023", "Winter 2023"),
 )
 
 AUDIENCE = (
@@ -23,29 +23,33 @@ GENRE = (
     ("non-fiction", "non-fiction"),
 )
 
+FORMAT = (
+    ("hardback", "hardback"),
+    ("paperback", "paperback"),
+    ("chapbook", "chapbook"),
+)
+
 
 class Book(models.Model):
-    quarter = models.CharField(choices=QUARTER, max_length=10)
+    quarter = models.CharField(choices=QUARTER, max_length=100)
     audience = models.CharField(
         choices=AUDIENCE, default="adult", max_length=10)
     language = models.CharField(
         choices=LANGUAGE, default="English", max_length=10)
     genre = models.CharField(
         choices=GENRE, default="fiction", max_length=20)
+    format = models.CharField(choices=FORMAT, default=None, max_length=20)
     sku = models.CharField(max_length=250, null=True, blank=True)
+    isbn = models.IntegerField(unique=True)
     title = models.CharField(max_length=250)
     author = models.CharField(max_length=250)
-    length = models.IntegerField()
+    pages = models.IntegerField()
     publisher = models.CharField(max_length=100)
-    year = models.IntegerField
-    isbn = models.IntegerField(unique=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    distributor = models.CharField(max_length=100)
+    distributor = models.CharField(max_length=100, default="Unknown")
     blurb = models.TextField()
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
 
     def __str__(self):
         return self.name
