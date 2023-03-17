@@ -17,7 +17,7 @@ LANGUAGE = (
     ("ENG", "English"),
 )
 
-CATEGORY = (
+GENRE = (
     ("poetry", "poetry"),
     ("fiction", "fiction"),
     ("non-fiction", "non-fiction"),
@@ -26,9 +26,11 @@ CATEGORY = (
 
 class Book(models.Model):
     quarter = models.CharField(choices=QUARTER, max_length=10)
-    audience = models.CharField(choices=AUDIENCE, max_length=10)
-    language = models.CharField(choices=LANGUAGE, max_length=10)
-    category = models.CharField(choices=CATEGORY, max_length=20)
+    audience = models.CharField(
+        choices=AUDIENCE, default="adult", max_length=10)
+    language = models.CharField(choices=LANGUAGE, default="ENG", max_length=10)
+    genre = models.CharField(
+        choices=GENRE, default="fiction", max_length=20)
     sku = models.CharField(max_length=250, null=True, blank=True)
     title = models.CharField(max_length=250)
     author = models.CharField(max_length=250)
@@ -41,7 +43,8 @@ class Book(models.Model):
     blurb = models.TextField()
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    added = models.DateTimeField(auto_now_add=True)
+    rating = models.DecimalField(
+        max_digits=6, decimal_places=2, null=True, blank=True)
 
     def __str__(self):
         return self.name
