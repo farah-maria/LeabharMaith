@@ -7,10 +7,17 @@ QUARTER = (
     ("Winter", "Geimhreadh"),
 )
 
-CATEGORY = (
+AUDIENCE = (
     ("adult", "adult"),
     ("children's", "children's"),
+)
+
+LANGUAGE = (
     ("Irish", "Gaelige"),
+    ("ENG", "English"),
+)
+
+CATEGORY = (
     ("poetry", "poetry"),
     ("fiction", "fiction"),
     ("non-fiction", "non-fiction"),
@@ -18,8 +25,10 @@ CATEGORY = (
 
 
 class Book(models.Model):
-    category = models.CharField(choices=CATEGORY, max_length=20)
     quarter = models.CharField(choices=QUARTER, max_length=10)
+    age = models.CharField(choices=AUDIENCE, max_length=10)
+    language = models.CharField(choices=LANGUAGE, max_length=10)
+    category = models.CharField(choices=CATEGORY, max_length=20)
     sku = models.CharField(max_length=250, null=True, blank=True)
     title = models.CharField(max_length=250)
     author = models.CharField(max_length=250)
