@@ -1,20 +1,20 @@
 from django.db import models
 
 QUARTER = (
-    ("Spring", "Earrach"),
-    ("Summer", "Samhradh"),
-    ("Autumn", "Fómhar"),
-    ("Winter", "Geimhreadh"),
+    ("Earrach", "spring"),
+    ("Samhradh", "summer"),
+    ("Fómhar", "autumn"),
+    ("Geimhreadh", "winter"),
 )
 
 AUDIENCE = (
     ("adult", "adult"),
-    ("children's", "children's"),
+    ("children", "children"),
 )
 
 LANGUAGE = (
     ("Irish", "Gaelige"),
-    ("ENG", "English"),
+    ("English", "English"),
 )
 
 GENRE = (
@@ -28,7 +28,8 @@ class Book(models.Model):
     quarter = models.CharField(choices=QUARTER, max_length=10)
     audience = models.CharField(
         choices=AUDIENCE, default="adult", max_length=10)
-    language = models.CharField(choices=LANGUAGE, default="ENG", max_length=10)
+    language = models.CharField(
+        choices=LANGUAGE, default="English", max_length=10)
     genre = models.CharField(
         choices=GENRE, default="fiction", max_length=20)
     sku = models.CharField(max_length=250, null=True, blank=True)
