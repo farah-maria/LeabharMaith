@@ -30,6 +30,16 @@ FORMAT = (
 )
 
 
+class Author(models.Model):
+    first_name = models.CharField(max_length=40)
+    last_name = models.CharField(max_length=40)
+    first_name1 = models.CharField(max_length=40, blank=True, null=True)
+    last_name1 = models.CharField(max_length=40, blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name} ; {self.first_name1} {self.last_name1}"
+
+
 class Book(models.Model):
     quarter = models.CharField(choices=QUARTER, max_length=100)
     audience = models.CharField(
@@ -39,20 +49,19 @@ class Book(models.Model):
     genre = models.CharField(
         choices=GENRE, default="fiction", max_length=20)
     format = models.CharField(choices=FORMAT, default=None, max_length=20)
-    sku = models.CharField(max_length=250, null=True, blank=True)
-    isbn = models.IntegerField(unique=True)
-    title = models.CharField(max_length=250)
-    author = models.CharField(max_length=250)
+    sku = models.CharField(max_length=250, null=True, blank=True, unique=True)
+    isbn = models.IntegerField()
+    title = models.CharField(max_length=250, unique=True)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
     pages = models.IntegerField()
     publisher = models.CharField(max_length=100)
+    publication_year = models.PositiveSmallIntegerField(
+        null=True, blank=False, default=2000)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     distributor = models.CharField(max_length=100, default="Unknown")
     blurb = models.TextField()
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image_url = models.URLField(max_length=1000, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-
-    def __str__(self):
-        return self.name
 
     def __str__(self):
         return f"{self.title} by {self.author}"

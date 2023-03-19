@@ -48,3 +48,4 @@ On Leabhar Maith, there is no guest mode for buying books without registering as
 Despite being in a team of... one... I used an Agile approach to designing, planning and developing the site.
 
 First of all, 'user stories' were put together and recorded using the GitHub project tools, and a MVP (Minimum Viable Product) was then designed around the requirements that most directly met the needs of each user story.
+ 
