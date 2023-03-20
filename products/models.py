@@ -69,3 +69,19 @@ class Book(models.Model):
     class Meta:
         verbose_name_plural = 'Books'
         ordering = ['quarter']
+
+
+class Featured_Product(models.Model):
+    name = models.CharField(max_length=250, unique=True)
+    description = models.TextField()
+    quarter = models.CharField(choices=QUARTER, max_length=100)
+    manufacturer = models.CharField(max_length=100)
+    image_url = models.URLField(max_length=1000, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.name} by {self.manufacturer}"
+
+    class Meta:
+        verbose_name_plural = 'Featured Products'
+        ordering = ['quarter']
