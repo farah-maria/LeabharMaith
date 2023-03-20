@@ -74,7 +74,7 @@ class Featured_Product(models.Model):
     name = models.CharField(max_length=250, unique=True)
     description = models.TextField()
     quarter = models.CharField(choices=QUARTER, max_length=100)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
+    price = models.DecimalField(max_digits=6, decimal_places=2, default=0.00)
     manufacturer = models.CharField(max_length=100)
     image_url = models.URLField(max_length=1000, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
