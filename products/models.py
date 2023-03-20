@@ -37,7 +37,7 @@ class Author(models.Model):
     last_name1 = models.CharField(max_length=40, blank=True, null=True)
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} ; {self.first_name1} {self.last_name1}"
+        return f"{self.first_name} {self.last_name} , {self.first_name1} {self.last_name1}"
 
 
 class Book(models.Model):
@@ -67,7 +67,6 @@ class Book(models.Model):
         return f"{self.title} by {self.author}"
 
     class Meta:
-        verbose_name_plural = 'Books'
         ordering = ['quarter']
 
 
@@ -75,6 +74,7 @@ class Featured_Product(models.Model):
     name = models.CharField(max_length=250, unique=True)
     description = models.TextField()
     quarter = models.CharField(choices=QUARTER, max_length=100)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
     manufacturer = models.CharField(max_length=100)
     image_url = models.URLField(max_length=1000, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
