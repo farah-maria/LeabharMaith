@@ -13,10 +13,26 @@
     <div class="container">
         <div class="row">
             <div class="col yellow">
-                {{ books }}
-            </div>
-            <div class="col yellow">
-                {{ featured }}
+                {% for products in all_products %}
+                    {{ book.all }}
+                {% endfor %}
+                <br>
+                {% for featured in featured_products %}
+                    {{ featured.all }}
+                {% endfor %}
+                <h2>This is the loop of books:</h2>
+                {% for book in books %}
+                <ul>
+                    <li>The book object: {{ book }}</li>
+                    <li>The book title: {{ book.title }}</li>
+                    <li>The book ISBN: {{ book.isbn }}</li>
+                </ul>
+                {% endfor %}
+                <br>
+                <h2>This is the loop of featured products:</h2>
+                {% for featured in featured_products %}
+                    This is the featured object: {{ featured }}
+                {% endfor %}
             </div>    
         </div>
     </div>
