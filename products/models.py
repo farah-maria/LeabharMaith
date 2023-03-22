@@ -1,4 +1,6 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
+
 
 QUARTER = (
     ("Earrach 2023", "Spring 2023"),
@@ -60,8 +62,7 @@ class Book(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     distributor = models.CharField(max_length=100, default="Unknown")
     blurb = models.TextField()
-    image_url = models.URLField(max_length=1000, null=True, blank=True)
-    image = models.ImageField(max_length=1000, null=True, blank=True)
+    image = CloudinaryField('image')
 
     def __str__(self):
         return f"{self.title} by {self.author}"
@@ -76,8 +77,7 @@ class Featured_Product(models.Model):
     quarter = models.CharField(choices=QUARTER, max_length=100)
     price = models.DecimalField(max_digits=6, decimal_places=2, default=0.00)
     manufacturer = models.CharField(max_length=100)
-    image_url = models.URLField(max_length=1000, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+    image = CloudinaryField('image')
 
     def __str__(self):
         return f"{self.name} by {self.manufacturer}"
