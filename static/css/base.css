@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: black;
     font-family: 'Goudy Bookletter 1911', serif;
+    background-color: whitesmoke;
 }
 
 a {
@@ -35,7 +36,7 @@ a:hover {
 }
 
 .logo-font {
-   
+    
 }
 
 .main-logo-link {
@@ -78,12 +79,19 @@ a:hover {
 .my-1 {
     background-color: #023020;
     border-radius: 2%;
-    border: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;;
 }
 
 .text-background {
     background-color: rgba(227, 222, 225, 0.8);
     margin-top: 2%;
+}
+
+.heading {
+    font-family: 'Fasthand', cursive;
+    font-size: 400%;
+    color: white;
+    background-color: #6D712E;
 }
 
 .overlay {
@@ -92,7 +100,7 @@ a:hover {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: rgba(177, 185, 179, 0.71);
+	background-color: rgba(177, 185, 179, 0.71);
 	z-index: -1;
 }
 
