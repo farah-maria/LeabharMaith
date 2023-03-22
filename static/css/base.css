@@ -8,7 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: black;
     font-family: 'Goudy Bookletter 1911', serif;
-    background-color: whitesmoke;
+    background-color: #accaa1;
 }
 
 a {
