@@ -6,7 +6,7 @@ body {
 	background: url('/media/homepageimg.jpg') no-repeat center center fixed;
 	background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: black;
     font-family: 'Goudy Bookletter 1911', serif;
 }
 
@@ -17,10 +17,6 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-}
-
-.yellow {
-   color: yellow;
 }
 
 .display-4 {
@@ -59,7 +55,7 @@ body {
     color: white;
 }
 
-.text-black {
+.text-dark {
     color: #023020 !important;
     background-color: rgba(249,249,249, 0.7);
     border-radius: 1%;
@@ -73,6 +69,20 @@ body {
     background-color: #023020;
     border-radius: 2%;
     border: 2px solid whitesmoke;
+}
+
+.col {
+    background-color: rgba(227, 222, 225, 0.8);
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: rgba(177, 185, 179, 0.71);
+	z-index: -1;
 }
 
 /* --------------------------------- Media queries ( some are from Boutique Ado walkthrough project by Code Institute) */
