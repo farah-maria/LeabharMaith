@@ -8,6 +8,7 @@ class BookAdmin(admin.ModelAdmin):
         'genre',
         'audience',
         'language',
+        'image',
         'price',
     )
 
@@ -19,6 +20,7 @@ class Featured_ProductAdmin(admin.ModelAdmin):
         'quarter',
         'name',
         'manufacturer',
+        'image',
         'price',
     )
 
