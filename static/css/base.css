@@ -10,6 +10,14 @@ body {
     font-family: 'Goudy Bookletter 1911', serif;
 }
 
+a {
+    color: #001800;
+}
+
+a:hover {
+    color: #023020;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -22,6 +30,8 @@ body {
 .display-4 {
     padding-left: 3%;
     padding-right: 1%;
+    color: #001800;
+    background-color: rgba(227, 222, 225, 0.5);
 }
 
 .logo-font {
@@ -71,8 +81,9 @@ body {
     border: 2px solid whitesmoke;
 }
 
-.col {
+.text-background {
     background-color: rgba(227, 222, 225, 0.8);
+    margin-top: 2%;
 }
 
 .overlay {
