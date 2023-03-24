@@ -1,1 +1,1 @@
-web: gunicorn leabhar-maith.wsgi
+web: gunicorn leabharmaith.wsgi
