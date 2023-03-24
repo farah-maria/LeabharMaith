@@ -52,7 +52,6 @@ class Book(models.Model):
         choices=GENRE, default="fiction", max_length=20)
     format = models.CharField(choices=FORMAT, default=None, max_length=20)
     sku = models.CharField(max_length=250, null=True, blank=True, unique=True)
-    isbn = models.IntegerField()
     title = models.CharField(max_length=250, unique=True)
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     pages = models.IntegerField()
@@ -63,6 +62,7 @@ class Book(models.Model):
     distributor = models.CharField(max_length=100, default="Unknown")
     blurb = models.TextField()
     featured_image = CloudinaryField('image', default='placeholder')
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
 
     def __str__(self):
         return f"{self.title} by {self.author}"
@@ -78,6 +78,7 @@ class Featured_Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2, default=0.00)
     manufacturer = models.CharField(max_length=100)
     featured_image = CloudinaryField('image', default='placeholder')
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
 
     def __str__(self):
         return f"{self.name} by {self.manufacturer}"
