@@ -77,7 +77,7 @@ class Featured_Product(models.Model):
     quarter = models.CharField(choices=QUARTER, max_length=100)
     price = models.DecimalField(max_digits=6, decimal_places=2, default=0.00)
     manufacturer = models.CharField(max_length=100)
-    image = CloudinaryField('image')
+    featured_image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         return f"{self.name} by {self.manufacturer}"
