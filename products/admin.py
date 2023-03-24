@@ -7,6 +7,8 @@ class BookAdmin(admin.ModelAdmin):
         'quarter',
         'genre',
         'audience',
+        'title',
+        'author',
         'language',
         'featured_image',
         'price',
