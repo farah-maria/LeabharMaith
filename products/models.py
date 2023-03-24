@@ -62,7 +62,7 @@ class Book(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     distributor = models.CharField(max_length=100, default="Unknown")
     blurb = models.TextField()
-    image = CloudinaryField('image')
+    featured_image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         return f"{self.title} by {self.author}"
