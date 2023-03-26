@@ -25,9 +25,9 @@
                     <div class="col sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
                             {% load static %}
-                            {% if book.featured_image %}
+                            {% if book.image %}
                             <a href="">
-                                <img class="card-img-top img-fluid" src="{{ book.featured_image }}" alt="{{ book.title }}">
+                                <img class="card-img-top img-fluid" src="{{ book.image }}" alt="{{ book.title }}">
                             </a>
                             {% else %}
                             <a href="">
