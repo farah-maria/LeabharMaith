@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/   
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
@@ -32,13 +32,13 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = development
 
 # if development:
 #  ALLOWED_HOSTS = ['localhost']
 # else:
 
-ALLOWED_HOSTS = ['leabhar-maith.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]     # ['leabhar-maith.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -114,18 +114,16 @@ WSGI_APPLICATION = 'leabharmaith.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
-#    DATABASES = {
-#        'default': {
-#            'ENGINE': 'django.db.backends.sqlite3',
-#            'NAME': BASE_DIR / 'db.sqlite3',
-#        }
-#    }
-# else:
-
-
-DATABASES = {
-        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+if development:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+         }
+    }
+else:
+    DATABASES = {
+            'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
 
 # Password validation
