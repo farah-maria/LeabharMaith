@@ -1,1 +1,1 @@
-web: gunicorn leabharmaith.wsgi
+web: gunicorn leabharmaith.wsgi:application
