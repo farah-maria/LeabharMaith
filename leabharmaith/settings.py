@@ -32,7 +32,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # if development:
 #  ALLOWED_HOSTS = ['localhost']
