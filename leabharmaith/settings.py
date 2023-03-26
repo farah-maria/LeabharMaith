@@ -37,7 +37,7 @@ DEBUG = development
 if development:
     ALLOWED_HOSTS = ['localhost']
 else:
-    ALLOWED_HOSTS = ['leabhar-maith.herokuapp.com']
+    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]                # ['leabhar-maith.herokuapp.com']
 
 # Application definition
 
