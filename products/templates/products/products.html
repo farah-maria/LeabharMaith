@@ -46,9 +46,9 @@
                 {% for book in books %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
-                            {% if book.image %}
+                            {% if book.featured_image.url %}
                             <a href="">
-                                <img class="card-img-top img-fluid" src="{{ book.image.url }}" alt="{{ book.title }}">
+                                <img class="card-img-top img-fluid" src="{{ book.featured_image.url }}" alt="{{ book.title }}">
                             </a>
                             {% else %}
                             <a href="">
