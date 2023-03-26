@@ -32,12 +32,13 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = development
+DEBUG = True
 
-if development:
-    ALLOWED_HOSTS = ['localhost']
-else:
-    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]                # ['leabhar-maith.herokuapp.com']
+# if development:
+#  ALLOWED_HOSTS = ['localhost']
+# else:
+
+ALLOWED_HOSTS = ['leabhar-maith.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -113,15 +114,17 @@ WSGI_APPLICATION = 'leabharmaith.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if development:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-else:
-    DATABASES = {
+
+#    DATABASES = {
+#        'default': {
+#            'ENGINE': 'django.db.backends.sqlite3',
+#            'NAME': BASE_DIR / 'db.sqlite3',
+#        }
+#    }
+# else:
+
+
+DATABASES = {
         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
 
