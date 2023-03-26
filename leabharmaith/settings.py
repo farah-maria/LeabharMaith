@@ -25,7 +25,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/   
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
@@ -34,11 +34,10 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-# if development:
-#  ALLOWED_HOSTS = ['localhost']
-# else:
-
-ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]     # ['leabhar-maith.herokuapp.com', 'localhost']
+if development:
+    ALLOWED_HOSTS = ['localhost']
+else:
+    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]     # ['leabhar-maith.herokuapp.com', 'localhost']
 
 # Application definition
 
