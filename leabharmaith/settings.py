@@ -32,7 +32,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['leabhar-maith.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ["leabhar-maith.herokuapp.com", "localhost"]
 
 # Application definition
 
