@@ -91,13 +91,30 @@
         </div>
     </div>
 </div>
+<br>
+<h2 class="heading" id="heading_featured">& Our featured product by...</h2>
+{% for featured in featured_products %}
+    <h2 id="advert_heading">{{ featured.manufacturer }}</h2>
+{% endfor %}
+
+<br>
+{% for featured in featured_products %}
+    {% if featured.featured_image.url %}
+        <a href="">
+            <img class="card-img-top img-fluid product_thumbnail" src="{{ featured.featured_image.url }}" alt="{{ featured.name }}">
+        </a>
+    {% endif %}
+        <p class="lead mb-0 text-left font-weight-bold">{{ featured.name }}, €{{ featured.price }}</p>                                            
+{% endfor %}
+{% endblock %}
+<!--
 <div>
 
     {% for featured in featured_products %}
         <img class="product_thumbnail" src="{{ featured.featured_image.url }}">
         <img class="product_thumbnail" src="https://res.cloudinary.com/farahtasia/image/upload/v1679943933/leabharmaith/notebook_2_xuvjjh.png">
+        <img class="product_thumbnail" src="https://res.cloudinary.com/farahtasia/image/upload/v1679943943/leabharmaith/notebook_3_tlxigm.png"
     {% endfor %}
 
 
-</div>
-{% endblock %}
+</div> 

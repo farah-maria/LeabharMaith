@@ -23,6 +23,17 @@ a:hover {
     max-height: 200px;
 }
 
+#heading_featured {
+    margin-top: 5%;
+    color: #1e3f66;
+    text-decoration: none;
+    margin-bottom: 2px;
+}
+
+#advert_heading {
+    text-align: center;
+    background-color: azure;
+}
 /* from Bulma */
 .icon {
     align-items: center;
