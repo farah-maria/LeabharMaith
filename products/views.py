@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Book, Featured_Product
+from .models import Book, Author, Featured_Product
 
 
 def all_products(request):

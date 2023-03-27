@@ -22,6 +22,7 @@ a:hover {
 #book_thumbnail {
     max-height: 200px;
 }
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -36,10 +37,6 @@ a:hover {
     padding-right: 1%;
     color: #001800;
     background-color: rgba(227, 222, 225, 0.5);
-}
-
-.logo-font {
-    
 }
 
 
@@ -124,6 +121,11 @@ a:hover {
     flex-direction: column;
     min-width: 0; 
     background-color: transparent;
+}
+
+.product_thumbnail {
+    max-height: 200px;
+    width: auto;
 }
 
 /* --------------------------------- Media queries ( some are from Boutique Ado walkthrough project by Code Institute) */

@@ -91,4 +91,13 @@
         </div>
     </div>
 </div>
+<div>
+
+    {% for featured in featured_products %}
+        <img class="product_thumbnail" src="{{ featured.featured_image.url }}">
+        <img class="product_thumbnail" src="https://res.cloudinary.com/farahtasia/image/upload/v1679943933/leabharmaith/notebook_2_xuvjjh.png">
+    {% endfor %}
+
+
+</div>
 {% endblock %}
