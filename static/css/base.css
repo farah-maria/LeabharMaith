@@ -19,6 +19,9 @@ a:hover {
     color: #023020;
 }
 
+#book_thumbnail {
+    max-height: 200px;
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -91,8 +94,12 @@ a:hover {
 .heading {
     font-family: 'Fasthand', cursive;
     font-size: 400%;
-    color: white;
-    background-color: #6D712E;
+    color:#001800;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 7%;
+    padding-bottom: 1%;
+    text-decoration: underline 2px solid orange;
 }
 
 .overlay {
@@ -103,6 +110,20 @@ a:hover {
 	position: fixed;
 	background-color: rgba(177, 185, 179, 0.71);
 	z-index: -1;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  flex-shrink: 0;
+  width: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0; 
+    background-color: transparent;
 }
 
 /* --------------------------------- Media queries ( some are from Boutique Ado walkthrough project by Code Institute) */

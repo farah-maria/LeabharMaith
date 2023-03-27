@@ -12,10 +12,9 @@
 {% block content %}
 
 <div class="overlay"></div>
-<div class="container-fluid">
+<div class="container-  fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="heading">spring / earrach</h2>
             <hr class="w-50 mb-1">
         </div>
     </div>
@@ -42,13 +41,14 @@
                     </p>
                 </div>
             </div>
+            <h2 class="heading">spring / earrach</h2>
             <div class="row">
                 {% for book in books %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
                             {% if book.featured_image.url %}
                             <a href="">
-                                <img class="card-img-top img-fluid" src="{{ book.featured_image.url }}" alt="{{ book.title }}">
+                                <img id= "book_thumbnail" class="card-img-top img-fluid" src="{{ book.featured_image.url }}" alt="{{ book.title }}">
                             </a>
                             {% else %}
                             <a href="">
@@ -57,16 +57,10 @@
                             {% endif %}
                             <div class="card-body pb-0">
                             </div>
-                            <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="card-footer pt-0 border-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        <p class="lead mb-0 text-left font-weight-bold">€{{ book.price }}</p>
-                                        {% if request.user.is_superuser %}
-                                            <small class="ml-3">
-                                                <a href="">Edit</a> | 
-                                                <a class="text-danger" href="">Delete</a>
-                                            </small>
-                                        {% endif %}                    
+                                        <p class="lead mb-0 text-left font-weight-bold">€{{ book.price }}</p>             
                                     </div>
                                 </div>
                             </div>
@@ -102,36 +96,4 @@
         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
     </a>	
 </div>
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
-<script type="text/javascript">
-    $('.btt-link').click(function(e) {
-        window.scrollTo(0,0)
-    })
-</script>
-
-<script type="text/javascript">
-    $('#sort-selector').change(function() {
-        var selector = $(this);
-        var currentUrl = new URL(window.location);
-
-        var selectedVal = selector.val();
-        if(selectedVal != "reset"){
-            var sort = selectedVal.split("_")[0];
-            var direction = selectedVal.split("_")[1];
-
-            currentUrl.searchParams.set("sort", sort);
-            currentUrl.searchParams.set("direction", direction);
-
-            window.location.replace(currentUrl);
-        } else {
-            currentUrl.searchParams.delete("sort");
-            currentUrl.searchParams.delete("direction");
-
-            window.location.replace(currentUrl);
-        }
-    })
-</script>
 {% endblock %}
