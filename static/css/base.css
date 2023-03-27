@@ -34,6 +34,29 @@ a:hover {
     text-align: center;
     background-color: azure;
 }
+
+/* for carousel */
+
+h5 {
+    display: inline-block;
+    padding: 10px;
+    background: #B9121B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+  
+.p {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 13px;
+}
+
+.product_carousel {
+    width: 100;
+    height: auto;
+}
+
+
 /* from Bulma */
 .icon {
     align-items: center;
