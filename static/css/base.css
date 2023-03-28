@@ -59,6 +59,13 @@ h5 {
     color: #001800;
 }
 
+
+.advert_heading1 {
+    text-align: center;
+    color: darkgray;
+    background-color: azure;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
