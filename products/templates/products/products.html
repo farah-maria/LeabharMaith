@@ -93,51 +93,34 @@
 </div>
 <br>
 <h2 class="heading" id="heading_featured">& Our featured product by...</h2>
-{% for featured in featured_products %}
-    <h2 id="advert_heading">{{ featured.manufacturer }}</h2>
-{% endfor %}
 
-<br>
-{% for featured in featured_products %}
-    {% if featured.featured_image.url %}
-        <a href="">
-            <img class="card-img-top img-fluid product_thumbnail" src="{{ featured.featured_image.url }}" alt="{{ featured.name }}">
-        </a>
-    {% endif %}
-        <p class="lead mb-0 text-left font-weight-bold">{{ featured.name }}, €{{ featured.price }}</p>                                            
-{% endfor %}
-
-
+<!-- carousel-->
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100 product_carousel" src="https://res.cloudinary.com/farahtasia/image/upload/v1679348132/leabharmaith/notebook_pm3wpl.png" data-color="lightblue" alt="First Image">
+        <img class="d-block w-50 product_carousel" src="https://res.cloudinary.com/farahtasia/image/upload/v1680014346/leabharmaith/badlymade1_tkmuty.jpg" data-color="lightblue" alt="First Image">
         <div class="carousel-caption d-md-block">
-          <h5>First Image</h5>
+            {% for featured in featured_products %}
+                <h2 class="advert_heading">{{ featured.manufacturer }}</h2>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 product_carousel" src="https://res.cloudinary.com/farahtasia/image/upload/v1679943933/leabharmaith/notebook_2_xuvjjh.png" data-color="firebrick" alt="Second Image">
+        <img class="d-block w-50 product_carousel" src="https://res.cloudinary.com/farahtasia/image/upload/v1680014378/leabharmaith/badlymade2_ooviuu.jpg" data-color="firebrick" alt="Second Image">
         <div class="carousel-caption d-md-block">
-          <h5>Second Image</h5>
+                <h2 class="advert_heading">{{ featured.manufacturer }}</h2>
+            {% endfor %}
         </div>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100 product_carousel" src="https://res.cloudinary.com/farahtasia/image/upload/v1679943943/leabharmaith/notebook_3_tlxigm.png" data-color="violet" alt="Third Image">
-        <div class="carousel-caption d-md-block">
-          <h5>Third Image</h5>
-        </div>
       </div>
     </div>
-    <!-- Controls -->
+    <!--  Carousel Controls -->
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   <span class="sr-only">Previous</span>
@@ -147,7 +130,22 @@
   <span class="sr-only">Next</span>
   </a>
   </div>
+<!-- end of carousel -->
+
+<br>
+{% for featured in featured_products %}
+    {% if featured.featured_image.url %}
+        <a href="">
+            <img class="card-img-top img-fluid product_thumbnail" src="{{ featured.featured_image.url }}" alt="{{ featured.name }}">
+        </a>
+    {% endif %}
+        <br>
+        <p class="lead mb-0 text-center featured_text">{{ featured.name }}, €{{ featured.price }}</p>       
+        <br>
+        <br>                                     
+{% endfor %}
 {% endblock %}
+
 
 {% block postloadjs %}
     <script>

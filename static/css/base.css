@@ -30,10 +30,6 @@ a:hover {
     margin-bottom: 2px;
 }
 
-#advert_heading {
-    text-align: center;
-    background-color: azure;
-}
 
 /* for carousel */
 
@@ -52,10 +48,16 @@ h5 {
 }
 
 .product_carousel {
-    width: 100;
-    height: auto;
+    height: 10%;
+    align-self: center;
+    margin-left: 25%;
 }
 
+.advert_heading {
+    text-align: center;
+    background-color: azure;
+    color: #001800;
+}
 
 /* from Bulma */
 .icon {
@@ -158,10 +160,14 @@ h5 {
 }
 
 .product_thumbnail {
-    max-height: 200px;
+    max-height: 400px;
     width: auto;
+    margin-left: 33%;
 }
 
+.featured_text {
+    font-size: 150%;
+}
 /* --------------------------------- Media queries ( some are from Boutique Ado walkthrough project by Code Institute) */
 
 /* Slightly larger container on xl screens */
