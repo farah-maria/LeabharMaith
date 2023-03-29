@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container my-5">
+                        <a href="{{ book.featured_image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ book.featured_image.url }}" alt="{{ book.title }}">
+                        </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container mb-5 mt-md-5">
+                    <p class="mb-0">{{ book.title }} by {{ book.author }}</p>
+                    <p class="mb-0">{{ book.publisher }}, {{ book.publication_year }}</p>
+                    <p class="mb-0">ISBN: {{ book.sku }}</p>
+                    <p class="mb-0">Length: {{ book.pages }}pp</p>
+                    <p class="mb-0">Language: {{ book.language }}</p>
+                    <p class="mb-0">Genre: {{ book.audience }} {{ book.genre }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold">${{ book.price }}</p>
+                    <br>
+                    <br>
+                    <p class="mt-3">{{ book.blurb }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
