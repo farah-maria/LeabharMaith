@@ -31,14 +31,13 @@ def book_detail(request, book_id):
     return render(request, 'products/product_detail.html', context)
 
 
-def featured_product_detail(request, featured_product_id):
+def featured_detail(request, featured_id):
     """ A view to show individual book details """
 
-    featured_product = get_object_or_404(Featured_Product, 
-                                         pk=featured_product_id)
+    featured = get_object_or_404(Featured_Product, pk=featured_id)
 
     context = {
-        'featured_product': featured_product,
+        'featured': featured_product,
     }
 
     return render(request, 'products/product_detail.html', context)
