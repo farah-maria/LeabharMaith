@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.sites.models import Site
 from cloudinary.models import CloudinaryField
 
 

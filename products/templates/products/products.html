@@ -149,7 +149,11 @@
         <div>
             <br>
                 <h4 class="featured_text"><strong>{{ featured.name }}</strong>:  €{{ featured.price }}</h4>
-                <p class="small_product_text"><em>by</em> {{ featured.manufacturer }}</p>
+                <span>
+                    <a href="https://www.badlymadebooks.com/" rel="sponsored">
+                        <p class="small_product_text"><em>by</em> {{ featured.manufacturer }}</p>
+                    </a>
+                </span>
                 <p>{{ featured.description }}</p>
                 <a href="#" class="btn" id="btn_featured">Purchase Now &#160<i class="fa-solid fa-credit-card"></i></a>
         </div>
