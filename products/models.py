@@ -84,6 +84,8 @@ class Featured_Product(models.Model):
     image1_url = models.URLField(max_length=1024, null=True, blank=True)
     advert_image2 = CloudinaryField('image', default='placeholder')
     image2_url = models.URLField(max_length=1024, null=True, blank=True)
+    website = models.URLField(max_length=200, null=True, blank=True,
+                              db_index=True)
 
     def __str__(self):
         return f"{self.name} by {self.manufacturer}"
