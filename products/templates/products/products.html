@@ -134,20 +134,42 @@
   </div>
 <!-- end of carousel -->
 
-<br>
 {% for featured in featured_products %}
-    {% if featured.featured_image.url %}
-        <a href="">
-            <img class="card-img-top img-fluid product_thumbnail" src="{{ featured.featured_image.url }}" alt="{{ featured.name }}">
-        </a>
-    {% endif %}
-        <br>
-        <p class="lead mb-0 text-center featured_text">{{ featured.name }}, €{{ featured.price }}</p>       
-        <br>
-        <br>                                     
+
+    <div class="aligns-items-center" id="featured_container_card" style="width: 18rem;">
+        {% if featured.featured_image.url %}
+            <a href="">
+                <img class="card-img-top product_image img-fluid" src="{{ featured.featured_image.url }}" alt="{{ featured.name }}">
+            </a>
+        {% else %}
+            <a href="">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ featured.name }}">
+            </a>
+        {% endif %}
+        <div>
+            <br>
+                <h4 class="featured_text">'{{ featured.name }}':  €{{ featured.price }}</h4>
+                <p class="small_product_text"><em>by</em> {{ featured.manufacturer }}</p>
+                <p>{{ featured.description }}</p>
+                <a href="#" class="btn" id="btn_featured">Purchase Now &#160<i class="fa-solid fa-credit-card"></i></a>
+        </div>
+    </div>
+    
 {% endfor %}
 {% endblock %}
 
+           <!-- 151 <p class="lead mb-0 text-center featured_text">{{ featured.name }}, €{{ featured.price }}</p>       
+        <br>
+        <br>
+        <p>{{ featured.name }} by {{ featured.manufacturer }}</p>
+        <p>€{{ featured.price }}</p>
+        <br>
+        <br>
+        <p>{{ featured.description }}</p>
+    </div>
+</div>                                     
+
+-->
 
 {% block postloadjs %}
     <script>

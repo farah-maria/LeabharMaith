@@ -34,8 +34,8 @@
                     <p class="mb-0">ISBN: {{ book.sku }}</p>
                     <p class="mb-0">Length: {{ book.pages }}pp</p>
                     <p class="mb-0">Language: {{ book.language }}</p>
-                    <p class="mb-0">Genre: {{ book.audience }} {{ book.genre }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">${{ book.price }}</p>
+                    <p class="mb-0">Genre: {{ book.audience }}'s {{ book.genre }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold">€{{ book.price }}</p>
                     <br>
                     <br>
                     <p class="mt-3">{{ book.blurb }}</p>
