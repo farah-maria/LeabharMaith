@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% load static %}
 
 {% block page_header %}
@@ -15,9 +16,15 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
-                        <a href="{{ book.featured_image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ book.featured_image.url }}" alt="{{ book.title }}">
-                        </a>
+                        {% if book.featured_image %}
+                            <a href="{{ book.featured_image.url }}" target="_blank">
+                                <img class="card-img-top img-fluid" src="{{ book.featured_image.url }}" alt="{{ book.title }}">
+                            </a>
+                        {% else %}
+                            <a href="">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.title }}">
+                            </a>
+                        {% endif %}
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
