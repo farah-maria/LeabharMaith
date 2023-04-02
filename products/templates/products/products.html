@@ -98,6 +98,7 @@
 
 <!-- carousel-->
 
+<div id="advert-carousel">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -132,13 +133,14 @@
   <span class="sr-only">Next</span>
   </a>
   </div>
+</div>
 <!-- end of carousel -->
 
 {% for featured in featured_products %}
 
     <div class="aligns-items-center" id="featured_container_card" style="width: 18rem;">
         {% if featured.featured_image.url %}
-            <a href="">
+            <a href="{{ featured.featured_image.url }}" target="_blank">
                 <img class="card-img-top product_image img-fluid" src="{{ featured.featured_image.url }}" alt="{{ featured.name }}">
             </a>
         {% else %}
