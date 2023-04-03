@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views.generic.list import ListView
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -53,3 +54,7 @@ def featured_detail(request, featured_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+    
+
