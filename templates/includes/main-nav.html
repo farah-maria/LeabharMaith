@@ -10,8 +10,9 @@
                 Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item ">By Season</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="" class="dropdown-item ">By Genre</a>
+                <a href="{% url 'products' %}?books=Irish" class="dropdown-item">Irish Language</a>
+                <a href="{% url 'products' %}?books,audience=children" class="dropdown-item">Children's</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Books</a>
             </div>
         </li>
