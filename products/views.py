@@ -10,10 +10,22 @@ def all_products(request):
     """A view to return the products pages, incl sorting & search queries"""
     books = Book.objects.all()
     featured_products = Featured_Product.objects.all()
+    query = None
+
+    if request.GET:
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "You didn't enter any search criteria")
+                return redirect(reverse('books'))
+
+            queries = Q(title__icontains=query) | Q(blurb__icontains=query)
+            books = books.filter(queries)
 
     context = {
         'books': books,
         'featured_products': featured_products,
+        'search_term': query,
     }
 
     return render(request, 'products/products.html', context)
