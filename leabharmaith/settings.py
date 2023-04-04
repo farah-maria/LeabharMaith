@@ -42,12 +42,12 @@ ALLOWED_HOSTS = ['leabhar-maith.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',

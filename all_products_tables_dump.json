@@ -1,0 +1,312 @@
+[
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "4",
+        "friendly_name": "for younger readers"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "5",
+        "friendly_name": "fiction"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "6",
+        "friendly_name": "poetry"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "8",
+        "friendly_name": "non-fiction"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 1,
+    "fields": {
+        "first_name": "Ceaití",
+        "last_name": "Ní Bheildiúin",
+        "first_name1": "Paddy",
+        "last_name1": "Bushe"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 2,
+    "fields": {
+        "first_name": "Claire",
+        "last_name": "Kilroy",
+        "first_name1": "",
+        "last_name1": ""
+    }
+},
+{
+    "model": "products.author",
+    "pk": 3,
+    "fields": {
+        "first_name": "Declan",
+        "last_name": "Toohey",
+        "first_name1": "",
+        "last_name1": ""
+    }
+},
+{
+    "model": "products.author",
+    "pk": 4,
+    "fields": {
+        "first_name": "Joseph",
+        "last_name": "O'Connor",
+        "first_name1": "",
+        "last_name1": ""
+    }
+},
+{
+    "model": "products.author",
+    "pk": 5,
+    "fields": {
+        "first_name": "Joseph",
+        "last_name": "O'Connor",
+        "first_name1": "",
+        "last_name1": ""
+    }
+},
+{
+    "model": "products.author",
+    "pk": 6,
+    "fields": {
+        "first_name": "Helen",
+        "last_name": "Clo",
+        "first_name1": "",
+        "last_name1": ""
+    }
+},
+{
+    "model": "products.author",
+    "pk": 7,
+    "fields": {
+        "first_name": "Helen",
+        "last_name": "Close",
+        "first_name1": "",
+        "last_name1": ""
+    }
+},
+{
+    "model": "products.author",
+    "pk": 8,
+    "fields": {
+        "first_name": "Elaine",
+        "last_name": "Farrell",
+        "first_name1": "Leanne",
+        "last_name1": "McCormick"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 9,
+    "fields": {
+        "first_name": "Máire",
+        "last_name": "Zepf",
+        "first_name1": "Andrew",
+        "last_name1": "Whitson"
+    }
+},
+{
+    "model": "products.book",
+    "pk": 1,
+    "fields": {
+        "category": 6,
+        "genre": "poetry",
+        "quarter": "Earrach 2023",
+        "audience": "adult",
+        "language": "English",
+        "format": "paperback",
+        "sku": "9781915629043",
+        "title": "Let the Hare Sit / Lig don nGiorria Suí",
+        "author": 1,
+        "pages": 130,
+        "publisher": "Dedalus",
+        "publication_year": 2023,
+        "price": "12.50",
+        "distributor": "Unknown",
+        "in_stock": true,
+        "blurb": "Much-admired as \"one of the most innovative and interesting voices in contemporary Irish language poetry\" (Doireann Ní Ghríofa), Ní Bheildiúin is the author of a rich, myth-informed, yet entirely earthed body of work in which she can describe a school of beached whales as \"huge, songless shapes\" and address Mount Brandon with such simplicity and directness (\"I am too long hardened. Brandon, / have you hardened? And your heart?\") that we almost expect to hear the response.\r\n\r\n\r\nDeftly and faithfully rendered in English by Paddy Bushe, these selected poems are, among other things, an invitation to \"stop Dead still Without spilling a drop / From the jug of your heart ...\" - the kind of invitation few of us can afford to pass up on.",
+        "featured_image": "image/upload/v1680621814/buklnzsp4wod2o1b3ebh.jpg",
+        "image_url": "https://res.cloudinary.com/farahtasia/image/upload/v1679075888/leabharmaith/Let_Bheil_hwwewq.jpg"
+    }
+},
+{
+    "model": "products.book",
+    "pk": 2,
+    "fields": {
+        "category": 5,
+        "genre": "fiction",
+        "quarter": "Earrach 2023",
+        "audience": "adult",
+        "language": "English",
+        "format": "paperback",
+        "sku": "9780571381142",
+        "title": "Soldier, Sailor",
+        "author": 2,
+        "pages": 256,
+        "publisher": "Faber & Faber",
+        "publication_year": 2023,
+        "price": "18.95",
+        "distributor": "Unknown",
+        "in_stock": true,
+        "blurb": "In her first novel for over a decade, Claire Kilroy takes us deep into the early days of motherhood. Exploring the clash of fierce love for a new life with a seismic change in identity, she vividly realises the raw, tumultuous emotions of a new mother, as her marriage strains and she struggles with questions of love, autonomy and creativity.\r\n\r\nAs she smiles at her baby, Sailor, while mentally composing her own suicide note, an old friend makes a welcome return, but can he really offer a lifeline to the woman she used to be?",
+        "featured_image": "image/upload/v1680622019/pn7kzkvumxzsdqzgv8cv.jpg",
+        "image_url": "https://res.cloudinary.com/farahtasia/image/upload/v1679075903/leabharmaith/Soldier_Kilroy_yz3uig.jpg"
+    }
+},
+{
+    "model": "products.book",
+    "pk": 3,
+    "fields": {
+        "category": 5,
+        "genre": "fiction",
+        "quarter": "Earrach 2023",
+        "audience": "adult",
+        "language": "English",
+        "format": "hardback",
+        "sku": "9781848408487",
+        "title": "Perpetual Comedown",
+        "author": 3,
+        "pages": 256,
+        "publisher": "New Island",
+        "publication_year": 2023,
+        "price": "15.95",
+        "distributor": "Unknown",
+        "in_stock": true,
+        "blurb": "The debut novel from an unforgettable new voice in Irish fiction.\r\n\r\nAs a doctoral student at Trinity College Dublin, Darren Walton is trying to decode an elaborate conspiracy he stumbled across as an undergraduate. To do so he must locate an alternate Ireland named Camland, the existence of which is proven when he discovers a literary journal whose contents mirror his own past. With proof of his wild theories, Darren is sure academic fame is imminent. But for this he is willing to sacrifice not just his sanity and physical safety, but also his relationships with the ones who love him most.\r\n\r\nIn breathless prose, Declan Toohey weaves a contemporary yarn of academic intrigue and youthful irreverence, sexual fluidity and neurodiversity. Experimental and trippy, hilarious and compassionate, Perpetual Comedown is a riotous reckoning of the definition of the self.",
+        "featured_image": "image/upload/v1680622339/bgdklwssgfu3p0oabzr2.jpg",
+        "image_url": "https://res.cloudinary.com/farahtasia/image/upload/v1679075885/leabharmaith/Perp_Toohey_vqtwct.jpg"
+    }
+},
+{
+    "model": "products.book",
+    "pk": 4,
+    "fields": {
+        "category": 5,
+        "genre": "fiction",
+        "quarter": "Earrach 2023",
+        "audience": "adult",
+        "language": "English",
+        "format": "paperback",
+        "sku": "9781787300835",
+        "title": "My Father's House",
+        "author": 5,
+        "pages": 288,
+        "publisher": "Harvill Secker",
+        "publication_year": 2023,
+        "price": "15.99",
+        "distributor": "Unknown",
+        "in_stock": true,
+        "blurb": "September 1943: German forces occupy Rome. SS officer Paul Hauptmann rules with terror. When the Nazis take Rome, thousands go into hiding. But one Irish priest will risk everything to save them.\r\n\r\nHugh O'Flaherty, dedicates himself to helping those escaping from the Nazis. His home is Vatican City, a neutral, independent country within Rome where the occupiers hold no sway. He gathers a team to set up an Escape Line. But Hauptmann's net begins closing in and the need for a terrifyingly audacious mission grows critical. \r\n\r\nBased on a true story, My Father's House is a powerful thriller from a master of historical fiction. It is an unforgettable novel of love, sacrifice and what it means to be human in the most extreme circumstances.",
+        "featured_image": "image/upload/v1680625310/grk2zwn4o8gsey8a78zh.jpg",
+        "image_url": "https://res.cloudinary.com/farahtasia/image/upload/v1679075697/leabharmaith/Father_Conner_nhyo5n.jpg"
+    }
+},
+{
+    "model": "products.book",
+    "pk": 5,
+    "fields": {
+        "category": 4,
+        "genre": "fiction",
+        "quarter": "Earrach 2023",
+        "audience": "children",
+        "language": "English",
+        "format": "paperback",
+        "sku": "9781915071033",
+        "title": "Things I Know",
+        "author": 7,
+        "pages": 288,
+        "publisher": "Little Island",
+        "publication_year": 2023,
+        "price": "10.99",
+        "distributor": "Unknown",
+        "in_stock": true,
+        "blurb": "A Raven Award Winning Irish author's North American debut. A moving YA novel about mental illness and recovery. \r\n\r\n18-year-old Saoirse can’t wait to leave school – but just before the final exams her ex-boyfriend dies by suicide. Everyone blames Saoirse – even Saoirse herself, who cheated on him with his best friend. She is shunned by her schoolmates and suffers unbearable levels of anxiety, which her useless counsellor does nothing to alleviate.\r\n\r\nOn the night of the prom, everything becomes too much and Saoirse makes a decision that lands her in a psychiatric hospital. Slowly, painfully, with the support of a friendly hospital cleaner, her old best friend, her kind and hilarious grandmother, and even her irritating sister, Saoirse regains hope of finding herself again.",
+        "featured_image": "image/upload/v1680625836/d41q0hytvrdh1kcnqhcp.jpg",
+        "image_url": "https://res.cloudinary.com/farahtasia/image/upload/v1679075880/leabharmaith/Things_Close_a82chp.jpg"
+    }
+},
+{
+    "model": "products.book",
+    "pk": 6,
+    "fields": {
+        "category": 8,
+        "genre": "non-fiction",
+        "quarter": "Earrach 2023",
+        "audience": "adult",
+        "language": "English",
+        "format": "paperback",
+        "sku": "9781844885817",
+        "title": "Bad Bridget: Crime, Mayhem and the Lives of Irish Emigrant Women",
+        "author": 8,
+        "pages": 336,
+        "publisher": "Sandycove",
+        "publication_year": 2023,
+        "price": "18.74",
+        "distributor": "Unknown",
+        "in_stock": true,
+        "blurb": "Ireland in the nineteenth and early twentieth centuries was not a good place to be a woman. Among the wave of emigrants from Ireland to North America were many, many young women who travelled on their own, hoping for a better life. Some lived lives of quiet industry and piety. Others quickly found themselves in trouble – bad trouble, and on an astonishing scale.\r\n\r\nElaine Farrell and Leanne McCormick, creators of the celebrated ‘Bad Bridget’ podcast, have unearthed a world in which Irish women actually outnumbered Irish men in prison, in which you could get locked up for ‘stubbornness’, and in which a serial killer called Lizzie Halliday was described by the New York Times as ‘the worst woman on earth’. They reveal the social forces that bred this mayhem and dysfunction, through stories that are brilliantly strange, sometimes funny, and often moving. From sex workers and thieves to kidnappers and killers, these Bridgets are young women who have gone from the frying pan of their impoverished homeland to the fire of vast North American cities.\r\n\r\nBad Bridget is a masterpiece of social history and true crime, showing us a fascinating and previously unexplored world.",
+        "featured_image": "image/upload/v1680626697/ilaz24vmf8o3wxa2mjwy.jpg",
+        "image_url": "https://res.cloudinary.com/farahtasia/image/upload/v1679075891/leabharmaith/Bad_Farrell_z4micg.jpg"
+    }
+},
+{
+    "model": "products.book",
+    "pk": 7,
+    "fields": {
+        "category": 4,
+        "genre": "fiction",
+        "quarter": "Earrach 2023",
+        "audience": "children",
+        "language": "Irish",
+        "format": "paperback",
+        "sku": "9781912929108",
+        "title": "Rita agus an Lampa Draíochta",
+        "author": 9,
+        "pages": 28,
+        "publisher": "An tSnáthaid Mhór",
+        "publication_year": 2000,
+        "price": "15.00",
+        "distributor": "Unknown",
+        "in_stock": true,
+        "blurb": "Is Cailín í Rita le smaointe móra. Ba mhaith léi lampa draíochta agus ginid a thabharfas gach mian a croí di.\r\n\r\nAlacazám! Alacazám! Zim Zam Alacazú!\r\n\r\nAch bíonn níos mó ná maistir amháin ag ginid, nach mbíonn?\r\n\r\nRita is a Girl with big ideas. She wants a magic lamp and a genie that will give her all her heart’s desires.",
+        "featured_image": "image/upload/v1680627087/wmxjhjs5qsi7a4rzoogd.png",
+        "image_url": "https://res.cloudinary.com/farahtasia/image/upload/v1679075884/leabharmaith/Rita_wda6f3.png"
+    }
+},
+{
+    "model": "products.featured_product",
+    "pk": 1,
+    "fields": {
+        "category": null,
+        "name": "maybe. i can't remember. a6 notebook",
+        "description": "~75% recycled ingredients\r\nmade in cork\r\nblank\r\n56 pages, 140 gsm cartridge (UK paper, 80% used coffee cup)\r\nsoftcover paperback\r\n~a6 size - 140 x 100mm",
+        "quarter": "Earrach 2023",
+        "price": "12.00",
+        "manufacturer": "badly made books",
+        "in_stock": true,
+        "featured_image": "image/upload/v1680627494/enzetq1fsu3ggrldceus.png",
+        "image_url": "https://res.cloudinary.com/farahtasia/image/upload/v1679348132/leabharmaith/notebook_pm3wpl.png",
+        "advert_image1": "image/upload/v1680627629/tlsudtyitpynyyrotzqn.jpg",
+        "image1_url": "https://res.cloudinary.com/farahtasia/image/upload/v1680014378/leabharmaith/badlymade2_ooviuu.jpg",
+        "advert_image2": "image/upload/v1680627630/h9hjtt2jdic0blb5ry3y.jpg",
+        "image2_url": "https://res.cloudinary.com/farahtasia/image/upload/v1680014346/leabharmaith/badlymade1_tkmuty.jpg",
+        "website": "https://www.badlymadebooks.com/"
+    }
+}
+]
