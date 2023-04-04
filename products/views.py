@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Book, Author, Featured_Product
+from .models import Category, Book, Author, Featured_Product
 
 
 def all_products(request):
@@ -54,7 +54,3 @@ def featured_detail(request, featured_id):
     }
 
     return render(request, 'products/product_detail.html', context)
-
-
-    
-
