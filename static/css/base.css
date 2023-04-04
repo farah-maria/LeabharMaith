@@ -173,12 +173,12 @@ h5 {
 	z-index: -1;
 }
 
-a > .category-badge {
-   color: #001800;
+a.text-muted {
+    color: #1e3f66 !important;
 }
 
-.badge:hover {
-    color: #1e3f66;
+a.text-muted:hover {
+    color: #001800 !important;
 }
 
 .card-img,
