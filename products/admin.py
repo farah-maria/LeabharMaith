@@ -5,7 +5,7 @@ from .models import Category, Book, Author, Featured_Product
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
-        'genre',
+        'name',
     )
 
 

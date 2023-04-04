@@ -94,6 +94,8 @@
     </div>
 </div>
 <br>
+<br>
+<br>
 <h2 class="heading" id="heading_featured">& Our featured product...</h2>
 
 <!-- carousel-->
@@ -117,7 +119,7 @@
     <div class="carousel-item">
         <img class="d-block w-50 product_carousel" src="{{ featured.advert_image1.url }}" target="_blank" data-color="firebrick" alt="advert">
         <div class="carousel-caption d-md-block">
-                <h2 class="advert_heading">{{ featured.manufacturer }}</h2>
+                <h2 class="advert_heading"><em>by</em> {{ featured.manufacturer }}</h2>
             {% endfor %}
         </div>
       </div>

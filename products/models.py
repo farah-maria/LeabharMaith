@@ -7,7 +7,7 @@ class Category(models.Model):
     """
     category model
     """
-    genre = models.CharField(max_length=255)
+    name = models.CharField(max_length=255)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     class Meta:
