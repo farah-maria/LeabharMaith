@@ -181,6 +181,13 @@ a.text-muted:hover {
     color: #001800 !important;
 }
 
+.badge {
+    font-size: 120%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+    text-decoration: underline solid 1px black;
+}
+
 .card-img,
 .card-img-top,
 .card-img-bottom {
