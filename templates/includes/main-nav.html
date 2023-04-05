@@ -9,6 +9,12 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Books
             </a>
+            <!-- 
+            Category Key:   Younger Readers = 4
+                            Fiction = 5
+                            Poetry = 6
+                            Non-Fiction = 8
+            -->   
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?category=5" class="dropdown-item">Fiction</a>
                 <a href="{% url 'products' %}?category=8" class="dropdown-item">Non-Fiction</a>
@@ -16,9 +22,7 @@
                 <a href="{% url 'products' %}?category=4" class="dropdown-item">Younger Readers</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Books</a>
             </div>
-        </li>
-
-        
+        </li>  
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Little Extras
