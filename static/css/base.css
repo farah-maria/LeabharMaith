@@ -48,9 +48,13 @@ a:hover {
 }
 
 #btn_featured {
-    background-color: green;
+    background-color:#023020;
     color: white;
     margin-bottom: 10%;
+}
+
+#btn_featured:hover {
+    background-color: olivedrab ;
 }
 /* for carousel */
 

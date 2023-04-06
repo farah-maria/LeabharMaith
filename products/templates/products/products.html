@@ -115,7 +115,7 @@
             {% for featured in featured_products %}
                 <img class="d-block w-50 product_carousel" src="{{ featured.advert_image2.url }}" target="_blank" data-color="lightblue" alt="advert">
                 <div class="carousel-caption d-md-block">
-                    <h2 class="advert_heading1"> ...we'll send you one free if you spend €50</h2>
+                    <h2 class="advert_heading1"> ...we'll send you one free if you spend €70</h2>
                 </div>
         </div>
     <div class="carousel-item">
@@ -154,14 +154,17 @@
         {% endif %}
         <div>
             <br>
-                <h4 class="featured_text"><strong>{{ featured.name }}</strong>:  €{{ featured.price }}</h4>
+                <h4 class="featured_text"><strong>{{ featured.name }}</strong>: rrp  €{{ featured.price }}</h4>
                 <span>
                     <a href="{{ featured.website }}" rel="sponsored">
                         <p class="small_product_text"><em>by</em> {{ featured.manufacturer }}</p>
                     </a>
                 </span>
                 <p>{{ featured.description }}</p>
-                <a href="#" class="btn" id="btn_featured">Purchase Now &#160<i class="fa-solid fa-credit-card"></i></a>
+                <a href="{{ featured.website }}" rel="sponsored" class="btn" id="btn_featured">
+                    Check out similar products...
+                    <i class="fa-solid fa-credit-card"></i>
+                </a>
         </div>
     </div>
     

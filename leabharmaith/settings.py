@@ -84,6 +84,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.template.context_processors.media',
                 'django.contrib.messages.context_processors.messages',
+                # 'basket.contexts.basket_contents',
             ],
         },
     },
@@ -183,3 +184,9 @@ if 'DEVELOPMENT' in os.environ:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+FREE_DELIVERY_THRESHOLD = 50
+
+FREE_FEATURED_PRODUCT_THRESHOLD = 70
+
+STANDARD_DELIVERY_PERCENTAGE = 10
