@@ -28,7 +28,7 @@ a:hover {
     color:#023020;
 }
 
-#book_thumbnail {
+.book_thumbnail {
     max-height: 200px;
 }
 
