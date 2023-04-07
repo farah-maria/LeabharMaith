@@ -14,7 +14,7 @@ def view_basket(request):
 def add_to_basket(request, book_id):
     """ Add a quantity of the specified product to the shopping bag """
 
-    book = get_object_or_404(Book, pk=book_id)
+    book = get_object_or_404(Book, pk=book_id) 
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     basket = request.session.get('basket', {})
