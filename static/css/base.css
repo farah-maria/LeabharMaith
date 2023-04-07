@@ -56,6 +56,12 @@ a:hover {
 #btn_featured:hover {
     background-color: olivedrab ;
 }
+
+#product_thumbnail {
+    max-height: 400px;
+    width: auto;
+}
+
 /* for carousel */
 
 h5 {
@@ -221,15 +227,6 @@ a:hover {
 .card_title {
     background-color: #accaa1;
 }
-
-/* I may need this at a point where a year has passed and I need a separate page for a list of featured products
-    At the moment, there is only one (for the first quarter - Spring 2023)
-
-.product_thumbnail {
-    max-height: 400px;
-    width: auto;
-}
-*/
 
 .product_image {
     max-width: 50vw;

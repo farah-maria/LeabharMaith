@@ -1,7 +1,9 @@
 from decimal import Decimal
-from django.shortcuts import get_object_or_404    
+from django.shortcuts import get_object_or_404
 from django.conf import settings
 from products.models import Book, Featured_Product
+
+""" closely based on code from Boutique Ado project by Code Institute """
 
 
 def basket_contents(request):

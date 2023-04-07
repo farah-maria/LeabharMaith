@@ -33,7 +33,7 @@
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             {% for item in basket_items %}
@@ -52,7 +52,7 @@
                                         <p class="my-0">{{ item.quantity }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">€{{ item.book.price }}</p>
+                                        <p><strong></p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -65,6 +65,15 @@
                                         <p class="mb-1 text-danger">
                                             You're eligible for free delivery if you spend <strong>€{{ free_delivery_delta  }} more.</strong>
                                         </p>
+                                    {% endif %}
+                                    {%  if grand_total > featured_product_threshold %}
+                                        <p class="mb-1">
+                                            <strong>You'll get one of our free featured products with your order!</strong>
+                                        </p>
+                                        <p>
+                                            <img class="img-fluid rounded" id="product_thumbnail" src="{{ item.featured.featured_image.url }}">
+                                        </p>
+                                        <p>{{ item.featured_product.name }}</p>
                                     {% endif %}
                                 </td>
                             </tr>
