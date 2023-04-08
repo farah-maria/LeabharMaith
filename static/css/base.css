@@ -192,15 +192,15 @@ a.text-muted {
 }
 
 a.text-muted:hover {
-    color: #ff6200!important;
+    color: green!important;
 }
 
 a:hover {
-    color: #ff6200;
+    color: green;
 }
 
 .hover:hover {
-    color: #ff6200;
+    color: green;
     background-color: white;
     border-radius: 3%;
     text-decoration: solid underline 1px;
