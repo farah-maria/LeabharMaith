@@ -188,19 +188,22 @@ h5 {
 }
 
 a.text-muted {
-    color: #1e3f66 !important;
-}
-
-a.text-muted:hover {
     color: #001800 !important;
 }
 
+a.text-muted:hover {
+    color: #ff6200!important;
+}
+
 a:hover {
-    color: orange;
+    color: #ff6200;
 }
 
 .hover:hover {
-    color: orange
+    color: #ff6200;
+    background-color: white;
+    border-radius: 3%;
+    text-decoration: solid underline 1px;
 }
 
 .badge {
