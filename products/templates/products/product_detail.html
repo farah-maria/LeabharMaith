@@ -48,45 +48,61 @@
                     <p class="mt-3">{{ book.blurb }}</p>
                     
                     <!--Add to Shopping Bag Section-->
+                    <form class="form" action="{% url 'add_to_basket' book.id %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            {% if product.in_stock %}
+                            <div class="col-12">
+                                <p class="mt-3"><strong>Quantity:</strong></p>
+                                <div class="form-group w-50">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            
+                                            <button class="decrease-qty btn btn-dark" data-item_id="{{ book.id }}" 
+                                            id="decrease-qty_{{ book.id }}">
+                                                <span class="icon">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </button>
+                                        </div>
 
-                    <div class="col-12">
-                        <p class="mt-3"><strong>Quantity:</strong></p>
-                        <div class="form-group w-50">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <button class="decrease-qty btn btn-dark" data-item_id="{{ book.id }}"
-                                        id="decrease-qty_{{ book.id }}">
-                                        <span class="icon">
-                                            <i class="fas fa-minus"></i>
-                                        </span>
-                                    </button>
-                                </div>
-                                <input class="form-control qty_input" type="number" name="quantity" value="1" min="1"
-                                    max="5" data-item_id="{{ book.id }}" id="id_qty_{{ book.id }}">
-                                <div class="input-group-append">
-                                    <button class="increase-qty btn btn-dark" data-item_id="{{ book.id }}"
-                                        id="increase-qty_{{ book.id }}">
-                                        <span class="icon">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </button>
+
+                                        <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" 
+                                        max="5" data-item_id="{{ book.id }}" id="id_qty_{{ book.id }}">
+                                        <div class="input-group-append">
+                                            <button class="increase-qty btn btn-dark" data-item_id="{{ book.id }}" 
+                                            id="increase-qty_{{ book.id }}">
+                                                <span class="icon"><i class="fas fa-plus"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- Add to Basket-->
+                            <div class="col-12">
+                                <input type="submit" class="btn btn-dark hover mt-5" value="Add to Basket">
+                            </div>
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+
+                            <!--Don't allow to add to bag if item isn't in stock-->
+                            {% else %}
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="mt-5"><b>Apologies, this is out of stock.</b></p>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            <!-- Keep Shopping -->
                         </div>
-                    </div>
-                        
-                    
-                            
                                 <a href="{% url 'products' %}" class="btn mt-5 hover">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
-                                </a>  
-                                <input type="submit" class="btn btn-dark hover mt-5" value="Add to Basket">
+                                </a>       
                             </div>
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                            
+                        </div>
                         </div>
                     </form>
                 </div>
