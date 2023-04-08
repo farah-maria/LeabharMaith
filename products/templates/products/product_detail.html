@@ -46,17 +46,21 @@
                     <br>
                     <br>
                     <p class="mt-3">{{ book.blurb }}</p>
+                    
+                    <!--Add to Shopping Bag-->
+                    
+                    <div>
                     <form class="form" action="{% url 'add_to_basket' book.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            
+                         
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group input-group-{{ book.id }}">
                                         <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-black rounded-0 decrement-qty_{{ book.id }}" 
-                                                data-item_id="{{ book.id }}">
+                                            <button class="decrease-qty btn btn-dark" data-item_id="{{ book.id }}"
+                                                id="decrease-qty_{{ book.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
                                                 </span>
@@ -66,7 +70,7 @@
                                             name="quantity" value="1" min="1" max="99"
                                             data-item_id="{{ book.id }}">
                                         <div class="input-group-append">
-                                            <button class="increment-qty btn btn-black rounded-0 increment-qty_{{ book.id }}"
+                                            <button class="increment-qty btn btn-dark rounded-0 increment-qty_{{ book.id }}"
                                                 data-item_id="{{ book.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
@@ -78,13 +82,13 @@
                             </div>
                     
                             
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <a href="{% url 'products' %}" class="btn mt-5 hover">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>  
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Basket">
+                                <input type="submit" class="btn btn-dark hover mt-5" value="Add to Basket">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             
@@ -94,4 +98,6 @@
             </div>
         </div>
     </div>
+</div>
+
 {% endblock %}

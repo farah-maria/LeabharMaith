@@ -1,0 +1,43 @@
+<script type="text/javascript">
+    // disable +/- when qty is over 5 and gets to 1
+    function enableDisable(itemId) {
+        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
+        var minusDisabled = currentValue < 2;
+        var addDisabled = currentValue > 4;
+        $(`#decrease-qty_${itemId}`).prop('disabled', minusDisabled);
+        $(`#increase-qty_${itemId}`).prop('disabled', addDisabled);
+    }
+
+    // enable/disable on page load
+    var allQtyInputs = $('.qty_input');
+    for (var i = 0; i < allQtyInputs.length; i++) {
+        var itemId = $(allQtyInputs[i]).data('item_id');
+        enableDisable(itemId);
+    }
+
+    // check if enabled/disabled at each click
+    $('.qty_input').change(function () {
+        var itemId = $(this).data('item_id');
+        enableDisable(itemId);
+    });
+
+    // Incrrease quantity
+    $('.increase-qty').click(function (e) {
+        e.preventDefault();
+        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        var currentValue = parseInt($(closestInput).val());
+        $(closestInput).val(currentValue + 1);
+        var itemId = $(this).data('item_id');
+        enableDisable(itemId);
+    });
+
+    // Decrease quantity
+    $('.decrease-qty').click(function (e) {
+        e.preventDefault();
+        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        var currentValue = parseInt($(closestInput).val());
+        $(closestInput).val(currentValue - 1);
+        var itemId = $(this).data('item_id');
+        enableDisable(itemId);
+    });
+</script>

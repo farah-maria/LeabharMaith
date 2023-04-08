@@ -42,7 +42,7 @@ def basket_contents(request):
     else:
         featured_product = 1
 
-    grand_total = delivery + total
+    grand_total = delivery + total 
 
     context = {
         'basket_items': basket_items,

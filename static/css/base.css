@@ -32,6 +32,10 @@ a:hover {
     max-height: 200px;
 }
 
+.thumbnail_small {
+    max-height: 100px;
+}
+
 #heading_featured {
     margin-top: 2%;
     margin-bottom: 5%;
@@ -118,10 +122,6 @@ h5 {
     width: fit-content;
 }
 
-.main-logo-link:hover {
-    text-decoration: solid underline orange 2px;
-}
-
 .shop-now-button {
     background: rgba(11, 125, 19, 0.9);
     color: white;
@@ -203,7 +203,10 @@ a:hover {
     color: green;
     background-color: white;
     border-radius: 3%;
-    text-decoration: solid underline 1px;
+}
+
+.btn-dark {
+    background-color: #001800;
 }
 
 .badge {
