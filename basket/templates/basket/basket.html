@@ -49,10 +49,12 @@
                                         <p class="my-0">€{{ item.book.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <p class="my-0">{{ item.quantity }}</p>
+                                        <form class="form update-form" method="POST" action="">
+                                            {% csrf_token %}
+                                        </form>
                                     </td>
                                     <td class="py-3">
-                                        <p><strong></p>
+                                        <p></p>
                                     </td>
                                 </tr>
                             {% endfor %}
