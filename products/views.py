@@ -37,7 +37,6 @@ def all_products(request):
         'books': books,
         'featured_products': featured_products,
         'search_term': query,
-        'category': category,
     }
 
     return render(request, 'products/products.html', context)
