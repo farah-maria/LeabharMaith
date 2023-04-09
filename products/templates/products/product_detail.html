@@ -61,7 +61,7 @@
                                     <div class="input-group input-group-{{ book.id }}">
                                         <div class="input-group-prepend">
                                             <button
-                                                class="decrement-qty btn btn-dark decrement-qty_{{ book.id }}"
+                                                class="decrement-qty btn btn-dark hover decrement-qty_{{ book.id }}"
                                                 data-item_id="{{ book.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
@@ -73,7 +73,7 @@
                                             data-item_id="{{ book.id }}">
                                         <div class="input-group-append">
                                             <button
-                                                class="increment-qty btn btn-dark increment-qty_{{ book.id }}"
+                                                class="increment-qty btn btn-dark hover increment-qty_{{ book.id }}"
                                                 data-item_id="{{ book.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
@@ -86,22 +86,27 @@
                                     <!--(Keep Shopping Button)-->
     
                             <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <a href="{% url 'products' %}" class="btn hover mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-
-                                        <!--(Add to basket button) -->
-                                <input type="submit" class="btn btn-dark text-uppercase mt-5" value="Add to Bag">
+                                
+                                {% if book.in_stock %}   
+                                <!--(Add to basket button) -->
+                                <input type="submit" class="btn btn-dark hover text-uppercase mt-5" value="Add to Bag">
+                                </div>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </div>
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        </div>
-                    </form>
-
-                    <!--end of ADD TO BASKET section-->
-
+                                {% else %}
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="mt-5"><h5><strong>Apologies, this is out of stock, so we can't add it to your basket.</strong></h5></p>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                <!--end of ADD TO BASKET section-->
                 </div>
             </div>
         </div>

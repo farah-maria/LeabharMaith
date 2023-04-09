@@ -130,8 +130,8 @@ h5 {
     border: 1px solid whitesmoke;
 }
 
-.btn-black {
-    background: black;
+.btn-dark {
+    background: #001800;
     color: white;
 }
 
