@@ -66,8 +66,7 @@
                                                 </a>
                                             </p>
                                         {% endif %}
-                                        <br>
-                                        <button class="hover btn btn-dark mt-5" value="{{ book.id }}">Add to Cart</button>           
+                                        <a class="hover btn btn-dark mt-1" href="{% url 'book_detail' book.id %}">Further Info</a>           
                                     </div>
                                 </div>
                             </div>
