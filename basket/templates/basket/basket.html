@@ -49,8 +49,7 @@
                                         <p class="my-0">€{{ item.book.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <form class="form update-form" method="POST" action="">
-                                            {% csrf_token %}
+                                            {% include "basket/quantity.html" %}
                                         </form>
                                     </td>
                                     <td class="py-3">
