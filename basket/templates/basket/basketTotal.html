@@ -1,0 +1,14 @@
+<h6><strong>Your Basket Total: €{{ grand_total|floatformat:2 }}</strong></h6>
+<h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+<h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+{%  if free_delivery_delta > 0 %}
+    <p class="mb-1 text-danger">
+        You're eligible for free delivery if you spend <strong>€{{ free_delivery_delta  }} more.</strong>
+    </p>
+{% endif %}
+<!--Featured Product added if more than threshold amount spent-->
+{%  if grand_total > free_gift_threshold %}
+<p class="mb-1 alert alert-success">
+    You'll get one of our featured products for free with your order!
+</p>
+{% endif %}
