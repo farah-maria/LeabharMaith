@@ -10,16 +10,16 @@
                 Books
             </a>
             <!-- 
-            Category Key:   Younger Readers = 4
-                            Fiction = 5
-                            Poetry = 6
-                            Non-Fiction = 8
+            Category Key:   Younger Readers = 12
+                            Fiction = 9
+                            Poetry = 11
+                            Non-Fiction = 10
             -->   
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?category=5" class="dropdown-item">Fiction</a>
-                <a href="{% url 'products' %}?category=8" class="dropdown-item">Non-Fiction</a>
-                <a href="{% url 'products' %}?category=6" class="dropdown-item">Poetry</a>
-                <a href="{% url 'products' %}?category=4" class="dropdown-item">Younger Readers</a>
+                <a href="{% url 'products' %}?category=fiction" class="dropdown-item">Fiction</a>
+                <a href="{% url 'products' %}?category=non-fiction" class="dropdown-item">Non-Fiction</a>
+                <a href="{% url 'products' %}?category=poetry" class="dropdown-item">Poetry</a>
+                <a href="{% url 'products' %}?category=younger readers" class="dropdown-item">Younger Readers</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Books</a>
             </div>
         </li>  

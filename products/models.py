@@ -18,6 +18,9 @@ class Category(models.Model):
         friendly name instead of id
         """
         return self.friendly_name
+    
+    def __str__(self):
+        return self.friendly_name
 
 
 class Author(models.Model):

@@ -28,11 +28,16 @@ def all_products(request):
     if request.GET:
         if 'q' in request.GET:
             query = request.GET['q']
+            
+        if 'category' in request.GET:
+            friendly_name = request.GET['category'].split(',')[0]
+            books = books.filter(category__friendly_name=friendly_name)
 
     context = {
         'books': books,
         'featured_products': featured_products,
         'search_term': query,
+        'category': category,
     }
 
     return render(request, 'products/products.html', context)
