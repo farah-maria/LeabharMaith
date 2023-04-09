@@ -66,14 +66,11 @@
                                             You're eligible for free delivery if you spend <strong>€{{ free_delivery_delta  }} more.</strong>
                                         </p>
                                     {% endif %}
-                                    {%  if grand_total > featured_product_threshold %}
-                                        <p class="mb-1">
-                                            <strong>You'll get one of our free featured products with your order!</strong>
+                                    
+                                    {%  if grand_total > free_gift_threshold %}
+                                        <p class="mb-1 alert alert-success">
+                                            You'll get one of our free featured products with your order!
                                         </p>
-                                        <p>
-                                            <img class="img-fluid rounded" id="product_thumbnail" src="{{ item.featured.featured_image.url }}">
-                                        </p>
-                                        <p>{{ item.featured_product.name }}</p>
                                     {% endif %}
                                 </td>
                             </tr>
