@@ -1,4 +1,4 @@
-<!-- heavily based on code from Boutique Ado walkthrough project by the Code Institute -->
+<!-- Based on code from Boutique Ado walkthrough project by the Code Institute -->
 {% extends "base.html" %} 
 {% load static %}
 
@@ -66,22 +66,23 @@
                                             You're eligible for free delivery if you spend <strong>€{{ free_delivery_delta  }} more.</strong>
                                         </p>
                                     {% endif %}
-                                    
+                                    <!--Featured Product added if more than threshold amount spent-->
                                     {%  if grand_total > free_gift_threshold %}
                                         <p class="mb-1 alert alert-success">
-                                            You'll get one of our free featured products with your order!
+                                            You'll get one of our featured products for free with your order!
                                         </p>
                                     {% endif %}
                                 </td>
                             </tr>
-                            <tr>
+                            <tr> <!--Keep Shopping Option-->
                                 <td colspan="5" class="text-right">
                                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                                        <span class="icon">
+                                        <span class="icon hover">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
                                         <span class="hover">Keep Shopping</span>
                                     </a>
+                                    <!--Checkout And Pay Option-->
                                     <a href="" class="shop-now-button hover btn rounded-0 btn-lg">
                                         <span>Secure Checkout</span>
                                         <span class="icon">
@@ -91,8 +92,7 @@
                                 </td>
                             </tr>
                         </table>
-                    </div>
-                                   
+                    </div>                 
   
                 {% else %}
                     <p class="lead mb-5">Your basket is empty.</p>
