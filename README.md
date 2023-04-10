@@ -41,7 +41,7 @@ Given the impersonal e-commerce feel of many online bookshops, even those that a
 
 A subscription service option would certainly suit Leabhar Maith, but for the this intial version of the project it only offers one-off purchases. The curation of groups of books, however, encourages buying multiple books and there is a discount on purchases of three books or more. 
 
-On Leabhar Maith, there is no guest mode for buying books without registering as a user, as this doesn't fit the ethos of the site. Leabhar Maith offers a bookclub-type sense of belonging for the buyer, where there is a feeling of familiarity and friendliness rather than anonymity. The reality of the book market it that if someone wanted to buy a single book as cheaply and efficiently as possible, without registering user details, a guest would likely go to the Book Depository, because this Amazon owned company doesn't charge for delivery and has a huge selection of books available at a buyer's fingertips. Leabhar Maith offers a different kind of online book scene.  
+Leabhar Maith offers a bookclub-type sense of belonging for the buyer, where there is a feeling of familiarity and friendliness rather than anonymity. Users can purchase a book in anonymous-guest-mode, however. 
 
 ------
 
