@@ -1,3 +1,4 @@
+""" source code: Boutique Ado project, Code Institute """
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 
