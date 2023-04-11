@@ -1,34 +1,34 @@
 [
 {
     "model": "products.category",
-    "pk": 4,
+    "pk": 9,
     "fields": {
-        "name": "4",
-        "friendly_name": "for younger readers"
-    }
-},
-{
-    "model": "products.category",
-    "pk": 5,
-    "fields": {
-        "name": "5",
+        "name": "fiction",
         "friendly_name": "fiction"
     }
 },
 {
     "model": "products.category",
-    "pk": 6,
+    "pk": 10,
     "fields": {
-        "name": "6",
+        "name": "non-fiction",
+        "friendly_name": "non-fiction"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 11,
+    "fields": {
+        "name": "poetry",
         "friendly_name": "poetry"
     }
 },
 {
     "model": "products.category",
-    "pk": 8,
+    "pk": 12,
     "fields": {
-        "name": "8",
-        "friendly_name": "non-fiction"
+        "name": "younger readers",
+        "friendly_name": "younger readers"
     }
 },
 {
@@ -125,7 +125,7 @@
     "model": "products.book",
     "pk": 1,
     "fields": {
-        "category": 6,
+        "category": 11,
         "genre": "poetry",
         "quarter": "Earrach 2023",
         "audience": "adult",
@@ -149,7 +149,7 @@
     "model": "products.book",
     "pk": 2,
     "fields": {
-        "category": 5,
+        "category": 9,
         "genre": "fiction",
         "quarter": "Earrach 2023",
         "audience": "adult",
@@ -173,7 +173,7 @@
     "model": "products.book",
     "pk": 3,
     "fields": {
-        "category": 5,
+        "category": 9,
         "genre": "fiction",
         "quarter": "Earrach 2023",
         "audience": "adult",
@@ -197,7 +197,7 @@
     "model": "products.book",
     "pk": 4,
     "fields": {
-        "category": 5,
+        "category": 9,
         "genre": "fiction",
         "quarter": "Earrach 2023",
         "audience": "adult",
@@ -221,7 +221,7 @@
     "model": "products.book",
     "pk": 5,
     "fields": {
-        "category": 4,
+        "category": 12,
         "genre": "fiction",
         "quarter": "Earrach 2023",
         "audience": "children",
@@ -245,7 +245,7 @@
     "model": "products.book",
     "pk": 6,
     "fields": {
-        "category": 8,
+        "category": 10,
         "genre": "non-fiction",
         "quarter": "Earrach 2023",
         "audience": "adult",
@@ -269,7 +269,7 @@
     "model": "products.book",
     "pk": 7,
     "fields": {
-        "category": 4,
+        "category": 12,
         "genre": "fiction",
         "quarter": "Earrach 2023",
         "audience": "children",
