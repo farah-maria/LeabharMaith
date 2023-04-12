@@ -1,0 +1,24 @@
+Hello {{ order.full_name }}. Thank you for your order, we really appreciate it!
+
+This is to confirm the info below:
+
+Order Number: {{ order.order_id }}
+Date: {{ order.date }}
+
+Order Total: €{{ order.order_total }}
+Grand Total (incl delivery): €{{ order.grand_total }}
+
+Your books will be shipped to {{ order.address_line_1 }} in {{ order.city }}, {{ order.country }}
+
+We have your current phone number as {{ order.phone_number }}.
+
+If there's anything we can help you with, feel free to write to us at {{ contact_email }}
+
+Thank you, again.
+
+Yours sincerely,
+
+Farah Nova
+Leabhar Maith online bookshop
+083 7378 4655
+
