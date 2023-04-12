@@ -31,15 +31,6 @@ h5 {
     border-top-right-radius: 10px;
 }
 
-/*form.login {
-    background-color: #accaa1;
-    margin-top: 10%;
-    margin-left: 2%;
-    padding: 2%;
-    border: solid 2px;
-    max-width: 96%;
-} */
-
 #heading_featured {
     margin-top: 2%;
     margin-bottom: 5%;
@@ -254,6 +245,16 @@ a:hover {
 }
 
 /* Allauth Styles */
+
+form.login {
+    background-color: rgba(203, 197, 185, 0.8);
+    margin-top: 10%;
+    margin-left: 2%;
+    padding: 2%;
+    border: solid 2px;
+    border-radius: 5px;
+    max-width: 96%;
+}
 
 .allauth-form-inner-content {
     padding: 0;
