@@ -31,14 +31,14 @@ h5 {
     border-top-right-radius: 10px;
 }
 
-form.login {
+/*form.login {
     background-color: #accaa1;
     margin-top: 10%;
     margin-left: 2%;
     padding: 2%;
     border: solid 2px;
     max-width: 96%;
-}
+} */
 
 #heading_featured {
     margin-top: 2%;
@@ -252,6 +252,41 @@ a:hover {
 .featured_text {
     font-size: 150%;
 }
+
+/* Allauth Styles */
+
+.allauth-form-inner-content {
+    padding: 0;
+    margin: 0;
+}
+
+.allauth-form-inner-content #allauth-bg {
+    background-color: #accaa1
+    padding: 2em;
+}
+
+@media (max-width: 767px) {
+    .allauth-form-inner-content #allauth-bg {
+        margin: 0 1em 2em 1em;
+    }
+}
+
+.allauth-form-inner-content #allauth-bg div {
+    margin-bottom: 1em;
+}
+
+.allauth-form-inner-content input {
+    border-radius: 0;
+}
+
+.allauth-form-inner-content .allauth-text {
+    color: darkolivegreen;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
 
 /* --------------------------------- Media queries ( some are from Boutique Ado walkthrough project by Code Institute) */
 
