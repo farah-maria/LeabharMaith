@@ -23,17 +23,21 @@ a:hover {
     color: #023020;
 }
 
-.small_product_text {
-    font-size: 150%;
-    color:#023020;
+h5 {
+    display: inline-block;
+    padding: 10px;
+    background: #B9121B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.book_thumbnail {
-    max-height: 200px;
-}
-
-.thumbnail_small {
-    max-height: 100px;
+form.login {
+    background-color: #accaa1;
+    margin-top: 10%;
+    margin-left: 2%;
+    padding: 2%;
+    border: solid 2px;
+    max-width: 96%;
 }
 
 #heading_featured {
@@ -68,14 +72,19 @@ a:hover {
 
 /* for carousel */
 
-h5 {
-    display: inline-block;
-    padding: 10px;
-    background: #B9121B;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.small_product_text {
+    font-size: 150%;
+    color:#023020;
 }
-  
+
+.book_thumbnail {
+    max-height: 200px;
+}
+
+.thumbnail_small {
+    max-height: 100px;
+}
+
 .p {
     text-align: center;
     padding-top: 40px;
@@ -243,6 +252,7 @@ a:hover {
 .featured_text {
     font-size: 150%;
 }
+
 /* --------------------------------- Media queries ( some are from Boutique Ado walkthrough project by Code Institute) */
 
 /* Slightly larger container on xl screens */
