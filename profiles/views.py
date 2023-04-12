@@ -5,7 +5,7 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 from checkout.models import Order
-
+""" code from Boutique Ado project by Code Institute"""
 
 @login_required
 def profile(request):
@@ -23,15 +23,14 @@ def profile(request):
                             'the form is valid.'))
     else:
         form = UserProfileForm(instance=profile)
-        orders = profile.orders.all()
+    orders = profile.orders.all()
 
-        template = 'profiles/profile.html'
-
-        context = {
-            'form': form,
-            'orders': orders,
-            'on_profile_page': True
-        }
+    template = 'profiles/profile.html'
+    context = {
+        'form': form,
+        'orders': orders,
+        'on_profile_page': True
+    }
 
     return render(request, template, context)
 
