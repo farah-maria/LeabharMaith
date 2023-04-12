@@ -34,8 +34,8 @@
 
 #payment-form .form-control,
 #card-element {
-    color: #000;
-    border: 1px solid #000;
+    color: black;
+    border: 1px solid #333333;
 }
 
 select,
@@ -55,7 +55,7 @@ select option[value=""] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(23, 162, 184, .85);
+    background: rgba(154, 205, 50, .6);
     z-index: 9999;
 }
 
@@ -65,4 +65,8 @@ select option[value=""] {
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+
+.form-text {
+    color: #333333;
 }
