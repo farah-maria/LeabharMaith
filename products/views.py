@@ -68,8 +68,19 @@ def featured_detail(request, featured_id):
 
 
 def add_book(request):
-    """ Add a product to the store """
-    form = BookForm()
+    """ Add a book to the shop - for shop owners """
+    if request.method == 'POST':
+        form = BookForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added book!')
+            return redirect(reverse('add_book'))
+        else:
+            messages.error(request,
+                           'Failed to add book. Please ensure input is valid.')
+    else:
+        form = BookForm()
+
     template = 'products/add_book.html'
     context = {
         'form': form,
@@ -79,8 +90,19 @@ def add_book(request):
 
 
 def add_author(request):
-    """ Add a product to the store """
-    form = AuthorForm()
+    """ Add an author to the system - for shop owners """
+    if request.method == 'POST':
+        form = AuthorForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added writer!')
+            return redirect(reverse('add_author'))
+        else:
+            messages.error(request,
+                           'Failed to add. Please ensure input is valid.')
+    else:
+        form = AuthorForm()
+
     template = 'products/add_author.html'
     context = {
         'form': form,
@@ -90,8 +112,19 @@ def add_author(request):
 
 
 def add_featured(request):
-    """ Add a product to the store """
-    form = FeaturedForm()
+    """ Add a featured product to the shop - for shop owners """
+    if request.method == 'POST':
+        form = FeaturedForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('add_featured'))
+        else:
+            messages.error(request,
+                           'Failed to add. Please ensure input is valid.')
+    else:
+        form = FeaturedForm()
+
     template = 'products/add_featured.html'
     context = {
         'form': form,
