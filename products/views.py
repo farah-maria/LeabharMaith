@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Category, Book, Author, Featured_Product
+from .forms import BookForm, FeaturedForm, AuthorForm
 
 
 def all_products(request):
@@ -64,3 +65,36 @@ def featured_detail(request, featured_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def add_book(request):
+    """ Add a product to the store """
+    form = BookForm()
+    template = 'products/add_book.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+
+def add_author(request):
+    """ Add a product to the store """
+    form = AuthorForm()
+    template = 'products/add_author.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+
+def add_featured(request):
+    """ Add a product to the store """
+    form = FeaturedForm()
+    template = 'products/add_featured.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

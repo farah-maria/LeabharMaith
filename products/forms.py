@@ -18,10 +18,10 @@ class BookForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black'
 
 
-class Featured_ProductForm(forms.ModelForm):
+class FeaturedForm(forms.ModelForm):
 
     class Meta:
-        model = Featured_Product()
+        model = Featured_Product
         fields = '__all__'
 
     def __init__(self, *args, **kwargs):
@@ -37,7 +37,7 @@ class Featured_ProductForm(forms.ModelForm):
 class AuthorForm(forms.ModelForm):
 
     class Meta:
-        model = Book
+        model = Author
         fields = '__all__'
 
     def __init__(self, *args, **kwargs):
