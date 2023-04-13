@@ -7,6 +7,7 @@ from .forms import UserProfileForm
 from checkout.models import Order
 """ code from Boutique Ado project by Code Institute"""
 
+
 @login_required
 def profile(request):
     """ Display the user's profile. """
@@ -29,7 +30,7 @@ def profile(request):
     context = {
         'form': form,
         'orders': orders,
-        'on_profile_page': True
+        'on_profile_page': True,
     }
 
     return render(request, template, context)
