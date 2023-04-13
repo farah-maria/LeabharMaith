@@ -16,7 +16,7 @@ em {
 }
 
 a {
-    color: #244424;
+    color: #023020;
 }
 
 h5 {
@@ -147,6 +147,10 @@ h5 {
     border-radius: 1%;
 }
 
+.text-muted {
+    font-weight: bold;
+    color: #1e3f66!important
+}
 .border-black {
     border: 1px solid black !important;
 }
@@ -210,6 +214,17 @@ a:hover {
     font-family: 'Courier New', Courier, monospace;
     background-color: transparent;
     text-decoration: underline solid 1px black;
+}
+
+.about-us {
+    background-color: #e4ecce;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 2%;
+    border: #accaa1 solid 4px;
+    border-radius: 5px;
 }
 
 .card-img,
