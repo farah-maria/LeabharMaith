@@ -208,28 +208,18 @@
 </header>
 {% endblock %}
 
+<!--Bootstrap/ Messages alert code-->
 {% if messages %}
-<div class="alert alert-success" role="alert">
-<ul class="messages">
-    {% for message in messages %}
-    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-    {% endfor %}
-</ul>
-</div>
-<!--Bootstrap alert-->
+    {% include 'includes/alert.html' %}
 {% endif %}
-
-
+<!--End of Messages code-->
 
 {% block content %}
+
 {% endblock %}
 
 {% block postloadjs %}
- <script>
-    setTimeout(()=>{
-        $(".alert").addClass("fade")    
-    },10000)
-</script>
+
 {% endblock %}
 
 

@@ -1,0 +1,13 @@
+<div class="alert alert-info" role="alert">
+    <ul class="messages">
+        {% for message in messages %}
+            <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<script>
+    setTimeout(()=>{
+        $(".alert").addClass("fade")    
+    },2000)
+</script>
