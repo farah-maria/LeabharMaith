@@ -16,13 +16,14 @@
             <div class="col-12 col-md-6">
                 <hr>
                 <h2 class="logo-font mb-4">Product Management</h2>
-                <h4 class="text-muted text-uppercase">Add a book</h4>
+                <h5 class="text-muted">Edit Book Record</h5>
                 <hr>
             </div>
         </div>
+
         <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'add_book' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'edit_product' book.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
                         {% if field.name != 'image' %}
@@ -32,12 +33,11 @@
                         {% endif %}
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-outline-light hover" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn btn-dark hover" type="submit">Add</button>
+                        <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn btn-dark hover" type="submit">Update</button>
                     </div>
                 </form>
             </div>            
         </div>
-
     </div>
 {% endblock %}
