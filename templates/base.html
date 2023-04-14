@@ -43,8 +43,6 @@
         <script src="https://kit.fontawesome.com/52443e90c9.js" crossorigin="anonymous"></script>
         <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
-        
-
     {% endblock %}
 
     {% block extra_js %}
@@ -211,7 +209,7 @@
 {% endblock %}
 
 {% if messages %}
-<div class="alert alert-success fade" role="alert">
+<div class="alert alert-success" role="alert">
 <ul class="messages">
     {% for message in messages %}
     <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
@@ -227,7 +225,11 @@
 {% endblock %}
 
 {% block postloadjs %}
-<script>$(".alert")</script>
+ <script>
+    setTimeout(()=>{
+        $(".alert").addClass("fade")    
+    },10000)
+</script>
 {% endblock %}
 
 
