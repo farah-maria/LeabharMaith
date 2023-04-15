@@ -72,7 +72,13 @@
                                                 </a>
                                             </p>
                                         {% endif %}
-                                        <a class="hover btn btn-dark mt-1" href="{% url 'book_detail' book.id %}">Further Info</a>           
+                                        <a class="hover btn btn-dark mt-1" href="{% url 'book_detail' book.id %}">Further Info</a>
+                                        {% if request.user.is_superuser %}
+                                            <small class="ml-3">
+                                                <a href="{% url 'edit_book' book.id %}">Edit</a> | 
+                                                <a class="text-danger" href="{% url 'delete_book' book.id %}">Delete</a>
+                                            </small>
+                                        {% endif %}           
                                     </div>
                                 </div>
                             </div>
@@ -173,6 +179,12 @@
                     Check out similar products...
                     <i class="fa-solid fa-credit-card"></i>
                 </a>
+                {% if request.user.is_superuser %}
+                    <small class="ml-3">
+                    <a href="{% url 'edit_featured' featured.id %}">Edit</a> | 
+                    <a class="text-danger" href="{% url 'delete_featured' featured.id %}">Delete</a>
+                    </small>
+                {% endif %}
         </div>
     </div>
     
