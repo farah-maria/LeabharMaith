@@ -61,7 +61,7 @@ def featured_detail(request, featured_id):
     featured = get_object_or_404(Featured_Product, pk=featured_id)
 
     context = {
-        'featured': featured_product,
+        'featured': featured,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -211,13 +211,13 @@ def edit_featured(request, featured_id):
                            ('Failed to update. '
                             'Please ensure input is valid.'))
     else:
-        form = FeaturedForm(instance=featured_product)
+        form = FeaturedForm(instance=featured)
         messages.info(request, f'You are editing {featured.name}')
 
     template = 'products/edit_featured.html'
     context = {
         'form': form,
-        'featured': featured_product,
+        'featured': featured,
     }
 
     return render(request, template, context)
@@ -234,3 +234,26 @@ def delete_book(request, book_id):
     messages.success(request, 'Book deleted.')
     return redirect(reverse('products'))
 
+
+def delete_featured(request, featured_id):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only staff can do that.')
+        return redirect(reverse('home'))
+
+    featured = get_object_or_404(Featured_Product, pk=featured_id)
+    featured.delete()
+    messages.success(request, 'Product deleted.')
+    return redirect(reverse('products'))
+
+
+def delete_author(request, author_id):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only staff can do that.')
+        return redirect(reverse('home'))
+
+    author = get_object_or_404(Author, pk=author_id)
+    author.delete()
+    messages.success(request, 'Writer deleted.')
+    return redirect(reverse('products'))
