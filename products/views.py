@@ -70,6 +70,9 @@ def featured_detail(request, featured_id):
 @login_required
 def add_book(request):
     """ Add a book to the shop - for shop owners """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only staff can do that.')
+        return redirect(reverse('home'))
     if request.method == 'POST':
         form = BookForm(request.POST, request.FILES)
         if form.is_valid():
@@ -93,6 +96,9 @@ def add_book(request):
 @login_required
 def add_author(request):
     """ Add an author to the system - for shop owners """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only staff can do that.')
+        return redirect(reverse('home'))
     if request.method == 'POST':
         form = AuthorForm(request.POST, request.FILES)
         if form.is_valid():
@@ -116,6 +122,9 @@ def add_author(request):
 @login_required
 def add_featured(request):
     """ Add a featured product to the shop - for shop owners """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only staff can do that.')
+        return redirect(reverse('home'))
     if request.method == 'POST':
         form = FeaturedForm(request.POST, request.FILES)
         if form.is_valid():
@@ -140,9 +149,8 @@ def add_featured(request):
 def edit_book(request, book_id):
     """ Edit a book in the shop """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only shop owners can do that.')
+        messages.error(request, 'Sorry, only staff can do that.')
         return redirect(reverse('home'))
-
     book = get_object_or_404(Book, pk=book_id)
     if request.method == 'POST':
         form = BookForm(request.POST, request.FILES, instance=product)
@@ -171,7 +179,7 @@ def edit_book(request, book_id):
 def edit_author(request, author_id):
     """ Edit author info """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only shop owners can do that.')
+        messages.error(request, 'Sorry, only staff can do that.')
         return redirect(reverse('home'))
 
     author = get_object_or_404(Author, pk=author_id)
@@ -202,9 +210,8 @@ def edit_author(request, author_id):
 def edit_featured(request, featured_id):
     """ Edit a featured product in the shop """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only shop owners can do that.')
+        messages.error(request, 'Sorry, only staff can do that.')
         return redirect(reverse('home'))
-
     featured = get_object_or_404(Featured_Product, pk=featured_id)
     if request.method == 'POST':
         form = FeaturedForm(request.POST, request.FILES, instance=product)
@@ -235,7 +242,6 @@ def delete_book(request, book_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only staff can do that.')
         return redirect(reverse('home'))
-
     book = get_object_or_404(Book, pk=book_id)
     book.delete()
     messages.success(request, 'Book deleted.')
@@ -248,7 +254,6 @@ def delete_featured(request, featured_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only staff can do that.')
         return redirect(reverse('home'))
-
     featured = get_object_or_404(Featured_Product, pk=featured_id)
     featured.delete()
     messages.success(request, 'Product deleted.')
@@ -261,7 +266,6 @@ def delete_author(request, author_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only staff can do that.')
         return redirect(reverse('home'))
-
     author = get_object_or_404(Author, pk=author_id)
     author.delete()
     messages.success(request, 'Writer deleted.')
