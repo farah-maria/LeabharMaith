@@ -15,4 +15,9 @@ urlpatterns = [
           name='edit_featured'),
      path('edit_author/<int:author_id>/', views.edit_author,
           name='edit_author'),
+     path('delete_book/<int:book_id>/', views.delete_book, name='delete_book'),
+     path('delete_featured/<int:featured_id>/', views.delete_featured,
+          name='delete_featured'),
+     path('delete_author/<int:author_id>/', views.delete_author,
+          name='delete_author'),
 ]

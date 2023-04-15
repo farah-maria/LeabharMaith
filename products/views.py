@@ -72,9 +72,9 @@ def add_book(request):
     if request.method == 'POST':
         form = BookForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            book = form.save()
             messages.success(request, 'Successfully added book!')
-            return redirect(reverse('add_book'))
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request,
                            'Failed to add book. Please ensure input is valid.')
@@ -221,3 +221,16 @@ def edit_featured(request, featured_id):
     }
 
     return render(request, template, context)
+
+
+def delete_book(request, book_id):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only staff can do that.')
+        return redirect(reverse('home'))
+
+    book = get_object_or_404(Book, pk=book_id)
+    book.delete()
+    messages.success(request, 'Book deleted.')
+    return redirect(reverse('products'))
+
