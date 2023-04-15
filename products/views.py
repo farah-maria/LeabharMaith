@@ -134,18 +134,18 @@ def add_featured(request):
 
 
 def edit_book(request, book_id):
-    """ Edit a product in the store """
+    """ Edit a book in the shop """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only the shop owners can do that.')
+        messages.error(request, 'Sorry, only shop owners can do that.')
         return redirect(reverse('home'))
 
-    product = get_object_or_404(Product, pk=product_id)
+    book = get_object_or_404(Book, pk=book_id)
     if request.method == 'POST':
         form = BookForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+            return redirect(reverse('product_detail', args=[book.id]))
         else:
             messages.error(request,
                            ('Failed to update. '
@@ -162,3 +162,62 @@ def edit_book(request, book_id):
 
     return render(request, template, context)
 
+
+def edit_author(request, author_id):
+    """ Edit author info """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only shop owners can do that.')
+        return redirect(reverse('home'))
+
+    author = get_object_or_404(Author, pk=author_id)
+    if request.method == 'POST':
+        form = AuthorForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated author!')
+            return redirect(reverse('add_author'))
+        else:
+            messages.error(request,
+                           ('Failed to update. '
+                            'Please ensure input is valid.'))
+    else:
+        form = AuthorForm(instance=author)
+        messages.info(request, f'You are editing {author.name}')
+
+    template = 'products/edit_author.html'
+    context = {
+        'form': form,
+        'author': author,
+    }
+
+    return render(request, template, context)
+
+
+def edit_featured(request, featured_id):
+    """ Edit a featured product in the shop """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only shop owners can do that.')
+        return redirect(reverse('home'))
+
+    featured = get_object_or_404(Featured_Product, pk=featured_id)
+    if request.method == 'POST':
+        form = FeaturedForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated product!')
+            return redirect(reverse('products'))
+        else:
+            messages.error(request,
+                           ('Failed to update. '
+                            'Please ensure input is valid.'))
+    else:
+        form = FeaturedForm(instance=featured_product)
+        messages.info(request, f'You are editing {featured.name}')
+
+    template = 'products/edit_featured.html'
+    context = {
+        'form': form,
+        'featured': featured_product,
+    }
+
+    return render(request, template, context)
