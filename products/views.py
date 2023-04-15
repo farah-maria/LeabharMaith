@@ -67,6 +67,7 @@ def featured_detail(request, featured_id):
     return render(request, 'products/product_detail.html', context)
 
 
+@login_required
 def add_book(request):
     """ Add a book to the shop - for shop owners """
     if request.method == 'POST':
@@ -89,6 +90,7 @@ def add_book(request):
     return render(request, template, context)
 
 
+@login_required
 def add_author(request):
     """ Add an author to the system - for shop owners """
     if request.method == 'POST':
@@ -111,6 +113,7 @@ def add_author(request):
     return render(request, template, context)
 
 
+@login_required
 def add_featured(request):
     """ Add a featured product to the shop - for shop owners """
     if request.method == 'POST':
@@ -133,6 +136,7 @@ def add_featured(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_book(request, book_id):
     """ Edit a book in the shop """
     if not request.user.is_superuser:
@@ -163,6 +167,7 @@ def edit_book(request, book_id):
     return render(request, template, context)
 
 
+@login_required
 def edit_author(request, author_id):
     """ Edit author info """
     if not request.user.is_superuser:
@@ -193,6 +198,7 @@ def edit_author(request, author_id):
     return render(request, template, context)
 
 
+@login_required
 def edit_featured(request, featured_id):
     """ Edit a featured product in the shop """
     if not request.user.is_superuser:
@@ -223,6 +229,7 @@ def edit_featured(request, featured_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_book(request, book_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
@@ -235,6 +242,7 @@ def delete_book(request, book_id):
     return redirect(reverse('products'))
 
 
+@login_required
 def delete_featured(request, featured_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
@@ -247,6 +255,7 @@ def delete_featured(request, featured_id):
     return redirect(reverse('products'))
 
 
+@login_required
 def delete_author(request, author_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
