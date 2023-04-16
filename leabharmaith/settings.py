@@ -32,7 +32,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # 'DEVELOPMENT' in os.environ
 
@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'basket',
     'checkout',
     'profiles',
+    'extras',
 ]
 
 MIDDLEWARE = [
