@@ -217,14 +217,17 @@ a:hover {
 }
 
 .about-us {
-    background-color: #e4ecce;
     padding-top: 2%;
     padding-bottom: 1%;
     padding-left: 1%;
     padding-right: 1%;
+    margin-top: 20%;
     margin-bottom: 2%;
     border: #accaa1 solid 4px;
     border-radius: 5px;
+    color: black;
+    background-color: rgba(215, 229, 240, 0.5);
+    font-weight: bolder;
 }
 
 .card-img,
@@ -336,11 +339,6 @@ form.signup {
 	color: #001800;
     background-color: #accaa1;
 }
-
-.allauth-form-inner-content a {
-	color: #; /* text-info */
-}
-
 
 
 
