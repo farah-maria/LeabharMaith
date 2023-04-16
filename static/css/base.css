@@ -255,6 +255,21 @@ a:hover {
     font-size: 150%;
 }
 
+/* newsletter signup */
+
+#mc_embed_signup {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    margin-left: 10%;
+    border-radius: 5px;
+}
+
+#mc_embed_signup .button {
+    background-color: #001800 !important;
+}
+
 /* Allauth Styles */
 
 /* form.login,
