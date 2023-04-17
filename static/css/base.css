@@ -273,6 +273,12 @@ a:hover {
     background-color: #001800 !important;
 }
 
+.contact {
+    background-color: #accaa1;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 /* Allauth Styles */
 
 /* form.login,
@@ -339,8 +345,6 @@ form.signup {
 	color: #001800;
     background-color: #accaa1;
 }
-
-
 
 /* --------------------------------- Media queries ( some are from Boutique Ado walkthrough project by Code Institute) */
 
