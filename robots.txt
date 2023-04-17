@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /basket/
+Sitemap: https://leabhar-maith.herokuapp.com/sitemap.xml
