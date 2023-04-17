@@ -134,19 +134,8 @@
         </div>
       </div>
     </div>
-    </div>
-    <!--  Carousel Controls -->
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="sr-only">Previous</span>
-  </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="sr-only">Next</span>
-  </a>
-  </div>
 </div>
-<!-- end of carousel -->
+<!--End of carousel code -->
 
 {% for featured in featured_products %}
 
@@ -180,11 +169,9 @@
                     </small>
                 {% endif %}
         </div>
-    </div>
-    
+    </div>    
 {% endfor %}
 {% endblock %}
-
            
 {% block postloadjs %}
     <script>
@@ -194,15 +181,3 @@
     });
     </script>
 {% endblock %}
-
-<!--
-<div>
-
-    {% for featured in featured_products %}
-        <img class="product_thumbnail" src="{{ featured.featured_image.url }}">
-        <img class="product_thumbnail" src="https://res.cloudinary.com/farahtasia/image/upload/v1679943933/leabharmaith/notebook_2_xuvjjh.png">
-        <img class="product_thumbnail" src="https://res.cloudinary.com/farahtasia/image/upload/v1679943943/leabharmaith/notebook_3_tlxigm.png"
-    {% endfor %}
-
-
-</div> 
