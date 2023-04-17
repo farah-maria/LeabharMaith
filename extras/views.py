@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
+from django.http import HttpResponseRedirect
+from django.core.mail import send_mail
+from django.contrib import messages
 from .forms import ContactForm
 
 
@@ -25,27 +28,19 @@ def contact(request, *args, **kwargs):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            name = form.cleaned_data['name'],
-            email = form.cleaned_data['email'],
-            subject = form.cleaned_data['subject'],
-            message = form.cleaned_data['message'],
             form.save()
-
-            send_mail({subject}, f'{name}, {email}, {message}',
-                      settings.EMAIL_HOST_USER, [settings.EMAIL_HOST_USER],
-                      fail_silently=False)
-            messages.success(request,
-                             f'Message sent.'
-                             f'Thank you! We will get back to you soon.')
-
-            return redirect(reverse('products'))
+            messages.success(
+                request,
+                'Message sent. Thank you! We will get back to you soon.'
+                )
+            return redirect(reverse('home'))
         else:
-            messages.error(request,
-                           f'Oops, that did not work.'
-                           f'Check that your input is valid.'
-                           )
-
+            messages.error(
+                request, 'Oops! That did not send. \
+                    Check your details and try again.')
     else:
         form = ContactForm()
+        if 'submitted' in request.GET:
+            form = ContactForm()
 
     return render(request, 'extras/contact.html', {'form': form})
