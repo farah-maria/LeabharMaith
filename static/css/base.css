@@ -216,6 +216,10 @@ a:hover {
     text-decoration: underline solid 1px black;
 }
 
+.alert {
+    z-index: 9999;
+}
+
 .about-us {
     padding-top: 2%;
     padding-bottom: 1%;

@@ -1,5 +1,6 @@
 <!-- Based on code from Boutique Ado walkthrough project by the Code Institute -->
 {% extends "base.html" %}
+
 {% load static %}
 
 
@@ -79,7 +80,7 @@
                                         {% include "basket/item-info.html" %}
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.book.price }}</p>
+                                        <p class="my-0">€{{ item.book.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
                                         {% include "basket/quantity.html" %}
@@ -118,10 +119,10 @@
 
 <script type="text/javascript">
     // Update quantity on click
-    $('.update-link').click(function(e) {
-        var form = $(this).prev('.update-form');
-        form.submit();
-    })
+    $(".update-link").click(function (e) {
+    let form = $(this).prev(".update-form");
+    form.submit();
+  });
 
     // Remove item and reload on click
     $('.remove-item').click(function (e) {

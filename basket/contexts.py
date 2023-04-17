@@ -14,7 +14,7 @@ def basket_contents(request):
     basket = request.session.get('basket', {})
     free_delivery_threshold = settings.FREE_DELIVERY_THRESHOLD
     free_gift_threshold = settings.FREE_GIFT_THRESHOLD
-    
+
     for item_id, item_data in basket.items():
         if isinstance(item_data, int):
             book = get_object_or_404(Book, pk=item_id)
