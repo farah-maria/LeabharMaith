@@ -14,6 +14,12 @@ def newsletter(request):
     return render(request, 'extras/newsletter.html')
 
 
+def privacy(request):
+    """ A view to render the privacy statement in compliance with GDPR """
+
+    return render(request, 'extras/privacy.html')
+
+
 def contact(request, *args, **kwargs):
     """ A view to return the contact page """
     if request.method == 'POST':
