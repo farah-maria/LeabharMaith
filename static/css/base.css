@@ -96,7 +96,16 @@ h5 {
     color: darkgray;
     background-color: azure;
 }
+/* end of carousel styles */
 
+.footer {
+    margin-bottom: 10px;
+    position: absolute;
+    color: #1e3f66;
+    padding: 2px;
+    margin-left: auto;
+    font-size: 150%;
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -537,8 +546,6 @@ a:hover {
 
 /* privacy statement */
 
-
-}
 /* pad the top a bit when navbar is collapsed on mobile - from Boutique Ado project by the Code Institute */
 @media (max-width: 991px) {
     
