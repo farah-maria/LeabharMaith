@@ -410,6 +410,10 @@ a:hover {
         font-size: 200%;
         background-color: antiquewhite;
     }
+
+    .footer {
+        font-size: 70%;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 519px) and (orientation: portrait) {
@@ -431,6 +435,10 @@ a:hover {
     .shop-now-button {
         margin-top: 2vh;
     }
+
+    .footer {
+        font-size: 70%;
+    }
 }
 
 /* galaxy fold and a bit extra up to iphone4 width */
@@ -438,6 +446,10 @@ a:hover {
     .display-4 {
         margin-top: 20vh;
         background-color: antiquewhite;
+    }
+
+    .footer {
+        font-size: 70%;
     }
 }
 
@@ -462,6 +474,10 @@ a:hover {
     .display-4 {
         margin-top: 70%;
     }
+
+    .footer {
+        font-size: 70%;
+    }
 }
 
 
@@ -479,6 +495,10 @@ a:hover {
         font-size: 40%;
         padding: 0.2rem;
         min-width: 20%;
+    }
+    
+    .footer {
+        font-size: 70%;
     }
 }
 
@@ -498,6 +518,9 @@ a:hover {
         min-width: 50%;
     }
     
+    .footer {
+        font-size: 70%;
+    }
 }
 
 /* includes galaxy fold */
@@ -515,6 +538,9 @@ a:hover {
         margin-top: 12vh;
     }
 
+    .footer {
+        font-size: 70%;
+    }
 }
 
 @media (min-device-width: 280px) and (max-device-width: 320px) {
@@ -522,13 +548,21 @@ a:hover {
         margin-top: 20vh ;
         left: 100vw;
         position: fixed!important; 
-}
+    }
+    
+    .footer {
+        font-size: 70%;
+    }
 }
 
 @media (min-device-width: 321px) and (max-device-width: 500px) and (orientation: portrait){
     #mc_embed_signup {
         margin-top: 3vh;
         margin-left: 40vw;
+    }
+
+    .footer {
+        font-size: 70%;
     }
 }
 
@@ -542,6 +576,9 @@ a:hover {
         text-align: left!important;
     }
 
+    .footer {
+        font-size: 70%;
+    }
 }
 
 /* privacy statement */
@@ -563,5 +600,9 @@ a:hover {
 
     .heading {
         font-size: 200%;
+    }
+    
+    .footer {
+        font-size: 70%;
     }
 }
