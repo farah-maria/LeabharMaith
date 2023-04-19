@@ -216,7 +216,6 @@ a:hover {
     z-index: 9999;
 }
 
-#privacy,
 .about-us {
     padding-top: 2%;
     padding-bottom: 1%;
@@ -538,13 +537,7 @@ a:hover {
 
 /* privacy statement */
 
-@media (min-device-width: 280px) and (max-device-width: 1200px) and 
-    (min-device-height: 280px) and (max-device-height: 800px) {
 
-    #privacy {
-        margin-top: 25vh;
-        width: 90%;
-    }
 }
 /* pad the top a bit when navbar is collapsed on mobile - from Boutique Ado project by the Code Institute */
 @media (max-width: 991px) {
