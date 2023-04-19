@@ -279,19 +279,6 @@ a:hover {
     border-radius: 5px;
 }
 
-/* Allauth Styles */
-
-/* form.login,
-form.signup {
-    background-color: rgba(203, 197, 185, 0.8);
-    margin-top: 10%;
-    margin-left: 2%;
-    padding: 2%;
-    border: solid 2px;
-    border-radius: 5px;
-    max-width: 96%;
-} */
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -437,7 +424,6 @@ form.signup {
     }
 }
 
-
 /* galaxy fold and a bit extra up to iphone4 width */
 @media (min-width: 220px) and (max-width: 319px) and (orientation: portrait) {
     .display-4 {
@@ -472,10 +458,6 @@ form.signup {
 
 @media (max-width: 364px) {
 
-    /*.display-4 {
-        margin-top: 150%;
-    }*/
-
     .display-4 {
         background-color: antiquewhite;
     }
@@ -506,8 +488,35 @@ form.signup {
         font-size: 40%;
         min-width: 50%;
     }
-
     
+}
+
+/* includes galaxy fold */
+@media (max-device-width: 320px) and (max-device-height: 653px) {
+
+    .about-us {
+        margin-top: 40vh;
+        text-align: left!important;
+    }
+
+.contact {
+    width: auto;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-top: 12vh;
+}
+
+}
+
+/*  about-us info page on larger phones  */
+
+@media (min-device-width: 360px) and (max-device-width: 600px) and (max-device-height: 915px) {
+
+    .about-us {
+        margin-top: 40vh;
+        text-align: left!important;
+    }
+
 }
 
 
