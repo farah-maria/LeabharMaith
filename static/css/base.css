@@ -127,7 +127,7 @@ h5 {
 }
 
 .btn-dark {
-    background: #001800;
+    background: #023020;
     color: white;
 }
 
@@ -203,10 +203,6 @@ a:hover {
     color: green;
     background-color: white;
     border-radius: 3%;
-}
-
-.btn-dark {
-    background-color: #001800;
 }
 
 .badge {

@@ -214,7 +214,7 @@ def edit_featured(request, featured_id):
         return redirect(reverse('home'))
     featured = get_object_or_404(Featured_Product, pk=featured_id)
     if request.method == 'POST':
-        form = FeaturedForm(request.POST, request.FILES, instance=product)
+        form = FeaturedForm(request.POST, request.FILES, instance=featured)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated product!')

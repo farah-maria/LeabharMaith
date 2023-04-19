@@ -162,6 +162,7 @@
                     Check out similar products...
                     <i class="fa-solid fa-credit-card"></i>
                 </a>
+                <br>
                 {% if request.user.is_superuser %}
                     <small class="ml-3">
                     <a href="{% url 'edit_featured' featured.id %}">Edit</a> | 
