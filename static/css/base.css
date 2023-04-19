@@ -499,14 +499,31 @@ a:hover {
         text-align: left!important;
     }
 
-.contact {
-    width: auto;
-    margin-right: 1vw;
-    margin-left: 1vw;
-    margin-top: 12vh;
-}
+    .contact {
+        width: auto;
+        margin-right: 1vw;
+        margin-left: 1vw;
+        margin-top: 12vh;
+    }
 
 }
+
+/* contact form queries */
+@media (min-device-width: 280px) and (max-device-width: 320px) {
+    #mc_embed_signup {
+        margin-top: 20vh ;
+        left: 100vw;
+        position: fixed!important; 
+}
+}
+
+@media (min-device-width: 321px) and (max-device-width: 500px) and (orientation: portrait){
+    #mc_embed_signup {
+        margin-top: 3vh;
+        margin-left: 40vw;
+    }
+}
+
 
 /*  about-us info page on larger phones  */
 
