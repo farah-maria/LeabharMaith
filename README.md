@@ -2,7 +2,7 @@
 # Leabhar Maith
 
 ## Introduction
-
+ 
 <br>    
 
 This is a README for an e-commerce website for a hypothetical business called 'Leabhar Maith', meaning 'good book' in Irish. 
