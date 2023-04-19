@@ -454,9 +454,48 @@ a:hover {
 }
 
 @media (max-width: 499px) {
+    
+    
 
-    #advert-carousel {
-        display: none;
+    .product_carousel {
+        display: none!important;
+    }
+
+    .carousel-indicators {
+        display: none!important;
+    }
+
+    .featured_text {
+        font-size: 100%;
+    }
+    
+    .product_image {
+        margin-left: 10vw;
+        max-width: 60vw;
+        max-height: auto;
+    }
+
+    .small_product_text {
+        font-size: 100%;
+    }
+
+    #heading_featured {
+        font-size: 150%;
+    }
+
+    #featured_container_card {
+        margin-left: 5vw;
+    }
+
+    .featured_text {
+        margin-left: 2%;
+    }
+    #btn_featured {
+        margin-left: 10vw;
+    }
+
+    .featured_text > p {
+        margin-left: 20%;
     }
 }
 
@@ -477,6 +516,9 @@ a:hover {
 
     .footer {
         font-size: 70%;
+        margin-left: 10px;
+        font-weight: bolder;
+        margin-bottom: 20px;
     }
 }
 
@@ -499,6 +541,9 @@ a:hover {
     
     .footer {
         font-size: 70%;
+        margin-left: 10px;
+        font-weight: bolder;
+        margin-bottom: 20px;
     }
 }
 
@@ -520,6 +565,9 @@ a:hover {
     
     .footer {
         font-size: 70%;
+        margin-left: 10px;
+        font-weight: bolder;
+        margin-bottom: 20px;
     }
 }
 
@@ -540,6 +588,9 @@ a:hover {
 
     .footer {
         font-size: 70%;
+        margin-left: 10px;
+        font-weight: bolder;
+        margin-bottom: 20px;
     }
 }
 
@@ -552,6 +603,9 @@ a:hover {
     
     .footer {
         font-size: 70%;
+        margin-left: 10px;
+        font-weight: bolder;
+        margin-bottom: 20px;
     }
 }
 
@@ -563,6 +617,9 @@ a:hover {
 
     .footer {
         font-size: 70%;
+        margin-left: 10px;
+        font-weight: bolder;
+        margin-bottom: 20px;
     }
 }
 
@@ -578,6 +635,9 @@ a:hover {
 
     .footer {
         font-size: 70%;
+        margin-left: 10px;
+        font-weight: bolder;
+        margin-bottom: 20px;
     }
 }
 
@@ -604,5 +664,8 @@ a:hover {
     
     .footer {
         font-size: 70%;
+        margin-left: 10px;
+        font-weight: bolder;
+        margin-bottom: 20px;
     }
 }
