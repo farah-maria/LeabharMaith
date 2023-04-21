@@ -98,6 +98,10 @@ h5 {
 }
 /* end of carousel styles */
 
+.booklogo {
+    width: 10%;
+}
+
 .footer {
     margin-bottom: 10px;
     position: absolute;
