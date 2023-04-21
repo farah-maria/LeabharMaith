@@ -72,22 +72,29 @@ Even though Leabhar Maith offers a sense of belonging for the buyer, where there
 Despite being in a team of... one... I used an Agile approach to designing, planning and developing the site. Well, actually, I did get together with another software engineering student from a software testing course, and we pretended we were in a work-place team for the testing of features. We communicated via the ‘issues’ comments on the GitHub project for Leabhar Maith, and this can be seen on the details for each issue/ user-story/ feature-needed-docket. He taught me some of the terminology used for software testing, and we use this in the comments, which was great! 
 
 
-The first step was to gather the  user stories and record them using  GitHub project tools. An MVP (Minimum Viable Product) was then designed around the requirements that most directly met the needs of each user story. These were then attached to iterations that were time-boxed using the ‘milestones’ feature in GitHub. The list of milestones/ iterations is located at:
+The first step was to gather the  user stories and record them using  GitHub project tools. An MVP (Minimum Viable Product) was then designed around the requirements that most directly met the needs of each user story. These were then attached to iterations that were time-boxed using the ‘milestones’ feature in GitHub. The list of milestones/ iterations is located at: https://github.com/farah-maria/LeabharMaith/milestones and can be viewed in proper order according by due date at:
 
 
-https://github.com/farah-maria/LeabharMaith/milestones
+https://github.com/farah-maria/LeabharMaith/milestones?direction=asc&sort=due_date&state=open
+
+<br>
+<center><img src="assets/images/iterations.png" alt="iterations 1-4" width="80%"/></center>
+<br>   
+
+Note: issues were not closed using the tick box, but by placing them in the ‘done’ column on the kanban board, so it appears that none of the iterations were completed if judged by the percentage bar. A comment in each states its completion, though.
 
 
-Note: issues were not closed using the tick box, but by placing them in the ‘done’ column on the kanban board, so it appears that none of the iterations were completed when in fact they were.
-
-
-All of these points were organised using a kanban board in GitHub, which is called ‘Leabhar Maith Kanban Board’ and it is located at:
+All of these points, as well as  their testing status, were organised using a kanban board in GitHub. This is called ‘Leabhar Maith Kanban Board’ and it is located at:
 
 
 https://github.com/users/farah-maria/projects/6/
 
 
-The scope of the project can be seen on the kanban board, which I limited to the MVP requirements, each of which correlate with the Code Institute pass criteria of for the project. 
+<br>
+<center><img src="assets/images/kanban.png" alt="kanban board" width="80%"/></center>
+<br>   
+
+The scope of the project can be seen on the board, which I mainly limited to MVP requirements, each of which correlate with the Code Institute pass criteria for the project. 
 
 <br>
 
