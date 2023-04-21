@@ -124,5 +124,14 @@ The list of issues used to fill the kanban board can be found at:
 
 https://github.com/farah-maria/LeabharMaith/issues
 
+<br>
+The list of user stories, specifically, can be found at:
 
-Each user story was listed as an ‘issue’, and this was connected via the comments attached to the issue to a list of features needed to fulfil the needs voiced by the story. All aspects of the project associated with the Pass criteria supplied by the Code Institute were labelled ‘Must have’ for the MVP, and these were prioritised by me over all other issues.
+
+https://github.com/farah-maria/LeabharMaith/issues?q=is%3Aopen+is%3Aissue+label%3A%22USER+STORY%22
+
+
+By clicking on a user story heading, the full user story can be accessed with its attached list of functionalities and testing notes.
+
+
+Each user story was listed as an ‘issue’, and this was connected via the comments to a list of features needed to fulfil the needs voiced by the story. All aspects of the project associated with the Pass criteria supplied by the Code Institute were labelled ‘Must have’ for the MVP, and these were prioritised by me over all other issues.
