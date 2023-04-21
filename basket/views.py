@@ -21,8 +21,7 @@ def add_to_basket(request, book_id):
 
     if book_id in list(basket.keys()):
         basket[book_id] += quantity
-        messages.success(request,
-                         (f'Updated {book.title} 'f'quantity to{basket[book_id]}'))
+        messages.success(request, (f'Updated {book.title} 'f'quantity to{basket[book_id]}'))
 
     else:
         basket[book_id] = quantity
