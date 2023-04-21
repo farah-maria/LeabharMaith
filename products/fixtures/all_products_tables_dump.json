@@ -27,8 +27,8 @@
     "model": "products.category",
     "pk": 12,
     "fields": {
-        "name": "younger readers",
-        "friendly_name": "younger readers"
+        "name": "children",
+        "friendly_name": "children"
     }
 },
 {
@@ -119,6 +119,26 @@
         "last_name": "Zepf",
         "first_name1": "Andrew",
         "last_name1": "Whitson"
+    }
+},
+{
+    "model": "products.author",
+    "pk": 10,
+    "fields": {
+        "first_name": "Timmy",
+        "last_name": "Tommy",
+        "first_name1": "",
+        "last_name1": ""
+    }
+},
+{
+    "model": "products.author",
+    "pk": 11,
+    "fields": {
+        "first_name": "1234",
+        "last_name": "5432",
+        "first_name1": "",
+        "last_name1": ""
     }
 },
 {
@@ -291,21 +311,21 @@
 },
 {
     "model": "products.featured_product",
-    "pk": 1,
+    "pk": 41,
     "fields": {
         "category": null,
         "name": "maybe. i can't remember. a6 notebook",
-        "description": "~75% recycled ingredients\r\nmade in cork\r\nblank\r\n56 pages, 140 gsm cartridge (UK paper, 80% used coffee cup)\r\nsoftcover paperback\r\n~a6 size - 140 x 100mm",
+        "description": "~75% recycled ingredients\r\n~ made in cork\r\n~ blank\r\n~ 56 pages\r\n~ 140 gsm cartridge UK paper, 80% used coffee cup\r\n~ softcover paperback\r\n~a6 size - 140x100mm",
         "quarter": "Earrach 2023",
         "price": "12.00",
         "manufacturer": "badly made books",
         "in_stock": true,
-        "featured_image": "image/upload/v1680627494/enzetq1fsu3ggrldceus.png",
+        "featured_image": "image/upload/v1681894761/z8kawbwdqql7bye3vokq.png",
         "image_url": "https://res.cloudinary.com/farahtasia/image/upload/v1679348132/leabharmaith/notebook_pm3wpl.png",
-        "advert_image1": "image/upload/v1680627629/tlsudtyitpynyyrotzqn.jpg",
-        "image1_url": "https://res.cloudinary.com/farahtasia/image/upload/v1680014378/leabharmaith/badlymade2_ooviuu.jpg",
-        "advert_image2": "image/upload/v1680627630/h9hjtt2jdic0blb5ry3y.jpg",
-        "image2_url": "https://res.cloudinary.com/farahtasia/image/upload/v1680014346/leabharmaith/badlymade1_tkmuty.jpg",
+        "advert_image1": "image/upload/v1681894761/fop9vbpjq4zvghskysho.jpg",
+        "image1_url": "https://res.cloudinary.com/farahtasia/image/upload/v1680014346/leabharmaith/badlymade1_tkmuty.jpg",
+        "advert_image2": "image/upload/v1681894762/an176he36nrja95n3vay.jpg",
+        "image2_url": "https://res.cloudinary.com/farahtasia/image/upload/v1680014378/leabharmaith/badlymade2_ooviuu.jpg",
         "website": "https://www.badlymadebooks.com/"
     }
 }
