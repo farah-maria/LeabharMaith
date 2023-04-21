@@ -45,7 +45,7 @@
                         <div class="card h-100 border-0">
                             {% if book.featured_image %}
                                 <a href="{% url 'book_detail' book.id %}">
-                                    <img class= "book_thumbnail" class="card-img-top img-fluid" src="{{ book.featured_image.url }}" alt="{{ book.title }}">
+                                    <img class="card-img-top img-fluid book_thumbnail" src="{{ book.featured_image.url }}" alt="{{ book.title }}">
                                 </a>
                             {% else %}
                                 <a href="{% url 'book_detail' book.id %}">
@@ -152,11 +152,11 @@
         <div>
             <br>
                 <h4 class="featured_text"><strong>{{ featured.name }}</strong>: rrp  €{{ featured.price }}</h4>
-                <span>
-                    <a href="{{ featured.website }}" rel="sponsored" target="_blank">
-                        <p class="small_product_text"><em>by</em> {{ featured.manufacturer }}</p>
+                <p>
+                    <a href="{{ featured.website }}" rel="sponsored" target="_blank" class="small_product_text">
+                        <em>by</em> {{ featured.manufacturer }}
                     </a>
-                </span>
+                </p>
                 <p>{{ featured.description }}</p>
                 <a href="{{ featured.website }}" rel="sponsored" target="_blank" class="btn" id="btn_featured">
                     Check out similar products...
