@@ -286,6 +286,50 @@ As mentioned above in the 'Scope' section, email validation also has yet to be i
 <br>
 <br>
 
+### **Skeleton** / **Wireframes**
+<br>
+I used Balsamiq to create a skeleton of what my site would look like, combined with mock-ups from a practice-project called Boutique Ado that will form the template for my own equivalent pages on the Leabhar Maith site. The shopping basket icon on the navbar will turn blue and start showing the basket total when the user starts adding books to it.
+<br>
+<br>
+<center><img src="assets/images/wireframeHome.png" alt="Homepage wireframe" width="80%"/></center>
+<br>   
+<br>
+<center><img src="assets/images/wireframeProducts.png" alt="Products page, mobile design, wireframe" width="50%"/></center>
+<br>   
+<br>
+<center><img src="assets/images/mockupNav.png" alt="navigation bar mockup" width="80%"/></center>
+<br>   
+<br>
+<center><img src="assets/images/mockupSignup.png" alt="registration page" width="80%"/></center>
+<br>   
+<br>
+<center><img src="assets/images/mockupSignIn.png" alt="sign-in page" width="80%"/></center>
+<br>   
+<br>
+<center><img src="assets/images/mockupProfile.png" alt="profile page" width="80%"/></center>
+<br>   
+<br>
+<center><img src="assets/images/mockBasket.png" alt="Shopping Basket" width="80%"/></center>
+<br>   
+<br>
+<center><img src="assets/images/mockupAddProd.png" alt="Add product page for staff" width="80%"/></center>
+<br>   
+<br>
+<center><img src="assets/images/mockupAddProduct.png" alt="kanban board" width="80%"/></center>
+<br>   
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### **Entity Relationship Diagram**
 
 <br>
