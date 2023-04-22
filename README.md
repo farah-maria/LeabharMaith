@@ -409,10 +409,8 @@ In future, it would great to do some automated testing. In this case, time limit
 <br>
 <br>
 
-#### **CODE VALIDATION**
+### **CODE VALIDATION**
 
-<br>
-<br>
 
 **W3C Reports for HTML:**
 <br>
