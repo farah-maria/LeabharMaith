@@ -184,7 +184,7 @@ https://github.com/farah-maria/LeabharMaith/issues?q=is%3Aopen+is%3Aissue+label%
 
 <br>
 
-####  Summary of Main In-Scope Features
+####  Summary of Main In-Scope Features:
 <br>
 
 * Responsive navigation bar with product search, dropdown menu with book categories, user account access, registration option, and special dropdown list from navbar for shop staff/ superusers who want to edit/ add/ delete stock.
@@ -307,7 +307,8 @@ I used Balsamiq to create a skeleton of what the main two landing pages of the s
 <center><img src="assets/images/mockupNav.png" alt="navigation bar mockup" width="60%"/></center>
 <br>   
 <br>
-Obviously, the product detail page shown below will show the information required for a book rather than an item of clothing (ISBN, author, title, publisher etc) and there will be an image of the book cover to the left of the information. But the rough style and positioning of the buttons will remain the same.
+The product detail page shown below will show the information required for a book rather than an item of clothing (ISBN, author, title, publisher etc) and there will be an image of the book cover to the left of the information. But the rough style and positioning of the buttons will remain the same.
+<br>
 <br>
 <center><img src="assets/images/mockProdDetail.png" alt="navigation bar mockup" width="80%"/></center>
 <br>
@@ -324,26 +325,18 @@ Obviously, the product detail page shown below will show the information require
 <center><img src="assets/images/mockBasket.png" alt="Shopping Basket" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupAddProd.png" alt="Add product page for staff" width="60%"/></center>
+<center><img src="assets/images/mockAddProd.png" alt="Add product page for staff" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupAddProduct.png" alt="kanban board" width="60%"/></center>
+Bottom of add product page for staff below (need to scroll down):
+<br>
+<br>
+<center><img src="assets/images/mockupAddProduct.png" alt="Add product page" width="60%"/></center>
 <br>   
 <br>
-
-
-
-
-
-
-
-
-
-
-
 
 ### **Entity Relationship Diagram**
 
 <br>
-<center><img src="assets/images/erd.png" alt="kanban board" width="80%"/></center>
+<center><img src="assets/images/erd.png" alt="ERD image" width="90%" target="_blank"/></center>
 <br>   
