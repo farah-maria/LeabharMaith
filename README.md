@@ -35,7 +35,7 @@ The site was developed using Python in the Django framework and styled using CSS
     * [Surface](#Surface)
 * [Web Marketing Strategy](#Web-Marketing-Strategy)
 * [Features](#Features)
-* [Data Model](#Data-Model)
+* [Entity Relationship Diagram](#Entity-Relationship-Diagram)
 * [Testing](#Testing)
 * [Deployment](#Deployment)
 * [Credits, Sources & Acknowledgements](#Credits,-Sources-&-Acknowledgements)
@@ -284,3 +284,10 @@ As mentioned above in the 'Scope' section, email validation also has yet to be i
 
 * Title of the site is a clickable link back to the home page.
 <br>
+<br>
+
+### **Entity Relationship Diagram**
+
+<br>
+<center><img src="assets/images/erd.png" alt="kanban board" width="80%"/></center>
+<br>   
