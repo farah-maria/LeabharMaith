@@ -101,14 +101,23 @@ The scope of the project can be seen on the board, which I mainly limited to MVP
 ### **Scope**
 
 <br>
+The project specification outlining the scope of Leabhar Maith is, in this case, necessarily defined by Code Institute marking criteria. It is roughly described as follows:
+<br>
+Project purpose:
+<br>
+In this project, you'll build a Full-Stack site based on business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.
+<br>
+You will also need to create a dummy social media product page as part of your marketing strategy, a newsletter sign-up and SEO.  
+<br>
+The site owner, logging in as a particular user, should be able to see a list of all their past orders.
+<br>
+Your site should be a Full Stack Web application that incorporates Authentication and role-based Authorisation functionality.
+<hr>
+<br>
+As shown later in this document, there is a Facebook business page for Leabhar Maith, where news and discounts are aimed at growing the pool of potential site users.
+<br>
 
-While a subscription service option would certainly suit Leabhar Maith, for this initial version of the project it only offers one-off purchases, as I was learning to set up Stripe payment integration for the first time.  A subscription service would be a great future feature (see list of future features below). 
-
-
-Meanwhile, the curation of groups of books encourages buying multiple books, plus there is a cost benefit to larger purchases in terms of free delivery and the featured product of the season free of charge.
-
-
-The ‘issues’ feature in GitHub was used to create a list of features, and GitHub labels were used to order these according to priority, using the MoSCoW method..
+I used the ‘issues’ feature in GitHub to create a list of features necessary to meet the MVP outlined above. GitHub labels were used to order these according to priority, using the MoSCoW method..
 
 <br>
 
@@ -125,13 +134,47 @@ The list of issues used to fill the kanban board can be found at:
 https://github.com/farah-maria/LeabharMaith/issues
 
 <br>
-The list of user stories, specifically, can be found at:
+
+A list of user stories can be found at:
 
 
 https://github.com/farah-maria/LeabharMaith/issues?q=is%3Aopen+is%3Aissue+label%3A%22USER+STORY%22
 
-
+<br>
 By clicking on a user story heading, the full user story can be accessed with its attached list of functionalities and testing notes.
-
+<br>
 
 Each user story was listed as an ‘issue’, and this was connected via the comments to a list of features needed to fulfil the needs voiced by the story. All aspects of the project associated with the Pass criteria supplied by the Code Institute were labelled ‘Must have’ for the MVP, and these were prioritised by me over all other issues.
+
+<br>
+
+Due to time constraints, certain features were not included in the scope of this project, and none of these are in the ‘Must have’ category. 
+
+<br>
+
+•	I was not able to prioritise descriptive and easy to understand/ short links for the images used on the site, though this doesn’t make any difference on the user experience and user interface side of things, other than the fact that it affects SEO and therefore a potential user is slightly less likely to find the website on Google. (Labelled ‘Will not have’ in Github issues.)
+
+<br>
+
+•	I was not able to prioritise connecting up the email validation for successful transactions on the site, which would have provided the user with a  receipt. They do, however, receive feedback in the form of a pop-up message to say whether or not their payment was successful. 
+
+<br>
+
+Certain features which went above and beyond the MVP list of ‘must-haves’  were included in the scope of this project...
+
+<br>
+
+•	A submittable contact form was included on  a ‘contact us’ page, with a pop-up message that provides validation for the success/ failure of the message being sent. These messages can be accessed via the admin panel when super user credentials are used to log-in. (This was labelled ‘Could have’) 
+
+<br>
+
+•	Three easy to use forms are available for shop staff to enter, delete, read and edit all records relating to stock. These options can be viewed by the ‘my account’ option in the navigation bar when super user credentials are used to log-in. Only one back-end form was required by examiners for this project, but only one form would not have added enough functionality to extend to the featured products sold on the site as well as the books and the authors. 
+
+<br>
+
+All  user stories relating to ‘Must have’ functionalities, which defined the scope of this project, can be found at:
+
+https://github.com/farah-maria/LeabharMaith/issues?q=is%3Aopen+is%3Aissue+label%3A%22MUST+HAVE%22+label%3A%22USER+STORY%22
+
+
+
