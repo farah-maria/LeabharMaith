@@ -335,6 +335,17 @@ Bottom of add product page for staff below (need to scroll down):
 <br>   
 <br>
 
+### **Surface**
+
+<br>
+<br>
+Colour palette: the colours are based around shades of green, as the colour green is associated with the 'Emerald Isle' of Ireland.
+<br>
+Fonts: the fonts will have a literary theme, with handwritten-style headings and old fashioned book-type font for the main text and title of the website. 
+<br>
+Logo/ favicon: the logo will be an image of a green coloured book or a pile of green coloured books.
+<br>
+<br>
 ### **Entity Relationship Diagram**
 
 <br>
