@@ -77,8 +77,7 @@ Even though Leabhar Maith offers a sense of belonging for the buyer, where there
 Despite being in a team of... one... I used an Agile approach to designing, planning and developing the site. Well, actually, I did get together with another software engineering student from a software testing course, and we pretended we were in a work-place team for the testing of features. We communicated via the ‘issues’ comments on the GitHub project for Leabhar Maith, and this can be seen on the details for each issue/ user-story/ feature-needed-docket. He taught me some of the terminology used for software testing, and we use this in the comments, which was great! 
 
 
-The first step was to gather the  user stories and record them using  GitHub project tools. An MVP (Minimum Viable Product) was then designed around the requirements that most directly met the needs of each user story. These were then attached to iterations that were time-boxed using the ‘milestones’ feature in GitHub. The list of milestones/ iterations is located at: https://github.com/farah-maria/LeabharMaith/milestones and can be viewed in proper order according by due date at:
-
+The first step was to gather the  user stories and record them using  GitHub project tools. An MVP (Minimum Viable Product) was then designed around the requirements that most directly met the needs of each user story. These were then attached to iterations that were time-boxed using the ‘milestones’ feature in GitHub. The list of milestones/ iterations is located at: https://github.com/farah-maria/LeabharMaith/milestones and can be viewed in proper order according by due date here:
 
 https://github.com/farah-maria/LeabharMaith/milestones?direction=asc&sort=due_date&state=open
 
@@ -534,4 +533,30 @@ Results varied according to internet connection, but the SEO and Accessability s
 ## **Web Marketing Strategy**
 <br>
 <br>
-A robots.txt file and a 
+Search Engine Optimisation is an important part of any marketing strategy in an age were Google and Googling have become verbs. Whether a website comes up on the first page of a search via relevant keywords is a huge part of a brand being 'seen'. A website’s search engine ranking involves allowing its pages to be crawled and indexed by a robot/ bot. To make sure that Leabhar Maith gives the bots the information they need to read the site quickly, a robots.txt file and a sitemap.xml have been generated and are included in the code repository. I have blocked off accounts information from this, as there is no benefit for google to crawl such pages, and the files may well contain private information relating to a user's bank account, transactions and private contact details. 
+
+<br>
+<br>
+The keywords added to the meta description section at the head of the base.html file is important, and it's important to use these throughout the site as well. I chose the following a list of short tail keywords for this purpose:
+<br>
+<br>
+irish literature, books, irish language, as gaelege, irish fiction, irish poetry, irish interest, cork, badly, online bookclub, younger readers,
+<br>
+<br>
+<br>
+and the following long tail phrases:
+<br>
+<br>
+irish non-fiction,
+irish young adult fiction,
+badly made books,[advertiser on the site]
+irish children's books,
+<br>
+<br>
+The logo is also an important part of the Leabhar Maith brand, which I customised to match the dark green colour of the text used on the site. 
+<br>
+<center><img src="media/icon.png" alt="Logo" width="20%"/></center>
+<br>
+The logo is free for non-commercial use and is by ICONS DB. It can be found at:  https://www.iconsdb.com/custom-color/book-16-icon.html and can be changed to any colour by hex code.
+<br>
+<br>
