@@ -183,21 +183,25 @@ https://github.com/farah-maria/LeabharMaith/issues?q=is%3Aopen+is%3Aissue+label%
 
 While a subscription service option would certainly suit Leabhar Maith, for this initial version of the project it only offers one-off purchases, as I was learning to set up Stripe payment integration for the first time.  A subscription service would be a great future feature. 
 Meanwhile, the curation of groups of books encourages buying multiple books, plus there is a cost benefit to larger purchases in terms of free delivery and the featured product of the season free of charge.
-
+<br>.
 As mentioned above in the 'Scope' section, email validation also has yet to be implemented.
 <br>
+
 * To implement: A subscription service for all 6-8 books per quarter at 10% off the full cost.
 <br>
+
 * To implement: Email validation messages for successful purchases sent to the customer.
 <br>
+
 * To implement: A book blog to extend branch reach and customer involvement.
 <br>
+
 * To implement: Creation of the newsletter content, which could involve reaching out to existing subscribers to submit book reviews and musings, as well as features about Irish authors and the Irish language.
 <br>
+
 * To implement: Literary and Irish language events run by Leabhar Maith to grow the reach of the brand and increase subscriber base.
 <br>
-* To implement: Subscriber only benefits, such as previews of the next collection and extra content in the newsletter.
-<br>
+
 * To implement: Extend advertising for Irish crafts and stationary companies.
 <br>
 
