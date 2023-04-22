@@ -177,7 +177,59 @@ https://github.com/farah-maria/LeabharMaith/issues?q=is%3Aopen+is%3Aissue+label%
 
 <br>
 
-**Future Features**
+####  Summary of Main In-Scope Features
+<br>
+
+* Responsive navigation bar with product search, dropdown menu with book categories, user account access, registration option, and special dropdown list from navbar for shop staff/ superusers who want to edit/ add/ delete stock.
+<br>
+
+* A shopping basket to add books to or edit contents/ delete contents.
+<br>
+
+* Checkout page that’s easy-to-edit and retains products between visits.
+<br>
+
+* Basic information about the business on an ‘about us’ page.
+<br>
+
+* Registration option,  with editable data for delivery address and contact details. Profile page on 
+‘my account’ shows the customer’s order history and saved of delivery and contact info.
+
+<br>
+
+* Users can receive info on books and upcoming collections through signing up to the newsletter.
+<br>
+
+* Free delivery on orders over 50 EUR.
+<br>
+
+* Free ‘featured product of the season’ sent out to customers making a purchase of 70 EUR or more. 
+<br>
+
+* Page with privacy policy in accordance with GRDP regulations.
+<br>
+
+* A ‘contact us’ form with encouragement to send in book recommendations.
+<br>
+
+* Link to Facebook business page on the web home page and products page.
+<br>
+
+* Newsletter sign-up page with validation.
+<br>
+
+* Fully functional Stripe payment checkout in test mode for the purposes of this project.
+<br>
+
+* Fully set-up Facebook business page to complement the site.
+<br>
+
+* SEO considerations implemented: meta description of content and key search words in head of code. sitemap.xml and robots.txt files are also included in the code. 
+<br>
+
+* Advertising campaign for 'badly made books' notebook company to mutually increase brand reach. Their A6 notebook is the first season's 'featured product' - a concept to allow for ongoing advertising slots for different Irish stationary companies, to increase revenue for Leabhar Maith. 
+<br>
+### Future Features
 
 <br>
 
@@ -190,19 +242,23 @@ As mentioned above in the 'Scope' section, email validation also has yet to be i
 * To implement: A subscription service for all 6-8 books per quarter at 10% off the full cost.
 <br>
 
-* To implement: Email validation messages for successful purchases sent to the customer.
+* To implement: email validation messages for successful purchases sent to the customer.
 <br>
 
-* To implement: A book blog to extend branch reach and customer involvement.
+* To implement: delivery cost realistic to areas being delivered to rather than a flat 10%
 <br>
 
-* To implement: Creation of the newsletter content, which could involve reaching out to existing subscribers to submit book reviews and musings, as well as features about Irish authors and the Irish language.
+* To implement: a book blog to extend branch reach and customer involvement.
 <br>
 
-* To implement: Literary and Irish language events run by Leabhar Maith to grow the reach of the brand and increase subscriber base.
+* To implement: creation of the newsletter content, which could involve reaching out to existing subscribers to submit book reviews and musings, as well as features about Irish authors and the Irish language.
 <br>
 
-* To implement: Extend advertising for Irish crafts and stationary companies.
+* To implement: literary and Irish language events run by Leabhar Maith to grow the reach of the brand and increase subscriber base.
 <br>
 
+* To implement: extend advertising for Irish crafts and stationary companies.
+<br>
 
+* To implement: functionality for users to leave reviews. 
+<br>
