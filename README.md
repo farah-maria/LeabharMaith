@@ -359,8 +359,46 @@ Bottom of add product page for staff below (need to scroll down):
 * Forms: forms are styled using crispy forms templates to improve their appearance.
 <br>
 <br>
+
 ### **Entity Relationship Diagram**
 
 <br>
 <center><img src="assets/images/erd.png" alt="ERD image" width="90%" target="_blank"/></center>
 <br>   
+<br>
+
+### **Testing** & BUGS!!!
+<br>
+<br>
+Comments from my agile 'team' relating to testing can be found attached to each testable GitHub issue. My friend Joey taught me some software testing protocol in report writing... 
+<br>
+<br>
+<center><img src="assets/images/agiletesting.png" alt="testing comments" width="90%" target="_blank"/></center>
+<br>
+<br>
+The following bugs were found during manual testing:
+<br>
+<br>
+<center><img src="assets/images/testingbugs1.jpg" alt="list of bugs" width="90%" target="_blank"/></center>
+<br>
+<center><img src="assets/images/testingbugs2.jpg" alt="list of bugs" width="90%" target="_blank"/></center>
+<br>
+<center><img src="assets/images/testingbugs3.jpg" alt="list of bugs" width="90%" target="_blank"/></center>
+<br>
+<br>
+Most of these were resolved, and this is the final checklist of features manually tested and the pass/ fail result of each test.
+<br>
+<br>
+<center><img src="assets/images/testing1.jpg" alt="testing checklist" width="90%" target="_blank"/></center>
+<br>
+<center><img src="assets/images/testing2.jpg" alt="testing checklist" width="90%" target="_blank"/></center>
+<br>
+<center><img src="assets/images/testing3.jpg" alt="testing checklist" width="90%" target="_blank"/></center>
+<br>
+<br>
+In future, it would great to do some automated testing. In this case, time limitations meant that wasn't possible.
+<br>
+<br>
+
+
+
