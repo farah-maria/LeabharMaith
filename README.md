@@ -209,7 +209,7 @@ https://github.com/farah-maria/LeabharMaith/issues?q=is%3Aopen+is%3Aissue+label%
 * Page with privacy policy in accordance with GRDP regulations.
 <br>
 
-* A ‘contact us’ form with encouragement to send in book recommendations.
+* A ‘contact us’ form with form validation and encouragement to users to send in book recommendations.
 <br>
 
 * Link to Facebook business page on the web home page and products page.
@@ -239,7 +239,7 @@ Meanwhile, the curation of groups of books encourages buying multiple books, plu
 As mentioned above in the 'Scope' section, email validation also has yet to be implemented.
 <br>
 
-* To implement: A subscription service for all 6-8 books per quarter at 10% off the full cost.
+* To implement: a subscription service for all 6-8 books per quarter at 10% off the full cost.
 <br>
 
 * To implement: email validation messages for successful purchases sent to the customer.
@@ -261,4 +261,26 @@ As mentioned above in the 'Scope' section, email validation also has yet to be i
 <br>
 
 * To implement: functionality for users to leave reviews. 
+<br>
+<br>
+
+### **Structure**
+<br>
+
+* Homepage will be the landing pad with key links attached to the navbar .
+<br>
+
+* The navbar will provide the menu of options for all available pages. All pages are reachable from every other page via the navbar. 
+<br>
+
+* Book category page filterable by genre/ category of book .
+<br>
+
+* Clicking on a book or the ‘further info’ button underneath will take user to the book detail page. It can be added to the shopping basket here, where the user can either continue shopping or checkout and pay.
+<br>
+
+* The Navbar menu will collapse and be responsive for mobile and tablet devices.
+<br>
+
+* Title of the site is a clickable link back to the home page.
 <br>
