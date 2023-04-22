@@ -513,5 +513,15 @@ was found om StackOverflow, which was to add the following:
 <br>
 <br>
 
-
+#### **LIGHTHOUSE REPORT RESULTS FOR ACCESSABILITY AND SEO**
+<br>
+<br>
+Results varied according to internet connection, but the SEO and Accessability scores were high for both desktop and mobile versions of the site. The first image below is for the desktop version and the second is for the mobile version.
+<br>
+<br>
+<center><img src="assets/images/Lighthouse_Desk.png" alt="Lighthouse Report Desktop" width="70%"/></center>
+<br>
+<center><img src="assets/images/Lighthouse_Mob.png" alt="Lighthouse Report Mobile" width="70%"/></center>
+<br>
+<br>
 
