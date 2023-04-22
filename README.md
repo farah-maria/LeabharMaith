@@ -571,9 +571,8 @@ To view the facebook business page you can click on the link below:
 
 In case the page becomes deactivated by Facebook, here are some screenshots:
 
-<details>
-  <summary>Facebook Business Page Screenshots</summary>
-  <br>
+<br>
+<br>
 
 ![FB Business page overview](assets/images/facebook.png)
 
@@ -583,15 +582,125 @@ In case the page becomes deactivated by Facebook, here are some screenshots:
 The same cover image is used as in the homepage for the company website, and the business logo is also used
 for consistency of brand image. Consistency in the company colours and images makes the brand easier to recognise and remember.
 <br>
+<br>
 For new users who land on the Facebook page, there is a 'Shop Now' button at the top of the Facebook profile, which takes the user to the Leabhar Maith website.
 <br>
 <br>
 The advertising for Badly Made Books on the products page is intended to be a 'swap', where BMB also advertise for Leabhar Maith in return.
 <br>
+<br>
 The newsletter, free gift (a badly made books notebook) and free delivery options for higher purchases are also intended to entice customers and to keep them involved.
+<br>
+<br>
 
-![FB Business page overview](media/readme/facebook-business-page-3.png)
+## **DEPLOYMENT**
+<br>
+<br>
 
-![FB Business page overview](media/readme/facebook-business-page-4.png)
+* This project is deployed live on [**Heroku**](https://leabhar-maith.herokuapp.com/).
+* You can run the code in your chosen local **Integrated Development Environment** (**IDE**) by following the steps below…
 
-</details>
+    1. Open the **Project Repository** in [**Github**](https://github.com/farah-maria/LeabharMaith).
+    2. Look for the green *Coded* button at the top right of the repository.
+    3. If using [**Github Desktop**](https://desktop.github.com), chose to *Open in Desktop*.
+    4. If you want to **Clone** the files into a **Git** repository, chose to copy the URL from the same menu (# 2.). Open your chosen **Command Line Interface** (**CLI**, e.g. [**Gitbash**](https://git-scm.com/downloads)) and use the following command:
+
+
+        ``` bash
+        git clone https://github.com/farah-maria/LeabharMaith
+        ```
+
+    5. To set up the files manually in a local repository, chose to **Download ZIP** and remove the files from the ZIP folder. Place them into the chosen location. If desired, set up a **Git** repository in this folder in your **CLI** with the following command:
+
+        
+
+        ``` bash
+        git init
+        ```
+
+    6. You can check the state of your repository after initialising it by using this command:
+
+        
+
+        ``` bash
+        git status
+        ```
+
+### **Remote**
+
+* To push the code to a remote repository, follow the steps below (I use **Github** as an example).
+
+    1. After using the command 'git status' (see step 6 above) in the command line, check that the console reads:
+
+
+        ``` bash
+        Nothing to commit
+        working tree clean
+        ```
+
+    2. Next, link your remote repository. For **Github**, open your Github account and select *Repositories*. At the top right of the screen select *New*.
+
+    3. Give your repository a name. Keep it short and avoid underscores.
+
+    4. You can now choose a few different ways to link the local and remote repositories. The one we want here is "…*or push an existing repository from the command line*". Copy the code this option gives you and paste it into your command line. It should look something like this:
+
+        ``` bash
+        git remote add origin https://github.com/farah-maria/LeabharMaith
+        git push -u origin master
+        ```
+
+    5. Now you can push any changes from the command line with:
+
+        ``` bash
+        git push
+        ```
+
+    6. If you check the status of of your local repository now (using 'git status') it should give you something like this:
+
+        ``` bash
+        On branch master
+        Your branch is up-to-date with 'origin/master'.
+        nothing to commit, working tree clean
+        ```
+
+    7. Finally, to deploy the code live with **Github Pages**, open the repository in your **Github** account and select '*Settings*' at the top right of the page. Scroll down to the *Github Pages* section. Click on the '*None*' button. Select the correct branch from the menu. Now click on the URL link to visit the deployed site.
+
+### **Heroku**
+
+* To push the code to a Heroku and deploy it dynamically, follow the steps below.
+
+    1. Following on from **Local** deployment step 6 above, type the command 'git status' in the command line and check that the console reads:
+
+        ``` bash
+        Nothing to commit
+        working tree clean
+        ```
+
+    2. Next, create an App on Heroku. Log in to your previous Heroku account or set up a new one, select the *New* button on the top right of the screen, then select *Create New App*.
+
+    3. Name your app (usinb only lowercase characters and dashes) and choose the regional server that best suits your location.
+
+    4. Next, login to your Heroku account from your CLI using:
+
+        ``` bash
+        heroku login
+        ```
+
+        A browser window should open up where you can click to login to your account through your local IDE. If this does not open, select the link on the CLI with *ctrl + c* and open it manually.
+
+    5. Link your existing Git repository to Heroku by adding Heroku as a remote repository:
+
+
+        ``` bash
+        heroku git:remote -a <project-name>
+        ```
+
+    6. From now on you can push your code from the CLI with:
+
+        ``` bash
+        git push heroku master
+        ```
+
+    7. Set the necessary *Environment Variables*. Select the *Settings* tab, and then select the *Config Vars* button. Enter the KEY - VALUE pairs for your config variables here (e.g. SECRET_KEY, IP, etc.)
+
+    8. Finally, select the *Open App* button the top right of the screen to see your deployed application.
