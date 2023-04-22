@@ -102,16 +102,23 @@ The scope of the project can be seen on the board, which I mainly limited to MVP
 <br>
 The project specification outlining the scope of Leabhar Maith is, in this case, necessarily defined by Code Institute marking criteria. It is roughly described as follows:
 <br>
-Project purpose:
 <br>
-In this project, you'll build a Full-Stack site based on business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.
+
+**Project purpose:**
+
+<br>
+<em>In this project, you'll build a Full-Stack site based on business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.
+<br>
 <br>
 You will also need to create a dummy social media product page as part of your marketing strategy, a newsletter sign-up and SEO.  
 <br>
+<br>
 The site owner, logging in as a particular user, should be able to see a list of all their past orders.
 <br>
-Your site should be a Full Stack Web application that incorporates Authentication and role-based Authorisation functionality.
-<hr>
+<br>
+Your site should be a Full Stack Web application that incorporates Authentication and role-based Authorisation functionality.</em>
+<br>
+<br>
 <br>
 As shown later in this document, there is a Facebook business page for Leabhar Maith, where news and discounts are aimed at growing the pool of potential site users.
 <br>
@@ -288,36 +295,41 @@ As mentioned above in the 'Scope' section, email validation also has yet to be i
 
 ### **Skeleton** / **Wireframes**
 <br>
-I used Balsamiq to create a skeleton of what my site would look like, combined with mock-ups from a practice-project called Boutique Ado that will form the template for my own equivalent pages on the Leabhar Maith site. The shopping basket icon on the navbar will turn blue and start showing the basket total when the user starts adding books to it.
+I used Balsamiq to create a skeleton of what the main two landing pages of the site would look like, combined with mock-ups from a very similar e-commerce practice-project I completed with the Code Institute called 'Boutique Ado'. The Boutique Ado page mock-ups will form the template for my own equivalent pages on the Leabhar Maith site, e.g. the shopping basket icon on the navbar will turn blue and start showing the basket total when the user starts adding books to it in a similar way, and the icon for the shopping cart will be the same. I won't be reinventing the wheel in terms of the appearance and structure of my e-commerce site, but I will be adapting the code and creating new features where this suits the specific needs of an online bookshop. 
 <br>
 <br>
-<center><img src="assets/images/wireframeHome.png" alt="Homepage wireframe" width="80%"/></center>
+<center><img src="assets/images/wireframeHome.png" alt="Homepage wireframe" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/wireframeProducts.png" alt="Products page, mobile design, wireframe" width="50%"/></center>
+<center><img src="assets/images/wireframeProducts.png" alt="Products page, mobile design, wireframe" width="40%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupNav.png" alt="navigation bar mockup" width="80%"/></center>
+<center><img src="assets/images/mockupNav.png" alt="navigation bar mockup" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupSignup.png" alt="registration page" width="80%"/></center>
+Obviously, the product detail page shown below will show the information required for a book rather than an item of clothing (ISBN, author, title, publisher etc) and there will be an image of the book cover to the left of the information. But the rough style and positioning of the buttons will remain the same.
+<br>
+<center><img src="assets/images/mockProdDetail.png" alt="navigation bar mockup" width="80%"/></center>
+<br>
+<br>
+<center><img src="assets/images/mockupSignup.png" alt="registration page" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupSignIn.png" alt="sign-in page" width="80%"/></center>
+<center><img src="assets/images/mockupSignIn.png" alt="sign-in page" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupProfile.png" alt="profile page" width="80%"/></center>
+<center><img src="assets/images/mockupProfile.png" alt="profile page" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockBasket.png" alt="Shopping Basket" width="80%"/></center>
+<center><img src="assets/images/mockBasket.png" alt="Shopping Basket" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupAddProd.png" alt="Add product page for staff" width="80%"/></center>
+<center><img src="assets/images/mockupAddProd.png" alt="Add product page for staff" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupAddProduct.png" alt="kanban board" width="80%"/></center>
+<center><img src="assets/images/mockupAddProduct.png" alt="kanban board" width="60%"/></center>
 <br>   
-
+<br>
 
 
 
