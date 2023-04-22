@@ -1,5 +1,11 @@
 # Leabhar Maith
+<br>
+<br>
 
+Click [**here**](https://leabhar-maith.herokuapp.com/) for the deployed website.
+
+<br>
+<br> 
 
 ## Introduction
   
@@ -525,3 +531,7 @@ Results varied according to internet connection, but the SEO and Accessability s
 <br>
 <br>
 
+## **Web Marketing Strategy**
+<br>
+<br>
+A robots.txt file and a 
