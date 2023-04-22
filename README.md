@@ -7,6 +7,8 @@
 
 
 This is a README for an e-commerce website for a hypothetical business called 'Leabhar Maith', meaning 'good book' in Irish. 
+
+
 Leabhar Maith is a business to customer (B2C) e-commerce site, selling literary products to the user, namely books written in English and Irish by Irish authors. The deliverables will expand in future to include journals, paperweights and stationary with an Irish literary theme. Customers sign up to create an online account and pay via single payments using Stripe. 
 
 
@@ -14,9 +16,6 @@ Features of this business-focused website include a shopping cart, a catalogue o
 
 
 The site was developed using Python in the Django framework and styled using CSS and Bootstrap. ElephantSQL is used for the database and Heroku for deployment. 
-
-
-'Leabhar Maith' means 'good book' in Irish.
 
 
 <br>
@@ -176,5 +175,30 @@ All  user stories relating to ‘Must have’ functionalities, which defined the
 
 https://github.com/farah-maria/LeabharMaith/issues?q=is%3Aopen+is%3Aissue+label%3A%22MUST+HAVE%22+label%3A%22USER+STORY%22
 
+<br>
+
+**Future Features**
+
+<br>
+
+While a subscription service option would certainly suit Leabhar Maith, for this initial version of the project it only offers one-off purchases, as I was learning to set up Stripe payment integration for the first time.  A subscription service would be a great future feature. 
+Meanwhile, the curation of groups of books encourages buying multiple books, plus there is a cost benefit to larger purchases in terms of free delivery and the featured product of the season free of charge.
+
+As mentioned above in the 'Scope' section, email validation also has yet to be implemented.
+<br>
+* To implement: A subscription service for all 6-8 books per quarter at 10% off the full cost.
+<br>
+* To implement: Email validation messages for successful purchases sent to the customer.
+<br>
+* To implement: A book blog to extend branch reach and customer involvement.
+<br>
+* To implement: Creation of the newsletter content, which could involve reaching out to existing subscribers to submit book reviews and musings, as well as features about Irish authors and the Irish language.
+<br>
+* To implement: Literary and Irish language events run by Leabhar Maith to grow the reach of the brand and increase subscriber base.
+<br>
+* To implement: Subscriber only benefits, such as previews of the next collection and extra content in the newsletter.
+<br>
+* To implement: Extend advertising for Irish crafts and stationary companies.
+<br>
 
 
