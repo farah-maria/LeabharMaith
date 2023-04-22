@@ -432,9 +432,8 @@ As with the homepage, most errors from Boutique Ado walkthrough project, which s
 <br>
 Error: "Attribute target not allowed on element img at this point."
 <br> 
-This was confusing. I’d added target=_blank to ensure the images opened in a new tab and had done so in the same way as in the Boutique Ado walkthrough lessons (see code below). 
-<br>
-<img class="d-block w-50 product_carousel" src="https://res.cloudinary.com/farahtasia/image/upload/v1681894761/fop9vbpjq4zvghskysho.jpg" target="_blank" data-color="firebrick" alt="advert">↩  
+This was confusing. I’d added target=_blank to ensure the images opened in a new tab and had done so in the same way as in the Boutique Ado walkthrough lessons.
+<br>  
 <br>
 I left this alone, again as it was based on the Code Institute's own recommended code.
 <br>
@@ -555,8 +554,44 @@ irish children's books,
 <br>
 The logo is also an important part of the Leabhar Maith brand, which I customised to match the dark green colour of the text used on the site. 
 <br>
+<br>
 <center><img src="media/icon.png" alt="Logo" width="20%"/></center>
+<br>
 <br>
 The logo is free for non-commercial use and is by ICONS DB. It can be found at:  https://www.iconsdb.com/custom-color/book-16-icon.html and can be changed to any colour by hex code.
 <br>
 <br>
+Another part of the Leabhar Maith marketing strategy is its Facebook Business Page
+
+To view the facebook business page you can click on the link below:
+
+
+[Facebook Business Page](https://www.facebook.com/profile.php?id=100091762610528)
+
+
+In case the page becomes deactivated by Facebook, here are some screenshots:
+
+<details>
+  <summary>Facebook Business Page Screenshots</summary>
+  <br>
+
+![FB Business page overview](assets/images/facebook.png)
+
+![FB Business page overview](assets/images/facebook1.png)
+<br>
+<br>
+The same cover image is used as in the homepage for the company website, and the business logo is also used
+for consistency of brand image. Consistency in the company colours and images makes the brand easier to recognise and remember.
+<br>
+For new users who land on the Facebook page, there is a 'Shop Now' button at the top of the Facebook profile, which takes the user to the Leabhar Maith website.
+<br>
+<br>
+The advertising for Badly Made Books on the products page is intended to be a 'swap', where BMB also advertise for Leabhar Maith in return.
+<br>
+The newsletter, free gift (a badly made books notebook) and free delivery options for higher purchases are also intended to entice customers and to keep them involved.
+
+![FB Business page overview](media/readme/facebook-business-page-3.png)
+
+![FB Business page overview](media/readme/facebook-business-page-4.png)
+
+</details>
