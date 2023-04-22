@@ -370,6 +370,10 @@ Bottom of add product page for staff below (need to scroll down):
 ### **Testing** & BUGS!!!
 <br>
 <br>
+
+#### **Manual Testing of Features**
+<br>
+<br>
 Comments from my agile 'team' relating to testing can be found attached to each testable GitHub issue. My friend Joey taught me some software testing protocol in report writing... 
 <br>
 <br>
@@ -397,6 +401,115 @@ Most of these were resolved, and this is the final checklist of features manuall
 <br>
 <br>
 In future, it would great to do some automated testing. In this case, time limitations meant that wasn't possible.
+<br>
+<br>
+
+#### **CODE VALIDATION**
+
+<br>
+<br>
+
+**W3C Reports for HTML:**
+<br>
+HOME PAGE:
+
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fleabhar-maith.herokuapp.com%2F#l211c7
+
+All errors but one are in the source code for the Boutique Ado walkthrough project, which formed the basis for this repo, so I didn’t want to change it in case it broke the functionality in some way. An example of such an error is that the <title> is considered to come after too much content. But this content is in fact the background info for the navigation bar rather than the main content, so in fact the title is on the page in the correct place.
+The category ‘younger readers’ was raising an error due to the space, so I changed the category name to ‘childrens’ without the apostrophe and created a new fixtures file straight afterwards.
+<br>
+<br>
+ALL PRODUCTS PAGE:
+<br>
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fleabhar-maith.herokuapp.com%2Fproducts%2F#l211c7
+<br>
+As with the homepage, most errors from Boutique Ado walkthrough project, which seem to have a sensible justification. My error was to enter “class=……” twice for two class names relating to the same <a> element. I corrected this to using “class” just once, and adding both class names to it separated by a space.
+<br>
+Error: "Attribute target not allowed on element img at this point."
+<br> 
+This was confusing. I’d added target=_blank to ensure the images opened in a new tab and had done so in the same way as in the Boutique Ado walkthrough lessons (see code below). 
+<br>
+<img class="d-block w-50 product_carousel" src="https://res.cloudinary.com/farahtasia/image/upload/v1681894761/fop9vbpjq4zvghskysho.jpg" target="_blank" data-color="firebrick" alt="advert">↩  
+<br>
+I left this alone, again as it was based on the Code Institute's own recommended code.
+<br>
+<br> 
+The html for the featured product contained a paragraph as a child of an anchor tag. This was an error of mine, and I removed it (it was unnecessary anyway).
+<br>
+There was a typo at the end of a tag, <s/a> instead of </s>. I corrected that. And an unclosed <div> for the advert-carousel, which I closed.
+<br>
+All other “errors” from Code Institute recommended code.
+<br> 
+<br>
+PRODUCT CATEGORY PAGE:
+<br>
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fleabhar-maith.herokuapp.com%2Fproducts%2F%3Fcategory%3Dnon-fiction&showsource=yes
+<br>
+Only errors were ones mentioned above already, repeated on other pages.
+<br>
+<br>
+PRODUCT DETAIL PAGE:
+1.	Warning: The type attribute is unnecessary for JavaScript resources.
+From line 326, column 1; to line 326, column 31
+TUTE --> ↩<script type="text/javascript">↩↩ 
+<br>
+<br>
+This is from quantityjs.html, but is in the Boutique Ado code. I removed it anyway, as it seemed incorrect to me.
+<br>
+<br>
+ROCKET VALIDATOR FREE TRIAL supplied an all-pages report for the HTML of the site:
+<br>
+https://rocketvalidator.com/s/2478de46-af56-4f88-a3f3-42bdaaeefba0
+<br>
+The report shows that all other errors were the same errors from the source code mentioned above.
+I left them alone for the same reason, and was hugely appreciative of the time that Rocket Validator saved me!
+<br>
+<br>
+<br>
+<center><img src="assets/images/rocketVal1.png" alt="Rocket Validation Report p1" width="70%" target="_blank"/></center>
+<br>
+<br>
+<center><img src="assets/images/rocketVal2.png" alt="Rocket Validation Report p2" width="70%" target="_blank"/></center>
+<br>
+<br>
+
+**W3C Jigsaw Reports for CSS:**
+<br>
+<br>
+All code passed, for base.html and separate css file for user profiles (profiles.css).
+<br>
+<br>
+<br>
+<center><img src="assets/images/css1.png" alt="CSS Validation Report - base.css" width="70%" target="_blank"/></center>
+<br>
+<br>
+<center><img src="assets/images/css2.png" alt="CSS Validation Report - profiles.css" width="70%" target="_blank"/></center>
+<br>
+<br>
+
+**PEP8 CodeInstitute Validation for all Python Code**
+<br>
+This tool can be found at:
+<br>
+https://pep8ci.herokuapp.com/
+<br>
+<br>
+All passed apart from a few lines that were too long, but these had to be left either because they were from source code or because my IDE linter (in GitPod) was raising an issue when I 'corrected' my line breaks according to the recommendations of the PEP8 tool. Rather than do the incorrect thing with my code due to conflict between the recommendations of two apps, I left the lines the same as I knew the code was still actually functioning from the results of manual testing.
+<br>
+<br>
+
+**JShint Testing of Javascript and JQuery**
+<br>
+<br>
+All passed apart from an issue with ES6 use of lamba =>, which wasn't yet recognised by JShint. 
+<br>
+<br>
+<center><img src="assets/images/jshintIssue1.png" alt="JShint Validation Report" width="70%" target="_blank"/></center>
+A fix for this
+was found om StackOverflow, which was to add the following:
+<br>
+<br>
+<center><img src="assets/images/jshintIssue2.png" alt="JShint Validation Report" width="70%" target="_blank"/></center>
 <br>
 <br>
 
