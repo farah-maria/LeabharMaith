@@ -705,12 +705,16 @@ The newsletter, free gift (a badly made books notebook) and free delivery option
 
 
 ## Technologies
+<br>
 
+### Languages
+<br>
 * HTML5
 * CSS3
 * JavaScript
 * JQuery library
 * Python
+<br>
 
 ### Programs & Libraries
 
@@ -718,7 +722,8 @@ The newsletter, free gift (a badly made books notebook) and free delivery option
 * GitHub
 * Gitpod IDE
 * Django
-* Bootstrap 4 
+* Bootstrap 4
+* Stripe (for payments) 
 * Google Fonts (all fonts are from here)
 * Font Awesome (common icons through the site are from here)
 * Favicon.io (used to generate site favicon)   
@@ -734,3 +739,38 @@ The newsletter, free gift (a badly made books notebook) and free delivery option
 * JSHint validation 
 * Homebrew & GraphViz for ERD diagram
 * XML Site Map Generator (https://www.xml-sitemaps.com/)
+
+<br>
+<br>
+
+## **Credits, Sources & Acknowledgements
+<br>
+
+1. HTML layouts are from Bootstrap 4.6 templates. Inspired by the Boutique Ado walkthrough project by the Code Institute. Github repo can be found at: https://github.com/Code-Institute-Solutions/Boutique-Ado
+
+2. The image for my homepage, used throughout as the site as a background, is by Aliis Sinisalu on Unsplash and it is free for non-commercial use if credited.
+
+3. The Leabhar Maith single book logo is by ICONS DB. It can be found at:  https://www.iconsdb.com/custom-color/book-16-icon.html and can be changed to any colour by hex code.
+
+4. The favicon is called ‘books stack of three icon’ from flaticon.com, ‘freepik’
+https://www.flaticon.com/free-icon/books-stack-of-three_29302?k=1681306356012&log-in=google  It is free of charge and free to use.
+
+5. Icons are from Font Awesome.
+
+6. Fonts are from Google Fonts.
+
+7. Thank you so much to Joe Mulcahey for being in my Agile team and teaching me more about testing.
+
+8. Huge thanks to my industry mentor, Martina Terlevic, who has been so constructive and supportive.
+
+9. Many thanks to Paul Quinn, who inspired me to do this course.
+
+10. Thank you to Conor Gilligan for showing me how much I really don't know about programming and spending so much time helping me. 
+
+11. Huge thanks to the Code Institute tutors and facilitators.
+
+12. Youtube video on making a custom 404 error page: https://www.youtube.com/watch?v=oX_XKlPJAQk&ab_channel=ThinkThank
+
+13. Bootstrap documentation on how to create pop up alerts: https://getbootstrap.com/docs/4.0/components/alerts/
+
+14. Code Speedy lesson on how to set timer for alerts etc using JQuery: https://www.codespeedy.com/how-to-set-a-timer-in-jquery/#:~:text=The%20jQuery%20setTimeout%20%28%29%20method%20is%20able%20to,the%20alert%20message%20for%20timer%22%29%3B%20%7D%2C%205000%29%3B%20%7D%29
