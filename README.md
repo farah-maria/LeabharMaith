@@ -452,9 +452,13 @@ Fully implemented.
 <center><img src="assets/images/newsletter.png" alt="newsletter form signup" width="60%"/></center>
 * Free delivery on orders over 50 EUR.
 <br>
-
+Fully implemented
+<br>
+<br>
 * Free ‘featured product of the season’ sent out to customers making a purchase of 70 EUR or more. 
 <br>
+Fully implemented.
+
 
 * Page with privacy policy in accordance with GRDP regulations.
 <br>
