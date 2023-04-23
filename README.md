@@ -702,3 +702,33 @@ The newsletter, free gift (a badly made books notebook) and free delivery option
     7. Set the necessary *Environment Variables*. Select the *Settings* tab, and then select the *Config Vars* button. Enter the KEY - VALUE pairs for your config variables here (e.g. SECRET_KEY, IP, etc.)
 
     8. Finally, select the *Open App* button the top right of the screen to see your deployed application.
+
+
+## Technologies
+
+* HTML5
+* CSS3
+* JavaScript
+* JQuery library
+* Python
+
+### Programs & Libraries
+
+* Git Version control.
+* GitHub
+* Gitpod IDE
+* Django
+* Bootstrap 4 
+* Google Fonts (all fonts are from here)
+* Font Awesome (common icons through the site are from here)
+* Favicon.io (used to generate site favicon)   
+* Google Chrome Developer Tools
+* Heroku (for deployment)
+* ElephantSQL (database used)      
+* Cloudinary (for static files, image hosting - I can use AWS but got tired of emails demanding money!)
+* Whitenoise (to help with Cloudinary's common little glitches when connecting with Heroku)
+* W3C Markup Validation Service
+* W3C CSS Validation Service
+* Pep8ci (https://pep8ci.herokuapp.com/) 
+* JSHint validation 
+* Homebrew & GraphViz for ERD diagram
