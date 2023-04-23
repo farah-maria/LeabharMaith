@@ -26,7 +26,7 @@ The site was developed using Python in the Django framework and styled using CSS
 
 <br>
 
-![mock-up of site on different sized devices](assets/images/amiresponsive.png)
+![mock-up of site on different sized devices](media/images/amiresponsive.png)
 
 <br>
 
@@ -82,7 +82,7 @@ The first step was to gather the  user stories and record them using  GitHub pro
 https://github.com/farah-maria/LeabharMaith/milestones?direction=asc&sort=due_date&state=open
 
 <br>
-<center><img src="assets/images/iterations.png" alt="iterations 1-4" width="80%"/></center>
+<center><img src="media/images/iterations.png" alt="iterations 1-4" width="80%"/></center>
 <br>   
 
 Note: issues were not closed using the tick box, but by placing them in the ‘done’ column on the kanban board, so it appears that none of the iterations were completed if judged by the percentage bar. A comment in each states its completion, though.
@@ -95,7 +95,7 @@ https://github.com/users/farah-maria/projects/6/
 
 
 <br>
-<center><img src="assets/images/kanban.png" alt="kanban board" width="80%"/></center>
+<center><img src="media/images/kanban.png" alt="kanban board" width="80%"/></center>
 <br>   
 
 The scope of the project can be seen on the board, which I mainly limited to MVP requirements, each of which correlate with the Code Institute pass criteria for the project. 
@@ -307,40 +307,40 @@ As mentioned above in the 'Scope' section, email validation also has yet to be i
 I used Balsamiq to create a skeleton of what the main two landing pages of the site would look like, combined with mock-ups from a very similar e-commerce practice-project I completed with the Code Institute called 'Boutique Ado'. The Boutique Ado page mock-ups will form the template for my own equivalent pages on the Leabhar Maith site, e.g. the shopping basket icon on the navbar will turn blue and start showing the basket total when the user starts adding books to it in a similar way, and the icon for the shopping cart will be the same. I won't be reinventing the wheel in terms of the appearance and structure of my e-commerce site, but I will be adapting the code and creating new features where this suits the specific needs of an online bookshop. 
 <br>
 <br>
-<center><img src="assets/images/wireframeHome.png" alt="Homepage wireframe" width="60%"/></center>
+<center><img src="media/images/wireframeHome.png" alt="Homepage wireframe" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/wireframeProducts.png" alt="Products page, mobile design, wireframe" width="40%"/></center>
+<center><img src="media/images/wireframeProducts.png" alt="Products page, mobile design, wireframe" width="40%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupNav.png" alt="navigation bar mockup" width="60%"/></center>
+<center><img src="media/images/mockupNav.png" alt="navigation bar mockup" width="60%"/></center>
 <br>   
 <br>
 The product detail page shown below will show the information required for a book rather than an item of clothing (ISBN, author, title, publisher etc) and there will be an image of the book cover to the left of the information. But the rough style and positioning of the buttons will remain the same.
 <br>
 <br>
-<center><img src="assets/images/mockProdDetail.png" alt="navigation bar mockup" width="80%"/></center>
+<center><img src="media/images/mockProdDetail.png" alt="navigation bar mockup" width="80%"/></center>
 <br>
 <br>
-<center><img src="assets/images/mockupSignup.png" alt="registration page" width="60%"/></center>
+<center><img src="media/images/mockupSignup.png" alt="registration page" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupSignIn.png" alt="sign-in page" width="60%"/></center>
+<center><img src="media/images/mockupSignIn.png" alt="sign-in page" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockupProfile.png" alt="profile page" width="60%"/></center>
+<center><img src="media/images/mockupProfile.png" alt="profile page" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockBasket.png" alt="Shopping Basket" width="60%"/></center>
+<center><img src="media/images/mockBasket.png" alt="Shopping Basket" width="60%"/></center>
 <br>   
 <br>
-<center><img src="assets/images/mockAddProd.png" alt="Add product page for staff" width="60%"/></center>
+<center><img src="media/images/mockAddProd.png" alt="Add product page for staff" width="60%"/></center>
 <br>   
 <br>
 Bottom of add product page for staff below (need to scroll down):
 <br>
 <br>
-<center><img src="assets/images/mockupAddProduct.png" alt="Add product page" width="60%"/></center>
+<center><img src="media/images/mockupAddProduct.png" alt="Add product page" width="60%"/></center>
 <br>   
 <br>
 
@@ -372,7 +372,7 @@ Bottom of add product page for staff below (need to scroll down):
 ### **Entity Relationship Diagram**
 
 <br>
-<center><img src="assets/images/erd.png" alt="ERD image" width="90%" target="_blank"/></center>
+<center><img src="media/images/erd.png" alt="ERD image" width="90%" target="_blank"/></center>
 <br>   
 <br>
 
@@ -381,11 +381,11 @@ Bottom of add product page for staff below (need to scroll down):
 <br>
 This is a multi-page fullstack framework site with 8 Django apps. Anchor links within the site text are navigable and have a hover effect of changing colour to help the user see that there is a clickable item.
 <br>
-<center><img src="assets/images/homepage.png" alt="homepage" width="60%"/></center>
+<center><img src="media/images/homepage.png" alt="homepage" width="60%"/></center>
 <br>
 The homepage uses the intended palette of shades of green with white as a contrasting colour - emphasising two colours from the Irish flag. There are also flashes of 'gold'/ orange used to underline a couple of headings, reflecting the third colour of the flag, on the All Books (all_products) page...
 <br>
-<center><img src="assets/images/allproducts.png" alt="all products page" width="60%"/></center>
+<center><img src="media/images/allproducts.png" alt="all products page" width="60%"/></center>
 <br>
 <br>
 The 'literary' and 'handwritten' themes I wanted to use led me to select the fonts Goudy Bookletter
@@ -398,17 +398,17 @@ Below, I will go through the list of in-scope features listed above with screen 
 
 * Responsive navigation bar with product search, dropdown menu with book categories, user account access, registration option, and special dropdown list from navbar for shop staff/ superusers who want to edit/ add/ delete stock.
 <br>
-<center><img src="assets/images/navbar1.png" alt="navbar" width="60%"/></center>
+<center><img src="media/images/navbar1.png" alt="navbar" width="60%"/></center>
 <br>
-<center><img src="assets/images/navbar2.png" alt="navbar" width="60%"/></center>
+<center><img src="media/images/navbar2.png" alt="navbar" width="60%"/></center>
 <br>
-<center><img src="assets/images/navbar3.png" alt="navbar" width="60%"/></center>
+<center><img src="media/images/navbar3.png" alt="navbar" width="60%"/></center>
 <br>
-<center><img src="assets/images/navbar4.png" alt="navbar" width="60%"/></center>
+<center><img src="media/images/navbar4.png" alt="navbar" width="60%"/></center>
 <br>
-<center><img src="assets/images/responsiveNav1.png" alt="responsive navbar" width="60%"/></center>
+<center><img src="media/images/responsiveNav1.png" alt="responsive navbar" width="60%"/></center>
 <br>
-<center><img src="assets/images/responsiveNav2.png" alt="responsive navbar" width="60%"/></center>
+<center><img src="media/images/responsiveNav2.png" alt="responsive navbar" width="60%"/></center>
 <br>
 The navigation bar is fully responsive, and the shopping basket icon shows the updated value of items in the shopping basket plus delivery.
 <br>
@@ -419,19 +419,19 @@ The navigation bar is fully responsive, and the shopping basket icon shows the u
 This is fully functioning, but it would be great to add a subtotal feature.
 <br>
 <br>
-<center><img src="assets/images/basket1.png" alt="shopping basket" width="60%"/></center>
+<center><img src="media/images/basket1.png" alt="shopping basket" width="60%"/></center>
 <br>
 <br>
 * Checkout page that’s easy-to-edit and retains products between visits.
 <br>
 <br>
-<center><img src="assets/images/checkout1.png" alt="checkout" width="60%"/></center>
-<center><img src="assets/images/checkout1.png" alt="checkout" width="60%"/></center>
+<center><img src="media/images/checkout1.png" alt="checkout" width="60%"/></center>
+<center><img src="media/images/checkout1.png" alt="checkout" width="60%"/></center>
 <br>
 <br>
 * Basic information about the business on an ‘about us’ page.
 <br>
-<center><img src="assets/images/aboutus.png" alt="about us" width="60%"/></center>
+<center><img src="media/images/aboutus.png" alt="about us" width="60%"/></center>
 <br>
 <br>
 * Registration option,  with editable data for delivery address and contact details. Profile page on 
@@ -441,15 +441,15 @@ This is fully functioning, but it would be great to add a subtotal feature.
 Fully implemented.
 <br>
 <br> 
-<center><img src="assets/images/register.png" alt="registration page" width="60%"/></center>
+<center><img src="media/images/register.png" alt="registration page" width="60%"/></center>
 <br>
 <br> 
-<center><img src="assets/images/profile.png" alt="profile page" width="60%"/></center>
+<center><img src="media/images/profile.png" alt="profile page" width="60%"/></center>
 <br>
 <br>
 * Users can receive info on books and upcoming collections through signing up to the newsletter.
 <br>
-<center><img src="assets/images/newsletter.png" alt="newsletter form signup" width="60%"/></center>
+<center><img src="media/images/newsletter.png" alt="newsletter form signup" width="60%"/></center>
 * Free delivery on orders over 50 EUR.
 <br>
 Fully implemented
@@ -488,27 +488,27 @@ Fully implemented.
 Comments from my agile 'team' relating to testing can be found attached to each testable GitHub issue. My friend Joey taught me some software testing protocol in report writing... 
 <br>
 <br>
-<center><img src="assets/images/agiletesting.png" alt="testing comments" width="90%" target="_blank"/></center>
+<center><img src="media/images/agiletesting.png" alt="testing comments" width="90%" target="_blank"/></center>
 <br>
 <br>
 The following bugs were found during manual testing:
 <br>
 <br>
-<center><img src="assets/images/testingbugs1.jpg" alt="list of bugs" width="90%" target="_blank"/></center>
+<center><img src="media/images/testingbugs1.jpg" alt="list of bugs" width="90%" target="_blank"/></center>
 <br>
-<center><img src="assets/images/testingbugs2.jpg" alt="list of bugs" width="90%" target="_blank"/></center>
+<center><img src="media/images/testingbugs2.jpg" alt="list of bugs" width="90%" target="_blank"/></center>
 <br>
-<center><img src="assets/images/testingbugs3.jpg" alt="list of bugs" width="90%" target="_blank"/></center>
+<center><img src="media/images/testingbugs3.jpg" alt="list of bugs" width="90%" target="_blank"/></center>
 <br>
 <br>
 Most of these were resolved, and this is the final checklist of features manually tested and the pass/ fail result of each test.
 <br>
 <br>
-<center><img src="assets/images/testing1.jpg" alt="testing checklist" width="90%" target="_blank"/></center>
+<center><img src="media/images/testing1.jpg" alt="testing checklist" width="90%" target="_blank"/></center>
 <br>
-<center><img src="assets/images/testing2.jpg" alt="testing checklist" width="90%" target="_blank"/></center>
+<center><img src="media/images/testing2.jpg" alt="testing checklist" width="90%" target="_blank"/></center>
 <br>
-<center><img src="assets/images/testing3.jpg" alt="testing checklist" width="90%" target="_blank"/></center>
+<center><img src="media/images/testing3.jpg" alt="testing checklist" width="90%" target="_blank"/></center>
 <br>
 <br>
 In future, it would great to do some automated testing. In this case, time limitations meant that wasn't possible.
@@ -574,10 +574,10 @@ I left them alone for the same reason, and was hugely appreciative of the time t
 <br>
 <br>
 <br>
-<center><img src="assets/images/rocketVal1.png" alt="Rocket Validation Report p1" width="70%" target="_blank"/></center>
+<center><img src="media/images/rocketVal1.png" alt="Rocket Validation Report p1" width="70%" target="_blank"/></center>
 <br>
 <br>
-<center><img src="assets/images/rocketVal2.png" alt="Rocket Validation Report p2" width="70%" target="_blank"/></center>
+<center><img src="media/images/rocketVal2.png" alt="Rocket Validation Report p2" width="70%" target="_blank"/></center>
 <br>
 <br>
 
@@ -588,10 +588,10 @@ All code passed, for base.html and separate css file for user profiles (profiles
 <br>
 <br>
 <br>
-<center><img src="assets/images/css1.png" alt="CSS Validation Report - base.css" width="70%" target="_blank"/></center>
+<center><img src="media/images/css1.png" alt="CSS Validation Report - base.css" width="70%" target="_blank"/></center>
 <br>
 <br>
-<center><img src="assets/images/css2.png" alt="CSS Validation Report - profiles.css" width="70%" target="_blank"/></center>
+<center><img src="media/images/css2.png" alt="CSS Validation Report - profiles.css" width="70%" target="_blank"/></center>
 <br>
 <br>
 
@@ -612,12 +612,12 @@ All passed apart from a few lines that were too long, but these had to be left e
 All passed apart from an issue with ES6 use of lamba =>, which wasn't yet recognised by JShint. 
 <br>
 <br>
-<center><img src="assets/images/jshintIssue1.png" alt="JShint Validation Report" width="70%" target="_blank"/></center>
+<center><img src="media/images/jshintIssue1.png" alt="JShint Validation Report" width="70%" target="_blank"/></center>
 A fix for this
 was found om StackOverflow, which was to add the following:
 <br>
 <br>
-<center><img src="assets/images/jshintIssue2.png" alt="JShint Validation Report" width="70%" target="_blank"/></center>
+<center><img src="media/images/jshintIssue2.png" alt="JShint Validation Report" width="70%" target="_blank"/></center>
 <br>
 <br>
 
@@ -627,9 +627,9 @@ was found om StackOverflow, which was to add the following:
 Results varied according to internet connection, but the SEO and Accessability scores were high for both desktop and mobile versions of the site. The first image below is for the desktop version and the second is for the mobile version.
 <br>
 <br>
-<center><img src="assets/images/Lighthouse_Desk.png" alt="Lighthouse Report Desktop" width="70%"/></center>
+<center><img src="media/images/Lighthouse_Desk.png" alt="Lighthouse Report Desktop" width="70%"/></center>
 <br>
-<center><img src="assets/images/Lighthouse_Mob.png" alt="Lighthouse Report Mobile" width="70%"/></center>
+<center><img src="media/images/Lighthouse_Mob.png" alt="Lighthouse Report Mobile" width="70%"/></center>
 <br>
 <br>
 
@@ -678,9 +678,9 @@ In case the page becomes deactivated by Facebook, here are some screenshots:
 <br>
 <br>
 
-![FB Business page overview](assets/images/facebook.png)
+![FB Business page overview](media/images/facebook.png)
 
-![FB Business page overview](assets/images/facebook1.png)
+![FB Business page overview](media/images/facebook1.png)
 <br>
 <br>
 The same cover image is used as in the homepage for the company website, and the business logo is also used
