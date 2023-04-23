@@ -432,12 +432,12 @@ This is fully functioning, but it would be great to add a subtotal feature.
 * Basic information about the business on an ‘about us’ page.
 <br>
 <center><img src="assets/images/aboutus.png" alt="about us" width="60%"/></center>
-
-
+<br>
+<br>
 * Registration option,  with editable data for delivery address and contact details. Profile page on 
 ‘my account’ shows the customer’s order history and saved of delivery and contact info.
-
 <br>
+ 
 
 * Users can receive info on books and upcoming collections through signing up to the newsletter.
 <br>
