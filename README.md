@@ -392,7 +392,7 @@ The 'literary' and 'handwritten' themes I wanted to use led me to select the fon
 (which looks like old book type) and Fasthand (which looks like it's written with a caligraphy pen).
 <br>
 <br>
-Below, I will go through the list of in-scope features listed above with screen shots of the final implementation and outcomes.
+Below, I will go through the list of in-scope features listed above with note or/ and screen shots of the final implementation and outcomes.
 <br>
 <br>
 
@@ -449,6 +449,8 @@ Fully implemented.
 <br>
 * Users can receive info on books and upcoming collections through signing up to the newsletter.
 <br>
+<br>
+The Mailchimp form for signing up to the newsletter is on the dropdown list under 'Little Extras'. The mailchimp account is set up, and there is a pop up message saying whether sign-up has been successful or not.
 <center><img src="media/newsletter.png" alt="newsletter form signup" width="60%"/></center>
 * Free delivery on orders over 50 EUR.
 <br>
@@ -459,25 +461,42 @@ Fully implemented.
 <br>
 Fully implemented. See below - it is advertised at the bottom of the All Books page (where the 'shop now' button takes you.) A carousel also shows images from the advertising company's website, and the product images are marked in the code via a rel tag as "sponsored". 
 <br>
-<center><img src="media/navbar1.png" alt="newsletter form signup" width="60%"/></center>
+<center><img src="media/carousel.png" alt="carousel" width="60%"/></center>
+<center><img src="media/navbar1.png" alt="carousel" width="60%"/></center>
  
 * Page with privacy policy in accordance with GRDP regulations.
 <br>
-Fully implemented and created using 
+Fully implemented and is available from the 'Little Extras' dropdown list from the navbar.
+<br>
+<br>
 * A ‘contact us’ form with form validation and encouragement to users to send in book recommendations.
 <br>
-
+Fully implemented and  available from the 'Little Extras' dropdown list from the navbar. Emails go to the backend and can be seen in the admin panel.
+<br>
 * Link to Facebook business page on the web home page and products page.
 <br>
-
-* Newsletter sign-up page with validation.
+Fully implemented.
 <br>
-
+<br>
 * Fully functional Stripe payment checkout in test mode for the purposes of this project.
 <br>
-
+Fully implemented, and transactions can be made using test card details that can be found here:
+<br>
+https://stripe.com/docs/testing#cards
+<br>
+The card checkout process is in test mode, in terms of Stripe payments, so that no one accidentally tries to buy a book. Stripe is fully integrated, though.
+<br>
 * Custom 404 error page. 
-
+<br>
+Fully implemented.
+<br>
+<br>
+The site also has login-based functionality so that no protected content can be seen by more than the intended group. For example, superuser functionality for staff members can not be seen or accessed by general customers. And only logged in users can access their account information and contact details.
+<br>
+<br>
+The site is also fully responsive on devices starting from the size of an iphone4 (but includes the Galaxy Fold) and tablets and phones larger than these dimensions.
+<br>
+<br>
 
 ### **Testing** & BUGS!!!
 <br>
