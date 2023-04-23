@@ -452,17 +452,18 @@ Fully implemented.
 <center><img src="media/images/newsletter.png" alt="newsletter form signup" width="60%"/></center>
 * Free delivery on orders over 50 EUR.
 <br>
-Fully implemented
+Fully implemented.
 <br>
 <br>
 * Free ‘featured product of the season’ sent out to customers making a purchase of 70 EUR or more. 
 <br>
-Fully implemented.
+Fully implemented. See below - it is advertised at the bottom of the All Books page (where the 'shop now' button takes you.) A carousel also shows images from the advertising company's website, and the product images are marked in the code via a rel tag as "sponsored". 
+<br>
+<center><img src="media/images/navbar1.png" alt="newsletter form signup" width="60%"/></center>
  
-
 * Page with privacy policy in accordance with GRDP regulations.
 <br>
-
+Fully implemented and created using 
 * A ‘contact us’ form with form validation and encouragement to users to send in book recommendations.
 <br>
 
