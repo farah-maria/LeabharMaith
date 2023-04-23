@@ -233,6 +233,8 @@ https://github.com/farah-maria/LeabharMaith/issues?q=is%3Aopen+is%3Aissue+label%
 * Fully functional Stripe payment checkout in test mode for the purposes of this project.
 <br>
 
+* Custom 404 error page. 
+
 * Fully set-up Facebook business page to complement the site.
 <br>
 
@@ -241,6 +243,8 @@ https://github.com/farah-maria/LeabharMaith/issues?q=is%3Aopen+is%3Aissue+label%
 
 * Advertising campaign for 'badly made books' notebook company to mutually increase brand reach. Their A6 notebook is the first season's 'featured product' - a concept to allow for ongoing advertising slots for different Irish stationary companies, to increase revenue for Leabhar Maith. 
 <br>
+<br>
+
 ### Future Features
 
 <br>
@@ -371,6 +375,96 @@ Bottom of add product page for staff below (need to scroll down):
 <center><img src="assets/images/erd.png" alt="ERD image" width="90%" target="_blank"/></center>
 <br>   
 <br>
+
+## **Features**
+<br>
+<br>
+This is a multi-page fullstack framework site with 8 Django apps. Anchor links within the site text are navigable and have a hover effect of changing colour to help the user see that there is a clickable item.
+<br>
+<center><img src="assets/images/homepage.png" alt="homepage" width="60%"/></center>
+<br>
+The homepage uses the intended palette of shades of green with white as a contrasting colour - emphasising two colours from the Irish flag. There are also flashes of 'gold'/ orange used to underline a couple of headings, reflecting the third colour of the flag, on the All Books (all_products) page...
+<br>
+<center><img src="assets/images/allproducts.png" alt="all products page" width="60%"/></center>
+<br>
+<br>
+The 'literary' and 'handwritten' themes I wanted to use led me to select the fonts Goudy Bookletter
+(which looks like old book type) and Fasthand (which looks like it's written with a caligraphy pen).
+<br>
+<br>
+Below, I will go through the list of in-scope features listed above with screen shots of the final implementation and outcomes.
+<br>
+<br>
+
+* Responsive navigation bar with product search, dropdown menu with book categories, user account access, registration option, and special dropdown list from navbar for shop staff/ superusers who want to edit/ add/ delete stock.
+<br>
+<center><img src="assets/images/navbar1.png" alt="navbar" width="60%"/></center>
+<br>
+<center><img src="assets/images/navbar2.png" alt="navbar" width="60%"/></center>
+<br>
+<center><img src="assets/images/navbar3.png" alt="navbar" width="60%"/></center>
+<br>
+<center><img src="assets/images/navbar4.png" alt="navbar" width="60%"/></center>
+<br>
+<center><img src="assets/images/responsiveNav1.png" alt="responsive navbar" width="60%"/></center>
+<br>
+<center><img src="assets/images/responsiveNav2.png" alt="responsive navbar" width="60%"/></center>
+<br>
+The navigation bar is fully responsive, and the shopping basket icon shows the updated value of items in the shopping basket plus delivery.
+<br>
+<br>
+* A shopping basket to add books to or edit contents/ delete contents.
+<br>
+<br>
+This is fully functioning, but it would be great to add a subtotal feature.
+<br>
+<br>
+<center><img src="assets/images/basket1.png" alt="shopping basket" width="60%"/></center>
+<br>
+<br>
+* Checkout page that’s easy-to-edit and retains products between visits.
+<br>
+<br>
+<center><img src="assets/images/checkout1.png" alt="checkout" width="60%"/></center>
+<center><img src="assets/images/checkout1.png" alt="checkout" width="60%"/></center>
+<br>
+<br>
+* Basic information about the business on an ‘about us’ page.
+<br>
+<center><img src="assets/images/aboutus.png" alt="about us" width="60%"/></center>
+
+
+* Registration option,  with editable data for delivery address and contact details. Profile page on 
+‘my account’ shows the customer’s order history and saved of delivery and contact info.
+
+<br>
+
+* Users can receive info on books and upcoming collections through signing up to the newsletter.
+<br>
+
+* Free delivery on orders over 50 EUR.
+<br>
+
+* Free ‘featured product of the season’ sent out to customers making a purchase of 70 EUR or more. 
+<br>
+
+* Page with privacy policy in accordance with GRDP regulations.
+<br>
+
+* A ‘contact us’ form with form validation and encouragement to users to send in book recommendations.
+<br>
+
+* Link to Facebook business page on the web home page and products page.
+<br>
+
+* Newsletter sign-up page with validation.
+<br>
+
+* Fully functional Stripe payment checkout in test mode for the purposes of this project.
+<br>
+
+* Custom 404 error page. 
+
 
 ### **Testing** & BUGS!!!
 <br>
@@ -774,3 +868,8 @@ https://www.flaticon.com/free-icon/books-stack-of-three_29302?k=1681306356012&lo
 13. Bootstrap documentation on how to create pop up alerts: https://getbootstrap.com/docs/4.0/components/alerts/
 
 14. Code Speedy lesson on how to set timer for alerts etc using JQuery: https://www.codespeedy.com/how-to-set-a-timer-in-jquery/#:~:text=The%20jQuery%20setTimeout%20%28%29%20method%20is%20able%20to,the%20alert%20message%20for%20timer%22%29%3B%20%7D%2C%205000%29%3B%20%7D%29
+
+15. Coding is Thinking Youtube lesson on creating a contact form in Django: https://www.youtube.com/watch?v=x8kQ_Voa1pk&ab_channel=CodingIsThinking
+
+16. GDPR privacy policy generated by privacypolicygenerator.info: 
+https://www.privacypolicygenerator.info/live.php?token=Vu1sSuSvF4TOXyLw13wPpk9meXyFmFAw
