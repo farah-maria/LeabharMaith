@@ -437,11 +437,19 @@ This is fully functioning, but it would be great to add a subtotal feature.
 * Registration option,  with editable data for delivery address and contact details. Profile page on 
 ‘my account’ shows the customer’s order history and saved of delivery and contact info.
 <br>
- 
-
+<br>
+Fully implemented.
+<br>
+<br> 
+<center><img src="assets/images/register.png" alt="registration page" width="60%"/></center>
+<br>
+<br>
+<center><img src="assets/images/profile.png" alt="profile page" width="60%"/></center>
+<br>
+<br>
 * Users can receive info on books and upcoming collections through signing up to the newsletter.
 <br>
-
+<center><img src="assets/images/newsletter.png" alt="newsletter form signup" width="60%"/></center>
 * Free delivery on orders over 50 EUR.
 <br>
 
