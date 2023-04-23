@@ -458,7 +458,7 @@ Fully implemented
 * Free ‘featured product of the season’ sent out to customers making a purchase of 70 EUR or more. 
 <br>
 Fully implemented.
-
+ 
 
 * Page with privacy policy in accordance with GRDP regulations.
 <br>
