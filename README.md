@@ -443,7 +443,7 @@ Fully implemented.
 <br> 
 <center><img src="assets/images/register.png" alt="registration page" width="60%"/></center>
 <br>
-<br>
+<br> 
 <center><img src="assets/images/profile.png" alt="profile page" width="60%"/></center>
 <br>
 <br>
