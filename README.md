@@ -729,6 +729,8 @@ The newsletter, free gift (a badly made books notebook) and free delivery option
 * Whitenoise (to help with Cloudinary's common little glitches when connecting with Heroku)
 * W3C Markup Validation Service
 * W3C CSS Validation Service
+* Rocket HTML Validator
 * Pep8ci (https://pep8ci.herokuapp.com/) 
 * JSHint validation 
 * Homebrew & GraphViz for ERD diagram
+* XML Site Map Generator (https://www.xml-sitemaps.com/)
