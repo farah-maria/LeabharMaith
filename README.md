@@ -501,7 +501,7 @@ The site is also fully responsive on devices starting from the size of an iphone
 ### **Testing** & BUGS!!!
 <br>
 <br>
-
+ 
 #### **Manual Testing of Features**
 <br>
 <br>
