@@ -305,7 +305,7 @@ As mentioned above in the 'Scope' section, email validation also has yet to be i
 ### **Skeleton** / **Wireframes**
 <br>
 I used Balsamiq to create a skeleton of what the main two landing pages of the site would look like, combined with mock-ups from a very similar e-commerce practice-project I completed with the Code Institute called 'Boutique Ado'. The Boutique Ado page mock-ups will form the template for my own equivalent pages on the Leabhar Maith site, e.g. the shopping basket icon on the navbar will turn blue and start showing the basket total when the user starts adding books to it in a similar way, and the icon for the shopping cart will be the same. I won't be reinventing the wheel in terms of the appearance and structure of my e-commerce site, but I will be adapting the code and creating new features where this suits the specific needs of an online bookshop. 
-<br>
+<br> 
 <br>
 <center><img src="media/wireframeHome.png" alt="Homepage wireframe" width="60%"/></center>
 <br>   
