@@ -278,6 +278,9 @@ As mentioned above in the 'Scope' section, email validation also has yet to be i
 
 * To implement: functionality for users to leave reviews. 
 <br>
+
+* To implement: Facebook link bottom of every page, as well as the newsletter sign-up, in a strong footer that helps market the company. At present, this info is scattered throughout the site and isn't on every page.
+<br>
 <br>
 
 ### **Structure**
@@ -369,13 +372,70 @@ Bottom of add product page for staff below (need to scroll down):
 <br>
 <br>
 
-### **Entity Relationship Diagram**
+
+## **Web Marketing Strategy**
+<br>
+<br>
+Search Engine Optimisation is an important part of any marketing strategy in an age were Google and Googling have become verbs. Whether a website comes up on the first page of a search via relevant keywords is a huge part of a brand being 'seen'. A website’s search engine ranking involves allowing its pages to be crawled and indexed by a robot/ bot. To make sure that Leabhar Maith gives the bots the information they need to read the site quickly, a robots.txt file and a sitemap.xml have been generated and are included in the code repository. I have blocked off accounts information from this, as there is no benefit for google to crawl such pages, and the files may well contain private information relating to a user's bank account, transactions and private contact details. 
 
 <br>
-<center><img src="media/erd.png" alt="ERD image" width="90%" target="_blank"/></center>
-<br>   
+<br>
+The keywords added to the meta description section at the head of the base.html file is important, and it's important to use these throughout the site as well. I chose the following a list of short tail keywords for this purpose:
+<br>
+<br>
+irish literature, books, irish language, as gaelege, irish fiction, irish poetry, irish interest, cork, badly, online bookclub, younger readers,
+<br>
+<br>
+<br>
+and the following long tail phrases:
+<br>
+<br>
+irish non-fiction,
+irish young adult fiction,
+badly made books,[advertiser on the site]
+irish children's books,
+<br>
+<br>
+The logo is also an important part of the Leabhar Maith brand, which I customised to match the dark green colour of the text used on the site. 
+<br>
+<br>
+<center><img src="media/icon.png" alt="Logo" width="20%"/></center>
+<br>
+<br>
+The logo is free for non-commercial use and is by ICONS DB. It can be found at:  https://www.iconsdb.com/custom-color/book-16-icon.html and can be changed to any colour by hex code.
+<br>
+<br>
+Another part of the Leabhar Maith marketing strategy is its Facebook Business Page
+
+To view the facebook business page you can click on the link below:
+
+
+[Facebook Business Page](https://www.facebook.com/profile.php?id=100091762610528)
+
+
+In case the page becomes deactivated by Facebook, here are some screenshots:
+
+<br>
 <br>
 
+![FB Business page overview](media/facebook.png)
+
+![FB Business page overview](media/facebook1.png)
+<br>
+<br>
+The same cover image is used as in the homepage for the company website, and the business logo is also used
+for consistency of brand image. Consistency in the company colours and images makes the brand easier to recognise and remember.
+<br>
+<br>
+For new users who land on the Facebook page, there is a 'Shop Now' button at the top of the Facebook profile, which takes the user to the Leabhar Maith website.
+<br>
+<br>
+The advertising for Badly Made Books on the products page is intended to be a 'swap', where BMB also advertise for Leabhar Maith in return.
+<br>
+<br>
+The newsletter, free gift (a badly made books notebook) and free delivery options for higher purchases are also intended to entice customers and to keep them involved.
+<br>
+<br>
 ## **Features**
 <br>
 <br>
@@ -451,15 +511,17 @@ Fully implemented.
 <br>
 <br>
 The Mailchimp form for signing up to the newsletter is on the dropdown list under 'Little Extras'. The mailchimp account is set up, and there is a pop up message saying whether sign-up has been successful or not.
-<center><img src="media/newsletter.png" alt="newsletter form signup" width="60%"/></center>
+<center><img src="media/mailchimp.png" alt="newsletter form signup" width="60%"/></center>
+<br>
+<br>
 * Free delivery on orders over 50 EUR.
 <br>
-Fully implemented.
+Fully implemented. Automatically calculated in shopping basket.
 <br>
 <br>
 * Free ‘featured product of the season’ sent out to customers making a purchase of 70 EUR or more. 
 <br>
-Fully implemented. See below - it is advertised at the bottom of the All Books page (where the 'shop now' button takes you.) A carousel also shows images from the advertising company's website, and the product images are marked in the code via a rel tag as "sponsored". 
+Fully implemented, in that a message pops up in the shopping basket informing the customer when they've spent enough to have one. See below - the advert is at the bottom of the All Books page (where the 'shop now' button takes you.) A carousel also shows images from the advertising company's website, and the product images are marked in the code via a rel tag as "sponsored". 
 <br>
 <center><img src="media/carousel.png" alt="carousel" width="60%"/></center>
 <center><img src="media/navbar1.png" alt="carousel" width="60%"/></center>
@@ -468,14 +530,18 @@ Fully implemented. See below - it is advertised at the bottom of the All Books p
 <br>
 Fully implemented and is available from the 'Little Extras' dropdown list from the navbar.
 <br>
+<<center><img src="media/privacy.png" alt="privacy info" width="60%"/></center>>
 <br>
 * A ‘contact us’ form with form validation and encouragement to users to send in book recommendations.
 <br>
 Fully implemented and  available from the 'Little Extras' dropdown list from the navbar. Emails go to the backend and can be seen in the admin panel.
 <br>
+<center><img src="media/contact.png" alt="contact form" width="60%"/></center>
+<br>
+<br>
 * Link to Facebook business page on the web home page and products page.
 <br>
-Fully implemented.
+Fully implemented. It's a simple link that reads 'Follow us on Facebook'. I would prefer to have it at the bottom of every page, as well as a newsletter sign-up, in a strong footer that helps market the company.
 <br>
 <br>
 * Fully functional Stripe payment checkout in test mode for the purposes of this project.
@@ -498,9 +564,13 @@ The site is also fully responsive on devices starting from the size of an iphone
 <br>
 <br>
 
-### **Testing** & BUGS!!!
+## **Entity Relationship Diagram**
+
 <br>
+<center><img src="media/erd.png" alt="ERD image" width="90%" target="_blank"/></center>
+<br>   
 <br>
+
  
 #### **Manual Testing of Features**
 <br>
@@ -626,18 +696,18 @@ All passed apart from a few lines that were too long, but these had to be left e
 <br>
 <br>
 
-**JShint Testing of Javascript and JQuery**
+**JSHint Testing of Javascript and JQuery**
 <br>
 <br>
 All passed apart from an issue with ES6 use of lamba =>, which wasn't yet recognised by JShint. 
 <br>
 <br>
-<center><img src="media/jshintIssue1.png" alt="JShint Validation Report" width="70%" target="_blank"/></center>
+<center><img src="media/jshintIssue1.png" alt="JSHint Validation Report" width="70%" target="_blank"/></center>
 A fix for this
 was found om StackOverflow, which was to add the following:
 <br>
 <br>
-<center><img src="media/jshintIssue2.png" alt="JShint Validation Report" width="70%" target="_blank"/></center>
+<center><img src="media/jshintIssue2.png" alt="JSHint Validation Report" width="70%" target="_blank"/></center>
 <br>
 <br>
 
@@ -650,70 +720,6 @@ Results varied according to internet connection, but the SEO and Accessability s
 <center><img src="media/Lighthouse_Desk.png" alt="Lighthouse Report Desktop" width="70%"/></center>
 <br>
 <center><img src="media/Lighthouse_Mob.png" alt="Lighthouse Report Mobile" width="70%"/></center>
-<br>
-<br>
-
-## **Web Marketing Strategy**
-<br>
-<br>
-Search Engine Optimisation is an important part of any marketing strategy in an age were Google and Googling have become verbs. Whether a website comes up on the first page of a search via relevant keywords is a huge part of a brand being 'seen'. A website’s search engine ranking involves allowing its pages to be crawled and indexed by a robot/ bot. To make sure that Leabhar Maith gives the bots the information they need to read the site quickly, a robots.txt file and a sitemap.xml have been generated and are included in the code repository. I have blocked off accounts information from this, as there is no benefit for google to crawl such pages, and the files may well contain private information relating to a user's bank account, transactions and private contact details. 
-
-<br>
-<br>
-The keywords added to the meta description section at the head of the base.html file is important, and it's important to use these throughout the site as well. I chose the following a list of short tail keywords for this purpose:
-<br>
-<br>
-irish literature, books, irish language, as gaelege, irish fiction, irish poetry, irish interest, cork, badly, online bookclub, younger readers,
-<br>
-<br>
-<br>
-and the following long tail phrases:
-<br>
-<br>
-irish non-fiction,
-irish young adult fiction,
-badly made books,[advertiser on the site]
-irish children's books,
-<br>
-<br>
-The logo is also an important part of the Leabhar Maith brand, which I customised to match the dark green colour of the text used on the site. 
-<br>
-<br>
-<center><img src="media/icon.png" alt="Logo" width="20%"/></center>
-<br>
-<br>
-The logo is free for non-commercial use and is by ICONS DB. It can be found at:  https://www.iconsdb.com/custom-color/book-16-icon.html and can be changed to any colour by hex code.
-<br>
-<br>
-Another part of the Leabhar Maith marketing strategy is its Facebook Business Page
-
-To view the facebook business page you can click on the link below:
-
-
-[Facebook Business Page](https://www.facebook.com/profile.php?id=100091762610528)
-
-
-In case the page becomes deactivated by Facebook, here are some screenshots:
-
-<br>
-<br>
-
-![FB Business page overview](media/facebook.png)
-
-![FB Business page overview](media/facebook1.png)
-<br>
-<br>
-The same cover image is used as in the homepage for the company website, and the business logo is also used
-for consistency of brand image. Consistency in the company colours and images makes the brand easier to recognise and remember.
-<br>
-<br>
-For new users who land on the Facebook page, there is a 'Shop Now' button at the top of the Facebook profile, which takes the user to the Leabhar Maith website.
-<br>
-<br>
-The advertising for Badly Made Books on the products page is intended to be a 'swap', where BMB also advertise for Leabhar Maith in return.
-<br>
-<br>
-The newsletter, free gift (a badly made books notebook) and free delivery options for higher purchases are also intended to entice customers and to keep them involved.
 <br>
 <br>
 
@@ -869,7 +875,7 @@ The newsletter, free gift (a badly made books notebook) and free delivery option
 <br>
 <br>
 
-## **Credits, Sources & Acknowledgements
+## **Credits, Sources & Acknowledgements**
 <br>
 
 1. HTML layouts are from Bootstrap 4.6 templates. Inspired by the Boutique Ado walkthrough project by the Code Institute. Github repo can be found at: https://github.com/Code-Institute-Solutions/Boutique-Ado
